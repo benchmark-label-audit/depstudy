@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "full", "method": "ds_full_lo", "param": "smooth", "value": "1.0", "default": "1.0", "is_default": true, "ap": 0.1753787356565573, "pk": 0.3, "ap_key": 0.19230102762954182, "sec": 38.330485582351685}

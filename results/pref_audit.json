@@ -1,0 +1,170 @@
+{
+ "RB2": {
+  "models": 52,
+  "items": 1762,
+  "lb_rows": 169,
+  "lb_rows_matched": 169,
+  "mislabel_matched": 87,
+  "base_rate": 0.04937570942111237,
+  "methods": {
+   "mv": {
+    "ap": 0.2139798069415385,
+    "recall@20": 6,
+    "recall@50": 18,
+    "recall@100": 28,
+    "recall@200": 41,
+    "p_at_50_expected": 0.36
+   },
+   "crh": {
+    "ap": 0.22319707173130907,
+    "recall@20": 6,
+    "recall@50": 18,
+    "recall@100": 28,
+    "recall@200": 43,
+    "p_at_50_expected": 0.36
+   },
+   "catd": {
+    "ap": 0.25707066685741,
+    "recall@20": 7,
+    "recall@50": 19,
+    "recall@100": 33,
+    "recall@200": 48,
+    "p_at_50_expected": 0.38
+   },
+   "ds_onecoin_lo": {
+    "ap": 0.2669269646396973,
+    "recall@20": 10,
+    "recall@50": 18,
+    "recall@100": 31,
+    "recall@200": 44,
+    "p_at_50_expected": 0.36
+   },
+   "glad_lo": {
+    "ap": 0.2744877513802915,
+    "recall@20": 11,
+    "recall@50": 18,
+    "recall@100": 31,
+    "recall@200": 44,
+    "p_at_50_expected": 0.36
+   },
+   "ds_full_lo": {
+    "ap": 0.2646559809629548,
+    "recall@20": 9,
+    "recall@50": 17,
+    "recall@100": 30,
+    "recall@200": 42,
+    "p_at_50_expected": 0.34
+   },
+   "accu_depen_lo": {
+    "ap": 0.06698459486277498,
+    "recall@20": 1,
+    "recall@50": 3,
+    "recall@100": 5,
+    "recall@200": 14,
+    "p_at_50_expected": 0.06
+   },
+   "irt4pl": {
+    "ap": 0.3693074736677368,
+    "recall@20": 8,
+    "recall@50": 22,
+    "recall@100": 42,
+    "recall@200": 68,
+    "p_at_50_expected": 0.44
+   },
+   "entropy": {
+    "ap": 0.10890243546553054,
+    "recall@20": 4,
+    "recall@50": 6,
+    "recall@100": 13,
+    "recall@200": 19,
+    "p_at_50_expected": 0.12
+   }
+  },
+  "spearman_irt_vs_their_delta": 0.6070905653717829,
+  "spearman_n": 160
+ },
+ "JB": {
+  "models": 52,
+  "items": 350,
+  "lb_rows": 23,
+  "lb_rows_matched": 23,
+  "mislabel_matched": 12,
+  "base_rate": 0.03428571428571429,
+  "methods": {
+   "mv": {
+    "ap": 0.3666026835579597,
+    "recall@20": 8,
+    "recall@50": 10,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.2
+   },
+   "crh": {
+    "ap": 0.39973825834094706,
+    "recall@20": 8,
+    "recall@50": 10,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.2
+   },
+   "catd": {
+    "ap": 0.44832061895639486,
+    "recall@20": 9,
+    "recall@50": 11,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.22
+   },
+   "ds_onecoin_lo": {
+    "ap": 0.5085727547334434,
+    "recall@20": 9,
+    "recall@50": 11,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.22
+   },
+   "glad_lo": {
+    "ap": 0.5325969040725633,
+    "recall@20": 9,
+    "recall@50": 11,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.22
+   },
+   "ds_full_lo": {
+    "ap": 0.49208069849720637,
+    "recall@20": 9,
+    "recall@50": 11,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.22
+   },
+   "accu_depen_lo": {
+    "ap": 0.06666151836412686,
+    "recall@20": 1,
+    "recall@50": 3,
+    "recall@100": 4,
+    "recall@200": 10,
+    "p_at_50_expected": 0.06
+   },
+   "irt4pl": {
+    "ap": 0.5847589139255805,
+    "recall@20": 8,
+    "recall@50": 11,
+    "recall@100": 11,
+    "recall@200": 12,
+    "p_at_50_expected": 0.22
+   },
+   "entropy": {
+    "ap": 0.08267969681677034,
+    "recall@20": 1,
+    "recall@50": 5,
+    "recall@100": 7,
+    "recall@200": 11,
+    "p_at_50_expected": 0.1
+   }
+  },
+  "spearman_irt_vs_their_delta": 0.7944664031620555,
+  "spearman_n": 22
+ }
+}

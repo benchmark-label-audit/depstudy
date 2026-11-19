@@ -1,0 +1,1 @@
+{"bench": "gsm8kflex", "tag": "src_v1_strong_k_0", "n_models": 94, "n_false": 10, "uniform_rate": 0.1, "meanD_uni_key": 0.06602500172436175, "shareD50_uni_key": 0.06588881262868909, "same_false_rate_uni_key": 0.21772827464479458, "meanD_nu_key": 0.022633070222155948, "shareD50_nu_key": 0.022649279341111873, "same_false_rate_nu_key": 0.19647686024908373, "sec": 1.6895833015441895}

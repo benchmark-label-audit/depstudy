@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "small_strong", "method": "glad_lo", "param": "prior", "value": "0.1", "default": "1.0", "is_default": false, "ap": 0.2672241286038478, "pk": 0.35, "ap_key": 0.3194472216633403, "sec": 3.079235315322876}

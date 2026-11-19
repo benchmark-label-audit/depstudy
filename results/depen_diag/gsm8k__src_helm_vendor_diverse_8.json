@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "tag": "src_helm_vendor_diverse_8", "n_models": 20, "n_false": 10, "uniform_rate": 0.1, "meanD_uni": 0.13158242553494504, "shareD50_uni": 0.13157894736842105, "same_false_rate_uni": 0.1067115567591305, "meanD_nu": 0.0291741825460458, "shareD50_nu": 0.031578947368421054, "same_false_rate_nu": 0.08075676972921084, "sec": 0.9098963737487793}

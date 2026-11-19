@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "full", "method": "glad_lo", "param": "prior", "value": "1.0", "default": "1.0", "is_default": true, "ap": 0.19113706736486513, "pk": 0.285, "ap_key": 0.25643209765952724, "sec": 618.906819820404}

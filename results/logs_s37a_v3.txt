@@ -1,0 +1,76 @@
+mv
+crh
+catd
+ds_onecoin_lo
+ds_full_lo
+accu_nodep_lo
+accu_depen_lo
+accu_depen_nu_lo
+accu_depen_key_lo
+accu_depen_nu_key_lo
+glad_lo
+irt4pl
+              method metric                 effect  estimate      lo      hi  p_boot  R_design
+                  mv     ap top_minus_bottom_level   -0.0006 -0.0163  0.0139   0.900       NaN
+                  mv     ap         slope_per_0.05    0.0003 -0.0042  0.0045   0.928       NaN
+                  mv ap_key top_minus_bottom_level   -0.0069 -0.0549  0.0246   0.684       NaN
+                  mv ap_key         slope_per_0.05   -0.0010 -0.0135  0.0075   0.824       NaN
+                 crh     ap top_minus_bottom_level   -0.0029 -0.0209  0.0102   0.680       NaN
+                 crh     ap         slope_per_0.05   -0.0003 -0.0054  0.0035   0.840       NaN
+                 crh ap_key top_minus_bottom_level   -0.0172 -0.0751  0.0186   0.376       NaN
+                 crh ap_key         slope_per_0.05   -0.0034 -0.0176  0.0064   0.436       NaN
+                catd     ap top_minus_bottom_level    0.0035 -0.0135  0.0192   0.748       NaN
+                catd     ap         slope_per_0.05    0.0016 -0.0033  0.0064   0.536       NaN
+                catd ap_key top_minus_bottom_level   -0.0100 -0.0606  0.0305   0.616       NaN
+                catd ap_key         slope_per_0.05   -0.0012 -0.0132  0.0091   0.796       NaN
+       ds_onecoin_lo     ap top_minus_bottom_level   -0.0056 -0.0216  0.0073   0.408       NaN
+       ds_onecoin_lo     ap         slope_per_0.05   -0.0011 -0.0056  0.0029   0.556       NaN
+       ds_onecoin_lo ap_key top_minus_bottom_level   -0.0238 -0.0842  0.0219   0.284       NaN
+       ds_onecoin_lo ap_key         slope_per_0.05   -0.0050 -0.0199  0.0077   0.372       NaN
+          ds_full_lo     ap top_minus_bottom_level   -0.0132 -0.0318  0.0029   0.116       NaN
+          ds_full_lo     ap         slope_per_0.05   -0.0028 -0.0077  0.0015   0.268       NaN
+          ds_full_lo ap_key top_minus_bottom_level   -0.0631 -0.1303 -0.0144   0.008       NaN
+          ds_full_lo ap_key         slope_per_0.05   -0.0143 -0.0312 -0.0016   0.036       NaN
+       accu_nodep_lo     ap top_minus_bottom_level   -0.0056 -0.0214  0.0082   0.372       NaN
+       accu_nodep_lo     ap         slope_per_0.05   -0.0011 -0.0055  0.0027   0.596       NaN
+       accu_nodep_lo ap_key top_minus_bottom_level   -0.0237 -0.0985  0.0197   0.252       NaN
+       accu_nodep_lo ap_key         slope_per_0.05   -0.0050 -0.0225  0.0065   0.352       NaN
+       accu_depen_lo     ap top_minus_bottom_level   -0.0172 -0.0340 -0.0012   0.028       NaN
+       accu_depen_lo     ap         slope_per_0.05   -0.0058 -0.0104 -0.0013   0.000       NaN
+       accu_depen_lo ap_key top_minus_bottom_level   -0.0341 -0.0914  0.0072   0.116       NaN
+       accu_depen_lo ap_key         slope_per_0.05   -0.0111 -0.0252  0.0009   0.072       NaN
+    accu_depen_nu_lo     ap top_minus_bottom_level   -0.0097 -0.0251  0.0028   0.160       NaN
+    accu_depen_nu_lo     ap         slope_per_0.05   -0.0024 -0.0063  0.0011   0.212       NaN
+    accu_depen_nu_lo ap_key top_minus_bottom_level   -0.0171 -0.0764  0.0243   0.352       NaN
+    accu_depen_nu_lo ap_key         slope_per_0.05   -0.0030 -0.0178  0.0077   0.492       NaN
+   accu_depen_key_lo     ap top_minus_bottom_level   -0.0038 -0.0236  0.0166   0.716       NaN
+   accu_depen_key_lo     ap         slope_per_0.05   -0.0008 -0.0060  0.0052   0.756       NaN
+   accu_depen_key_lo ap_key top_minus_bottom_level   -0.0060 -0.0544  0.0417   0.832       NaN
+   accu_depen_key_lo ap_key         slope_per_0.05   -0.0014 -0.0152  0.0119   0.820       NaN
+accu_depen_nu_key_lo     ap top_minus_bottom_level   -0.0082 -0.0240  0.0060   0.248       NaN
+accu_depen_nu_key_lo     ap         slope_per_0.05   -0.0028 -0.0068  0.0014   0.180       NaN
+accu_depen_nu_key_lo ap_key top_minus_bottom_level   -0.0091 -0.0607  0.0314   0.628       NaN
+accu_depen_nu_key_lo ap_key         slope_per_0.05   -0.0029 -0.0149  0.0085   0.588       NaN
+             glad_lo     ap top_minus_bottom_level   -0.0003 -0.0174  0.0163   0.944       NaN
+             glad_lo     ap         slope_per_0.05    0.0003 -0.0046  0.0051   0.888       NaN
+             glad_lo ap_key top_minus_bottom_level   -0.0097 -0.0704  0.0399   0.624       NaN
+             glad_lo ap_key         slope_per_0.05   -0.0016 -0.0173  0.0122   0.704       NaN
+              irt4pl     ap top_minus_bottom_level   -0.0136 -0.0333  0.0073   0.200       NaN
+              irt4pl     ap         slope_per_0.05   -0.0051 -0.0116  0.0016   0.136       NaN
+              irt4pl ap_key top_minus_bottom_level   -0.0289 -0.0535 -0.0077   0.008       NaN
+              irt4pl ap_key         slope_per_0.05   -0.0101 -0.0181 -0.0032   0.004       NaN
+method              accu_depen_key_lo  accu_depen_lo  accu_depen_nu_key_lo  accu_depen_nu_lo  accu_nodep_lo   catd    crh  ds_full_lo  ds_onecoin_lo  glad_lo  irt4pl     mv
+metric effect                                                                                                                                                               
+ap     mean_level0              0.176          0.209                 0.207             0.214          0.217  0.195  0.200       0.197          0.217    0.210   0.122  0.198
+       mean_level1              0.178          0.206                 0.207             0.212          0.217  0.198  0.200       0.193          0.217    0.212   0.128  0.198
+       mean_level2              0.186          0.206                 0.208             0.212          0.218  0.207  0.205       0.197          0.218    0.216   0.131  0.204
+       mean_level3              0.188          0.195                 0.204             0.212          0.220  0.205  0.203       0.196          0.220    0.218   0.122  0.202
+       mean_level4              0.178          0.195                 0.202             0.211          0.217  0.204  0.202       0.193          0.217    0.214   0.114  0.201
+       mean_level5              0.172          0.192                 0.199             0.204          0.212  0.198  0.197       0.184          0.212    0.210   0.108  0.197
+ap_key mean_level0              0.215          0.287                 0.284             0.304          0.326  0.263  0.270       0.275          0.326    0.306   0.084  0.259
+       mean_level1              0.229          0.293                 0.289             0.305          0.319  0.264  0.267       0.255          0.319    0.310   0.091  0.262
+       mean_level2              0.241          0.295                 0.305             0.307          0.322  0.280  0.278       0.256          0.322    0.315   0.089  0.275
+       mean_level3              0.254          0.277                 0.289             0.313          0.327  0.275  0.273       0.250          0.327    0.322   0.074  0.269
+       mean_level4              0.225          0.274                 0.294             0.315          0.320  0.271  0.269       0.244          0.320    0.314   0.065  0.267
+       mean_level5              0.209          0.253                 0.275             0.287          0.303  0.253  0.253       0.212          0.303    0.296   0.055  0.252
+[0.428, 0.393] [(0.099, 0.285), (0.089, 0.247)]

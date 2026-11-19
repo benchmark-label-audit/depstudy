@@ -1,0 +1,29 @@
+{
+ "models": 3000,
+ "api_ok": 2495,
+ "declared": 826,
+ "multi_root": 322,
+ "families_with_ge5": 12,
+ "top_families": {
+  "mistralai/Mistral-7B-v0.1": 91,
+  "upstage/SOLAR-10.7B-v1.0": 13,
+  "mistralai/Mixtral-8x7B-v0.1": 13,
+  "mistralai/Mistral-7B-Instruct-v0.2": 13,
+  "mistralai/mistral-7b-instruct-v0.2": 10,
+  "microsoft/phi-2": 9,
+  "migtissera/Tess-34B-v1.4": 8,
+  "TinyLlama/TinyLlama-1.1B-Chat-v1.0": 8,
+  "meta-llama/Llama-2-13b-hf": 6,
+  "openchat/openchat_3.5": 6,
+  "liminerity/M7-7b": 5,
+  "google/gemma-7b": 5,
+  "alnrg2arg/blockchainlabs_7B_merged_test2_4": 4,
+  "meta-llama/Meta-Llama-3-8B-Instruct": 4,
+  "openlm-research/open_llama_3b": 4,
+  "google/gemma-2b": 4,
+  "google/gemma-1.1-7b-it": 3,
+  "migtissera/Tess-10.7B-v1.5b": 3,
+  "rishiraj/CatPPT-base": 3,
+  "codellama/CodeLlama-13b-Instruct-hf": 3
+ }
+}

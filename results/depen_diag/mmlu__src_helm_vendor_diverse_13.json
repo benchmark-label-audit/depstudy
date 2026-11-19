@@ -1,0 +1,1 @@
+{"bench": "mmlu", "tag": "src_helm_vendor_diverse_13", "n_models": 18, "n_false": 3, "uniform_rate": 0.3333333333333333, "meanD_uni": 0.1631659012029351, "shareD50_uni": 0.16339869281045752, "same_false_rate_uni": 0.5435314685314685, "meanD_nu": 0.058823529411765114, "shareD50_nu": 0.058823529411764705, "same_false_rate_nu": 0.5117242788145857, "sec": 3.2555854320526123}

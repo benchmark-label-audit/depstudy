@@ -1,0 +1,8 @@
+todo 7 of 889
+1 7 ('gsm8k', 'single_corr_dedup', 246.5) 20:23:02
+2 7 ('gsm8kflex', 'single_full', 456.2) 20:26:32
+3 7 ('gsm8k', 'single_full', 381.5) 20:29:24
+4 7 ('hellaswag', 'single_corr_dedup', 563.3) 20:35:56
+5 7 ('mmlu', 'single_corr_dedup', 939.0) 20:51:35
+6 7 ('mmlu', 'single_full', 3004.2) 21:41:39
+7 7 ('hellaswag', 'single_full', 6481.6) 22:17:26

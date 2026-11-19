@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "full", "method": "crh", "param": "iters", "value": "50", "default": "20", "is_default": false, "ap": 0.22646800302373735, "pk": 0.33, "ap_key": 0.17338022618612497, "sec": 17.063289165496826}

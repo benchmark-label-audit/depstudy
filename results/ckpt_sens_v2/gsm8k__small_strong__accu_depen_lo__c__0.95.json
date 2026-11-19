@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "small_strong", "method": "accu_depen_lo", "param": "c", "value": "0.95", "default": "0.8", "is_default": false, "ap": 0.26526109738061054, "pk": 0.33, "ap_key": 0.32557745422636347, "sec": 0.8785526752471924}

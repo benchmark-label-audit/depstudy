@@ -1,0 +1,3 @@
+bench,panel,ap_prob,ap_logodds,distinct_prob
+mmlu,full,0.09490230005837018,0.1753787356565573,9
+mmlu,small_strong,0.12297126485036289,0.19709894363837477,200

@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "full", "method": "catd", "param": "alpha", "value": "0.05", "default": "0.05", "is_default": true, "ap": 0.23586596331154247, "pk": 0.34, "ap_key": 0.1696986907373729, "sec": 1.900712013244629}

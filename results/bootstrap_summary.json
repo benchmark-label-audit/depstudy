@@ -1,0 +1,15 @@
+{
+ "B": 2000,
+ "n_contrasts": 644,
+ "recompute_check_max_abs_ap_diff": 0.0,
+ "significant_holm_0.05": {
+  "('methods', 'ap')": 21,
+  "('methods', 'ap_key')": 27,
+  "('panels', 'ap')": 15,
+  "('panels', 'ap_key')": 19,
+  "('sizecap', 'ap')": 17,
+  "('sizecap', 'ap_key')": 9,
+  "('sources', 'ap')": 51,
+  "('sources', 'ap_key')": 23
+ }
+}

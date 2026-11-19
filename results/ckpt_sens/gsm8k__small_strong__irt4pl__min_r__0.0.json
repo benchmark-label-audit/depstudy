@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "small_strong", "method": "irt4pl", "param": "min_r", "value": "0.0", "default": "0.2", "is_default": false, "ap": 0.28250648174364024, "pk": 0.36, "ap_key": 0.25532917184625825, "sec": 1.3740146160125732}

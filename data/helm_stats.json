@@ -1,0 +1,17 @@
+{
+ "mmlu": {
+  "runs": 4565,
+  "models": 81,
+  "rows": 453433,
+  "items_covered": 5663,
+  "helm_key_agrees_with_mmlu_key": 0.9998,
+  "per_model_items_median": 5663.0
+ },
+ "gsm8k": {
+  "runs": 94,
+  "models": 94,
+  "rows": 94000,
+  "items_covered": 1000,
+  "parse_agrees_with_helm_exact_match": 0.9893
+ }
+}

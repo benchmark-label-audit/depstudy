@@ -1,0 +1,496 @@
+{
+ "pk|gsm8k|accu_depen": {
+  "means": {
+   "lineage_high__dep_high": 0.2735,
+   "lineage_high__dep_low": 0.3135,
+   "lineage_low__dep_high": 0.285,
+   "lineage_low__dep_low": 0.311,
+   "random": 0.297
+  },
+  "dep_effect": -0.033,
+  "dep_ci": [
+   -0.0405,
+   -0.0257
+  ],
+  "lin_effect": -0.0045,
+  "lin_ci": [
+   -0.0122,
+   0.0025
+  ]
+ },
+ "pk|gsm8k|accu_nodep": {
+  "means": {
+   "lineage_high__dep_high": 0.2725,
+   "lineage_high__dep_low": 0.323,
+   "lineage_low__dep_high": 0.289,
+   "lineage_low__dep_low": 0.3165,
+   "random": 0.29
+  },
+  "dep_effect": -0.039,
+  "dep_ci": [
+   -0.046,
+   -0.032
+  ],
+  "lin_effect": -0.005,
+  "lin_ci": [
+   -0.0122,
+   0.002
+  ]
+ },
+ "pk|gsm8k|crh": {
+  "means": {
+   "lineage_high__dep_high": 0.2735,
+   "lineage_high__dep_low": 0.29,
+   "lineage_low__dep_high": 0.31,
+   "lineage_low__dep_low": 0.307,
+   "random": 0.3055
+  },
+  "dep_effect": -0.0068,
+  "dep_ci": [
+   -0.0142,
+   0.0008
+  ],
+  "lin_effect": -0.0267,
+  "lin_ci": [
+   -0.0342,
+   -0.0193
+  ]
+ },
+ "pk|gsm8k|ds_onecoin": {
+  "means": {
+   "lineage_high__dep_high": 0.2525,
+   "lineage_high__dep_low": 0.3225,
+   "lineage_low__dep_high": 0.288,
+   "lineage_low__dep_low": 0.3035,
+   "random": 0.2855
+  },
+  "dep_effect": -0.0428,
+  "dep_ci": [
+   -0.0498,
+   -0.036
+  ],
+  "lin_effect": -0.0083,
+  "lin_ci": [
+   -0.0155,
+   -0.0013
+  ]
+ },
+ "pk|gsm8k|irt4pl": {
+  "means": {
+   "lineage_high__dep_high": 0.2955,
+   "lineage_high__dep_low": 0.2925,
+   "lineage_low__dep_high": 0.265,
+   "lineage_low__dep_low": 0.3075,
+   "random": 0.286
+  },
+  "dep_effect": -0.0197,
+  "dep_ci": [
+   -0.0295,
+   -0.0103
+  ],
+  "lin_effect": 0.0077,
+  "lin_ci": [
+   -0.0008,
+   0.0173
+  ]
+ },
+ "pk|gsm8k|mv": {
+  "means": {
+   "lineage_high__dep_high": 0.273,
+   "lineage_high__dep_low": 0.286,
+   "lineage_low__dep_high": 0.3115,
+   "lineage_low__dep_low": 0.304,
+   "random": 0.3005
+  },
+  "dep_effect": -0.0028,
+  "dep_ci": [
+   -0.01,
+   0.0047
+  ],
+  "lin_effect": -0.0282,
+  "lin_ci": [
+   -0.0358,
+   -0.0207
+  ]
+ },
+ "pk|mmlu|accu_depen": {
+  "means": {
+   "lineage_high__dep_high": 0.1552,
+   "lineage_high__dep_low": 0.1525,
+   "lineage_low__dep_high": 0.186,
+   "lineage_low__dep_low": 0.1807,
+   "random": 0.178
+  },
+  "dep_effect": 0.004,
+  "dep_ci": [
+   -0.0071,
+   0.0151
+  ],
+  "lin_effect": -0.0295,
+  "lin_ci": [
+   -0.0408,
+   -0.0184
+  ]
+ },
+ "pk|mmlu|accu_nodep": {
+  "means": {
+   "lineage_high__dep_high": 0.1305,
+   "lineage_high__dep_low": 0.1305,
+   "lineage_low__dep_high": 0.12,
+   "lineage_low__dep_low": 0.1315,
+   "random": 0.1575
+  },
+  "dep_effect": -0.0057,
+  "dep_ci": [
+   -0.0094,
+   -0.0024
+  ],
+  "lin_effect": 0.0047,
+  "lin_ci": [
+   0.0012,
+   0.008
+  ]
+ },
+ "pk|mmlu|crh": {
+  "means": {
+   "lineage_high__dep_high": 0.2517,
+   "lineage_high__dep_low": 0.2493,
+   "lineage_low__dep_high": 0.2585,
+   "lineage_low__dep_low": 0.2638,
+   "random": 0.2253
+  },
+  "dep_effect": -0.0014,
+  "dep_ci": [
+   -0.0084,
+   0.0055
+  ],
+  "lin_effect": -0.0106,
+  "lin_ci": [
+   -0.0175,
+   -0.0037
+  ]
+ },
+ "pk|mmlu|ds_full": {
+  "means": {
+   "lineage_high__dep_high": 0.1297,
+   "lineage_high__dep_low": 0.1247,
+   "lineage_low__dep_high": 0.121,
+   "lineage_low__dep_low": 0.1253,
+   "random": 0.152
+  },
+  "dep_effect": 0.0004,
+  "dep_ci": [
+   -0.0024,
+   0.0029
+  ],
+  "lin_effect": 0.0041,
+  "lin_ci": [
+   0.0014,
+   0.0067
+  ]
+ },
+ "pk|mmlu|ds_onecoin": {
+  "means": {
+   "lineage_high__dep_high": 0.1305,
+   "lineage_high__dep_low": 0.1305,
+   "lineage_low__dep_high": 0.12,
+   "lineage_low__dep_low": 0.1315,
+   "random": 0.1577
+  },
+  "dep_effect": -0.0057,
+  "dep_ci": [
+   -0.009,
+   -0.0026
+  ],
+  "lin_effect": 0.0047,
+  "lin_ci": [
+   0.0014,
+   0.0081
+  ]
+ },
+ "pk|mmlu|irt4pl": {
+  "means": {
+   "lineage_high__dep_high": 0.1717,
+   "lineage_high__dep_low": 0.1648,
+   "lineage_low__dep_high": 0.1065,
+   "lineage_low__dep_low": 0.1767,
+   "random": 0.1585
+  },
+  "dep_effect": -0.0316,
+  "dep_ci": [
+   -0.0434,
+   -0.02
+  ],
+  "lin_effect": 0.0266,
+  "lin_ci": [
+   0.015,
+   0.0381
+  ]
+ },
+ "pk|mmlu|mv": {
+  "means": {
+   "lineage_high__dep_high": 0.2323,
+   "lineage_high__dep_low": 0.2298,
+   "lineage_low__dep_high": 0.2485,
+   "lineage_low__dep_low": 0.255,
+   "random": 0.2135
+  },
+  "dep_effect": -0.002,
+  "dep_ci": [
+   -0.0106,
+   0.0063
+  ],
+  "lin_effect": -0.0207,
+  "lin_ci": [
+   -0.0295,
+   -0.0126
+  ]
+ },
+ "ap|gsm8k|accu_depen": {
+  "means": {
+   "lineage_high__dep_high": 0.1955,
+   "lineage_high__dep_low": 0.2204,
+   "lineage_low__dep_high": 0.1985,
+   "lineage_low__dep_low": 0.2157,
+   "random": 0.2074
+  },
+  "dep_effect": -0.0211,
+  "dep_ci": [
+   -0.0244,
+   -0.0179
+  ],
+  "lin_effect": 0.0008,
+  "lin_ci": [
+   -0.0026,
+   0.0041
+  ]
+ },
+ "ap|gsm8k|accu_nodep": {
+  "means": {
+   "lineage_high__dep_high": 0.1927,
+   "lineage_high__dep_low": 0.2267,
+   "lineage_low__dep_high": 0.1976,
+   "lineage_low__dep_low": 0.2171,
+   "random": 0.2058
+  },
+  "dep_effect": -0.0268,
+  "dep_ci": [
+   -0.0298,
+   -0.0239
+  ],
+  "lin_effect": 0.0024,
+  "lin_ci": [
+   -0.0006,
+   0.0053
+  ]
+ },
+ "ap|gsm8k|crh": {
+  "means": {
+   "lineage_high__dep_high": 0.2093,
+   "lineage_high__dep_low": 0.23,
+   "lineage_low__dep_high": 0.2112,
+   "lineage_low__dep_low": 0.2187,
+   "random": 0.2186
+  },
+  "dep_effect": -0.0141,
+  "dep_ci": [
+   -0.0183,
+   -0.0097
+  ],
+  "lin_effect": 0.0048,
+  "lin_ci": [
+   0.0005,
+   0.0089
+  ]
+ },
+ "ap|gsm8k|ds_onecoin": {
+  "means": {
+   "lineage_high__dep_high": 0.1853,
+   "lineage_high__dep_low": 0.2101,
+   "lineage_low__dep_high": 0.1956,
+   "lineage_low__dep_low": 0.2086,
+   "random": 0.1983
+  },
+  "dep_effect": -0.0189,
+  "dep_ci": [
+   -0.022,
+   -0.0158
+  ],
+  "lin_effect": -0.0044,
+  "lin_ci": [
+   -0.0075,
+   -0.0012
+  ]
+ },
+ "ap|gsm8k|irt4pl": {
+  "means": {
+   "lineage_high__dep_high": 0.2137,
+   "lineage_high__dep_low": 0.2433,
+   "lineage_low__dep_high": 0.1882,
+   "lineage_low__dep_low": 0.234,
+   "random": 0.221
+  },
+  "dep_effect": -0.0376,
+  "dep_ci": [
+   -0.0444,
+   -0.0311
+  ],
+  "lin_effect": 0.0174,
+  "lin_ci": [
+   0.0109,
+   0.0238
+  ]
+ },
+ "ap|gsm8k|mv": {
+  "means": {
+   "lineage_high__dep_high": 0.2085,
+   "lineage_high__dep_low": 0.2287,
+   "lineage_low__dep_high": 0.2103,
+   "lineage_low__dep_low": 0.2167,
+   "random": 0.2172
+  },
+  "dep_effect": -0.0133,
+  "dep_ci": [
+   -0.0177,
+   -0.009
+  ],
+  "lin_effect": 0.0051,
+  "lin_ci": [
+   0.0008,
+   0.0093
+  ]
+ },
+ "ap|mmlu|accu_depen": {
+  "means": {
+   "lineage_high__dep_high": 0.1195,
+   "lineage_high__dep_low": 0.1159,
+   "lineage_low__dep_high": 0.1309,
+   "lineage_low__dep_low": 0.1276,
+   "random": 0.1217
+  },
+  "dep_effect": 0.0034,
+  "dep_ci": [
+   0.0004,
+   0.0064
+  ],
+  "lin_effect": -0.0116,
+  "lin_ci": [
+   -0.0145,
+   -0.0087
+  ]
+ },
+ "ap|mmlu|accu_nodep": {
+  "means": {
+   "lineage_high__dep_high": 0.0995,
+   "lineage_high__dep_low": 0.0999,
+   "lineage_low__dep_high": 0.0958,
+   "lineage_low__dep_low": 0.1002,
+   "random": 0.1004
+  },
+  "dep_effect": -0.0024,
+  "dep_ci": [
+   -0.0029,
+   -0.0019
+  ],
+  "lin_effect": 0.0017,
+  "lin_ci": [
+   0.0012,
+   0.0022
+  ]
+ },
+ "ap|mmlu|crh": {
+  "means": {
+   "lineage_high__dep_high": 0.1411,
+   "lineage_high__dep_low": 0.1448,
+   "lineage_low__dep_high": 0.1553,
+   "lineage_low__dep_low": 0.1606,
+   "random": 0.1407
+  },
+  "dep_effect": -0.0045,
+  "dep_ci": [
+   -0.0073,
+   -0.0018
+  ],
+  "lin_effect": -0.015,
+  "lin_ci": [
+   -0.0177,
+   -0.0119
+  ]
+ },
+ "ap|mmlu|ds_full": {
+  "means": {
+   "lineage_high__dep_high": 0.0987,
+   "lineage_high__dep_low": 0.0994,
+   "lineage_low__dep_high": 0.0958,
+   "lineage_low__dep_low": 0.1001,
+   "random": 0.0996
+  },
+  "dep_effect": -0.0025,
+  "dep_ci": [
+   -0.003,
+   -0.0021
+  ],
+  "lin_effect": 0.0011,
+  "lin_ci": [
+   0.0007,
+   0.0016
+  ]
+ },
+ "ap|mmlu|ds_onecoin": {
+  "means": {
+   "lineage_high__dep_high": 0.0995,
+   "lineage_high__dep_low": 0.0999,
+   "lineage_low__dep_high": 0.0958,
+   "lineage_low__dep_low": 0.1002,
+   "random": 0.1004
+  },
+  "dep_effect": -0.0024,
+  "dep_ci": [
+   -0.0029,
+   -0.0019
+  ],
+  "lin_effect": 0.0017,
+  "lin_ci": [
+   0.0012,
+   0.0022
+  ]
+ },
+ "ap|mmlu|irt4pl": {
+  "means": {
+   "lineage_high__dep_high": 0.1302,
+   "lineage_high__dep_low": 0.1213,
+   "lineage_low__dep_high": 0.1026,
+   "lineage_low__dep_low": 0.1322,
+   "random": 0.1196
+  },
+  "dep_effect": -0.0103,
+  "dep_ci": [
+   -0.0148,
+   -0.0059
+  ],
+  "lin_effect": 0.0083,
+  "lin_ci": [
+   0.0039,
+   0.0125
+  ]
+ },
+ "ap|mmlu|mv": {
+  "means": {
+   "lineage_high__dep_high": 0.1364,
+   "lineage_high__dep_low": 0.1402,
+   "lineage_low__dep_high": 0.1486,
+   "lineage_low__dep_low": 0.1537,
+   "random": 0.1347
+  },
+  "dep_effect": -0.0044,
+  "dep_ci": [
+   -0.0071,
+   -0.0018
+  ],
+  "lin_effect": -0.0129,
+  "lin_ci": [
+   -0.0154,
+   -0.0102
+  ]
+ }
+}

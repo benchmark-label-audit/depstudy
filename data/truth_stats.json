@@ -1,0 +1,37 @@
+{
+ "mmlu": {
+  "items": 5700,
+  "excluded_expert": 32,
+  "evaluated": 5668,
+  "defective": 338,
+  "error_types": {
+   "ok": 5330,
+   "bad_question_clarity": 132,
+   "wrong_groundtruth": 106,
+   "multiple_correct_answers": 39,
+   "no_correct_answer": 36,
+   "expert": 32,
+   "bad_options_clarity": 25
+  },
+  "ambiguous_keys": 33
+ },
+ "gsm8k": {
+  "items": 1319,
+  "status": {
+   "consensus": 1100,
+   "removed": 110,
+   "verified": 99,
+   "revised": 10
+  },
+  "defective": 120,
+  "platinum_rows_unmatched_to_original": 0,
+  "ambiguous_keys": 0
+ },
+ "hellaswag": {
+  "items": 10042,
+  "annotated": 10036,
+  "wrong_answer": 370,
+  "multiple_correct": 2121,
+  "broad": 2304
+ }
+}

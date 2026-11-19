@@ -1,0 +1,1 @@
+{"bench": "hellaswag", "tag": "dose_level5_0", "n_models": 100, "n_false": 3, "uniform_rate": 0.3333333333333333, "meanD_uni": 0.9999872128900102, "shareD50_uni": 1.0, "same_false_rate_uni": 0.9664027826401201, "meanD_nu": 0.9995959595961597, "shareD50_nu": 0.9995959595959596, "same_false_rate_nu": 0.9667506657569822, "sec": 6.42992639541626}

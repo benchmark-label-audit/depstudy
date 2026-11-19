@@ -1,0 +1,21 @@
+{'bench': 'mmlu', 'data': 'real', 'rounds': 1, 'flag': 0.9814, 'meanD': 0.9815, 'mean_acc': 0.5942, 'mean_acc_accu': 0.8758, 'truth_differs_from_accu': 0.2126, 'mean_max_post': 0.665, 'mean_max_post_accu': 0.9991}
+{'bench': 'mmlu', 'data': 'real', 'rounds': 2, 'flag': 0.98, 'meanD': 0.98, 'mean_acc': 0.6692, 'mean_acc_accu': 0.8758, 'truth_differs_from_accu': 0.2245, 'mean_max_post': 0.7992, 'mean_max_post_accu': 0.9991}
+{'bench': 'mmlu', 'data': 'real', 'rounds': 3, 'flag': 0.9503, 'meanD': 0.9503, 'mean_acc': 0.7031, 'mean_acc_accu': 0.8758, 'truth_differs_from_accu': 0.285, 'mean_max_post': 0.8735, 'mean_max_post_accu': 0.9991}
+{'bench': 'mmlu', 'data': 'real', 'rounds': 4, 'flag': 0.98, 'meanD': 0.98, 'mean_acc': 0.714, 'mean_acc_accu': 0.8758, 'truth_differs_from_accu': 0.2873, 'mean_max_post': 0.9166, 'mean_max_post_accu': 0.9991}
+{'bench': 'mmlu', 'data': 'real', 'rounds': 5, 'flag': 0.98, 'meanD': 0.98, 'mean_acc': 0.7155, 'mean_acc_accu': 0.8758, 'truth_differs_from_accu': 0.2873, 'mean_max_post': 0.941, 'mean_max_post_accu': 0.9991}
+{'bench': 'mmlu', 'data': 'sim_indep', 'rounds': 1, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.6232, 'mean_acc_accu': 0.8723, 'truth_differs_from_accu': 0.1062, 'mean_max_post': 0.6239, 'mean_max_post_accu': 0.9992}
+{'bench': 'mmlu', 'data': 'sim_indep', 'rounds': 2, 'flag': 0.8962, 'meanD': 0.8961, 'mean_acc': 0.5264, 'mean_acc_accu': 0.8723, 'truth_differs_from_accu': 0.2026, 'mean_max_post': 0.5382, 'mean_max_post_accu': 0.9992}
+{'bench': 'mmlu', 'data': 'sim_indep', 'rounds': 3, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.4675, 'mean_acc_accu': 0.8723, 'truth_differs_from_accu': 0.2097, 'mean_max_post': 0.468, 'mean_max_post_accu': 0.9992}
+{'bench': 'mmlu', 'data': 'sim_indep', 'rounds': 4, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.4255, 'mean_acc_accu': 0.8723, 'truth_differs_from_accu': 0.0622, 'mean_max_post': 0.4258, 'mean_max_post_accu': 0.9992}
+{'bench': 'mmlu', 'data': 'sim_indep', 'rounds': 5, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.394, 'mean_acc_accu': 0.8723, 'truth_differs_from_accu': 0.0588, 'mean_max_post': 0.3944, 'mean_max_post_accu': 0.9992}
+{'bench': 'gsm8k', 'data': 'real', 'rounds': 1, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.4772, 'mean_acc_accu': 0.8273, 'truth_differs_from_accu': 0.0296, 'mean_max_post': 0.47, 'mean_max_post_accu': 0.998}
+{'bench': 'gsm8k', 'data': 'real', 'rounds': 2, 'flag': 0.9873, 'meanD': 0.9869, 'mean_acc': 0.4241, 'mean_acc_accu': 0.8273, 'truth_differs_from_accu': 0.1213, 'mean_max_post': 0.4157, 'mean_max_post_accu': 0.998}
+{'bench': 'gsm8k', 'data': 'real', 'rounds': 3, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.4145, 'mean_acc_accu': 0.8273, 'truth_differs_from_accu': 0.1084, 'mean_max_post': 0.4049, 'mean_max_post_accu': 0.998}
+{'bench': 'gsm8k', 'data': 'real', 'rounds': 4, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.4128, 'mean_acc_accu': 0.8273, 'truth_differs_from_accu': 0.1061, 'mean_max_post': 0.4031, 'mean_max_post_accu': 0.998}
+{'bench': 'gsm8k', 'data': 'real', 'rounds': 5, 'flag': 1.0, 'meanD': 1.0, 'mean_acc': 0.4124, 'mean_acc_accu': 0.8273, 'truth_differs_from_accu': 0.1054, 'mean_max_post': 0.4028, 'mean_max_post_accu': 0.998}
+{'bench': 'gsm8k', 'data': 'sim_indep', 'rounds': 1, 'flag': 0.9968, 'meanD': 0.9969, 'mean_acc': 0.4702, 'mean_acc_accu': 0.8235, 'truth_differs_from_accu': 0.2494, 'mean_max_post': 0.4792, 'mean_max_post_accu': 0.999}
+{'bench': 'gsm8k', 'data': 'sim_indep', 'rounds': 2, 'flag': 0.9927, 'meanD': 0.9926, 'mean_acc': 0.4225, 'mean_acc_accu': 0.8235, 'truth_differs_from_accu': 0.2396, 'mean_max_post': 0.4353, 'mean_max_post_accu': 0.999}
+{'bench': 'gsm8k', 'data': 'sim_indep', 'rounds': 3, 'flag': 0.9996, 'meanD': 0.9996, 'mean_acc': 0.4216, 'mean_acc_accu': 0.8235, 'truth_differs_from_accu': 0.144, 'mean_max_post': 0.4192, 'mean_max_post_accu': 0.999}
+{'bench': 'gsm8k', 'data': 'sim_indep', 'rounds': 4, 'flag': 0.9958, 'meanD': 0.9957, 'mean_acc': 0.4167, 'mean_acc_accu': 0.8235, 'truth_differs_from_accu': 0.1873, 'mean_max_post': 0.4169, 'mean_max_post_accu': 0.999}
+{'bench': 'gsm8k', 'data': 'sim_indep', 'rounds': 5, 'flag': 0.9982, 'meanD': 0.9981, 'mean_acc': 0.4171, 'mean_acc_accu': 0.8235, 'truth_differs_from_accu': 0.1812, 'mean_max_post': 0.4124, 'mean_max_post_accu': 0.999}
+exit 0

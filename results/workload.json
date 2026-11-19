@@ -1,0 +1,161 @@
+{
+ "population": 2999,
+ "mmlu": {
+  "items": 5631,
+  "models": 2999,
+  "answers": 16887369,
+  "defective": 336,
+  "model_accuracy": {
+   "p10": 0.2596,
+   "p25": 0.4639,
+   "median": 0.6079,
+   "p75": 0.6494,
+   "p90": 0.663,
+   "mean": 0.542
+  },
+  "item_agreement_clean": {
+   "p10": 0.1414,
+   "p25": 0.2988,
+   "median": 0.6322,
+   "p75": 0.7994,
+   "p90": 0.8513,
+   "mean": 0.553
+  },
+  "item_agreement_defective": {
+   "p10": 0.0582,
+   "p25": 0.1119,
+   "median": 0.2898,
+   "p75": 0.6209,
+   "p90": 0.7904,
+   "mean": 0.3684
+  },
+  "share_items_majority_disagrees": 0.4063
+ },
+ "gsm8k": {
+  "items": 1319,
+  "models": 2999,
+  "answers": 3955681,
+  "defective": 120,
+  "model_accuracy": {
+   "p10": 0.0015,
+   "p25": 0.0572,
+   "median": 0.3275,
+   "p75": 0.6149,
+   "p90": 0.6967,
+   "mean": 0.3356
+  },
+  "item_agreement_clean": {
+   "p10": 0.0814,
+   "p25": 0.2139,
+   "median": 0.3641,
+   "p75": 0.4868,
+   "p90": 0.5679,
+   "mean": 0.3474
+  },
+  "item_agreement_defective": {
+   "p10": 0.0142,
+   "p25": 0.0484,
+   "median": 0.1869,
+   "p75": 0.3586,
+   "p90": 0.5111,
+   "mean": 0.2172
+  },
+  "share_items_majority_disagrees": 0.7847
+ },
+ "hellaswag": {
+  "items": 10036,
+  "models": 2999,
+  "answers": 29960535,
+  "defective": 370,
+  "model_accuracy": {
+   "p10": 0.5163,
+   "p25": 0.7481,
+   "median": 0.8261,
+   "p75": 0.8582,
+   "p90": 0.8832,
+   "mean": 0.7591
+  },
+  "item_agreement_clean": {
+   "p10": 0.2363,
+   "p25": 0.7323,
+   "median": 0.9005,
+   "p75": 0.9518,
+   "p90": 0.9739,
+   "mean": 0.7714
+  },
+  "item_agreement_defective": {
+   "p10": 0.0117,
+   "p25": 0.0932,
+   "median": 0.6164,
+   "p75": 0.892,
+   "p90": 0.9534,
+   "mean": 0.5253
+  },
+  "share_items_majority_disagrees": 0.1673
+ },
+ "helm_mmlu": {
+  "models": 81,
+  "model_accuracy": {
+   "p10": 0.6047,
+   "p25": 0.6907,
+   "median": 0.7608,
+   "p75": 0.8027,
+   "p90": 0.846,
+   "mean": 0.7375
+  }
+ },
+ "helm_gsm8k": {
+  "models": 94,
+  "model_accuracy": {
+   "p10": 0.2666,
+   "p25": 0.586,
+   "median": 0.7745,
+   "p75": 0.8662,
+   "p90": 0.9387,
+   "mean": 0.6896
+  }
+ },
+ "residual_dependence_mmlu": {
+  "pairs": 719400,
+  "all": {
+   "p10": -0.091,
+   "p25": -0.0577,
+   "median": -0.0138,
+   "p75": 0.0506,
+   "p90": 0.1898,
+   "mean": 0.0251
+  },
+  "same_family": {
+   "p10": -0.0179,
+   "p25": 0.0552,
+   "median": 0.1268,
+   "p75": 0.2289,
+   "p90": 0.3665,
+   "mean": 0.1602
+  },
+  "different_declared_families": {
+   "p10": -0.08,
+   "p25": -0.0498,
+   "median": -0.0095,
+   "p75": 0.0559,
+   "p90": 0.1726,
+   "mean": 0.0282
+  },
+  "n_same_family_pairs": 833,
+  "share_pairs_above_0.2": 0.0942
+ },
+ "lineage": {
+  "models": 3000,
+  "api_ok": 2495,
+  "single_root": 504,
+  "multi_root": 322,
+  "families": 243,
+  "families_ge5": 11
+ },
+ "dedup_kept": {
+  "mmlu": 1631,
+  "gsm8k": 2450,
+  "hellaswag": 903,
+  "of": 2999
+ }
+}

@@ -1,0 +1,1 @@
+{"bench": "mmlu", "tag": "src_v1_random_k_17", "n_models": 81, "n_false": 3, "uniform_rate": 0.3333333333333333, "meanD_uni": 0.19690847259431765, "shareD50_uni": 0.19691358024691358, "same_false_rate_uni": 0.4935978747892546, "meanD_nu": 0.114505959359977, "shareD50_nu": 0.11450617283950618, "same_false_rate_nu": 0.4647807082492761, "sec": 7.81704044342041}

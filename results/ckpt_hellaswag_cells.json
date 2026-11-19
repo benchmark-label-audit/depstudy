@@ -1,0 +1,268 @@
+{
+ "pk|hellaswag|accu_depen": {
+  "means": {
+   "lineage_high__dep_high": 0.121,
+   "lineage_high__dep_low": 0.1387,
+   "lineage_low__dep_high": 0.1305,
+   "lineage_low__dep_low": 0.1353,
+   "random": 0.1125
+  },
+  "dep_effect": -0.0112,
+  "dep_ci": [
+   -0.0175,
+   -0.0048
+  ],
+  "lin_effect": -0.003,
+  "lin_ci": [
+   -0.0091,
+   0.003
+  ]
+ },
+ "pk|hellaswag|accu_nodep": {
+  "means": {
+   "lineage_high__dep_high": 0.0875,
+   "lineage_high__dep_low": 0.0923,
+   "lineage_low__dep_high": 0.098,
+   "lineage_low__dep_low": 0.095,
+   "random": 0.0975
+  },
+  "dep_effect": -0.0009,
+  "dep_ci": [
+   -0.0026,
+   0.001
+  ],
+  "lin_effect": -0.0066,
+  "lin_ci": [
+   -0.0085,
+   -0.0049
+  ]
+ },
+ "pk|hellaswag|crh": {
+  "means": {
+   "lineage_high__dep_high": 0.152,
+   "lineage_high__dep_low": 0.157,
+   "lineage_low__dep_high": 0.145,
+   "lineage_low__dep_low": 0.156,
+   "random": 0.1338
+  },
+  "dep_effect": -0.008,
+  "dep_ci": [
+   -0.0128,
+   -0.0033
+  ],
+  "lin_effect": 0.004,
+  "lin_ci": [
+   -0.0007,
+   0.0086
+  ]
+ },
+ "pk|hellaswag|ds_full": {
+  "means": {
+   "lineage_high__dep_high": 0.0873,
+   "lineage_high__dep_low": 0.0915,
+   "lineage_low__dep_high": 0.097,
+   "lineage_low__dep_low": 0.0953,
+   "random": 0.0975
+  },
+  "dep_effect": -0.0012,
+  "dep_ci": [
+   -0.0029,
+   0.0005
+  ],
+  "lin_effect": -0.0067,
+  "lin_ci": [
+   -0.0085,
+   -0.0051
+  ]
+ },
+ "pk|hellaswag|ds_onecoin": {
+  "means": {
+   "lineage_high__dep_high": 0.0875,
+   "lineage_high__dep_low": 0.0923,
+   "lineage_low__dep_high": 0.098,
+   "lineage_low__dep_low": 0.095,
+   "random": 0.0975
+  },
+  "dep_effect": -0.0009,
+  "dep_ci": [
+   -0.0027,
+   0.0011
+  ],
+  "lin_effect": -0.0066,
+  "lin_ci": [
+   -0.0085,
+   -0.0048
+  ]
+ },
+ "pk|hellaswag|irt4pl": {
+  "means": {
+   "lineage_high__dep_high": 0.1278,
+   "lineage_high__dep_low": 0.1407,
+   "lineage_low__dep_high": 0.1247,
+   "lineage_low__dep_low": 0.1405,
+   "random": 0.1552
+  },
+  "dep_effect": -0.0144,
+  "dep_ci": [
+   -0.0198,
+   -0.0091
+  ],
+  "lin_effect": 0.0016,
+  "lin_ci": [
+   -0.004,
+   0.007
+  ]
+ },
+ "pk|hellaswag|mv": {
+  "means": {
+   "lineage_high__dep_high": 0.152,
+   "lineage_high__dep_low": 0.157,
+   "lineage_low__dep_high": 0.145,
+   "lineage_low__dep_low": 0.156,
+   "random": 0.1315
+  },
+  "dep_effect": -0.008,
+  "dep_ci": [
+   -0.0124,
+   -0.0034
+  ],
+  "lin_effect": 0.004,
+  "lin_ci": [
+   -0.0006,
+   0.0088
+  ]
+ },
+ "ap|hellaswag|accu_depen": {
+  "means": {
+   "lineage_high__dep_high": 0.073,
+   "lineage_high__dep_low": 0.0837,
+   "lineage_low__dep_high": 0.0778,
+   "lineage_low__dep_low": 0.078,
+   "random": 0.0644
+  },
+  "dep_effect": -0.0055,
+  "dep_ci": [
+   -0.0084,
+   -0.0024
+  ],
+  "lin_effect": 0.0004,
+  "lin_ci": [
+   -0.0024,
+   0.0032
+  ]
+ },
+ "ap|hellaswag|accu_nodep": {
+  "means": {
+   "lineage_high__dep_high": 0.0787,
+   "lineage_high__dep_low": 0.0803,
+   "lineage_low__dep_high": 0.0823,
+   "lineage_low__dep_low": 0.0825,
+   "random": 0.0832
+  },
+  "dep_effect": -0.001,
+  "dep_ci": [
+   -0.0013,
+   -0.0006
+  ],
+  "lin_effect": -0.0029,
+  "lin_ci": [
+   -0.0033,
+   -0.0025
+  ]
+ },
+ "ap|hellaswag|crh": {
+  "means": {
+   "lineage_high__dep_high": 0.0907,
+   "lineage_high__dep_low": 0.0922,
+   "lineage_low__dep_high": 0.0921,
+   "lineage_low__dep_low": 0.0924,
+   "random": 0.0899
+  },
+  "dep_effect": -0.0009,
+  "dep_ci": [
+   -0.0015,
+   -0.0004
+  ],
+  "lin_effect": -0.0008,
+  "lin_ci": [
+   -0.0014,
+   -0.0002
+  ]
+ },
+ "ap|hellaswag|ds_full": {
+  "means": {
+   "lineage_high__dep_high": 0.0785,
+   "lineage_high__dep_low": 0.0801,
+   "lineage_low__dep_high": 0.0823,
+   "lineage_low__dep_low": 0.0824,
+   "random": 0.0832
+  },
+  "dep_effect": -0.0009,
+  "dep_ci": [
+   -0.0012,
+   -0.0006
+  ],
+  "lin_effect": -0.003,
+  "lin_ci": [
+   -0.0034,
+   -0.0027
+  ]
+ },
+ "ap|hellaswag|ds_onecoin": {
+  "means": {
+   "lineage_high__dep_high": 0.0787,
+   "lineage_high__dep_low": 0.0803,
+   "lineage_low__dep_high": 0.0823,
+   "lineage_low__dep_low": 0.0825,
+   "random": 0.0832
+  },
+  "dep_effect": -0.001,
+  "dep_ci": [
+   -0.0014,
+   -0.0006
+  ],
+  "lin_effect": -0.0029,
+  "lin_ci": [
+   -0.0033,
+   -0.0025
+  ]
+ },
+ "ap|hellaswag|irt4pl": {
+  "means": {
+   "lineage_high__dep_high": 0.0786,
+   "lineage_high__dep_low": 0.0777,
+   "lineage_low__dep_high": 0.0735,
+   "lineage_low__dep_low": 0.0767,
+   "random": 0.085
+  },
+  "dep_effect": -0.0012,
+  "dep_ci": [
+   -0.0024,
+   0.0001
+  ],
+  "lin_effect": 0.003,
+  "lin_ci": [
+   0.0018,
+   0.0043
+  ]
+ },
+ "ap|hellaswag|mv": {
+  "means": {
+   "lineage_high__dep_high": 0.0906,
+   "lineage_high__dep_low": 0.0919,
+   "lineage_low__dep_high": 0.0917,
+   "lineage_low__dep_low": 0.0921,
+   "random": 0.0892
+  },
+  "dep_effect": -0.0009,
+  "dep_ci": [
+   -0.0014,
+   -0.0003
+  ],
+  "lin_effect": -0.0007,
+  "lin_ci": [
+   -0.0012,
+   -0.0001
+  ]
+ }
+}

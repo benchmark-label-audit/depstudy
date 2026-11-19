@@ -1,0 +1,22 @@
+{
+ "full/unparseable_incorrect": {
+  "ap": 0.2618118677778371,
+  "ap_key": 0.32250139690331736,
+  "share_unparseable": 0.37998286515014734
+ },
+ "full/unparseable_missing": {
+  "ap": 0.2355761949770815,
+  "ap_key": 0.135785644519442,
+  "share_unparseable": 0.37998286515014734
+ },
+ "small_strong/unparseable_incorrect": {
+  "ap": 0.2423032418963839,
+  "ap_key": 0.26933201850815364,
+  "share_unparseable": 0.07477634571645186
+ },
+ "small_strong/unparseable_missing": {
+  "ap": 0.30697595414071216,
+  "ap_key": 0.4192535170222068,
+  "share_unparseable": 0.07477634571645186
+ }
+}

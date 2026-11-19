@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "accu_nodep_lo", "param": "iters", "value": "50", "default": "5", "is_default": false, "ap": 0.22216590218823748, "pk": 0.35, "ap_key": 0.31402892649773473, "sec": 4.61211085319519}

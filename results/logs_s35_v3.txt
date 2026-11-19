@@ -1,0 +1,473 @@
+mmlu done
+gsm8k done
+scripts\s35_dep_analysis.py:126: RuntimeWarning: Mean of empty slice
+  "delta_other_defects": float(delta[ok & items.defect & ~items.kpos].mean()),
+numpy\_core\_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+scripts\s35_dep_analysis.py:182: RuntimeWarning: Mean of empty slice
+  "delta_other_defects": float(delta[ok & items.defect & ~items.kpos].mean()),
+numpy\_core\_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+hellaswag done
+         bench                method metric                      effect  estimate      lo      hi  p_boot
+0         mmlu                    mv     ap             dependence_main   -0.0046 -0.0101  0.0006   0.088
+2         mmlu                    mv     ap                 interaction    0.0033 -0.0071  0.0129   0.548
+3         mmlu                    mv     ap  dependence_in_lineage_high   -0.0030 -0.0095  0.0029   0.340
+4         mmlu                    mv     ap   dependence_in_lineage_low   -0.0063 -0.0147  0.0021   0.136
+26        mmlu                   crh     ap             dependence_main   -0.0051 -0.0108  0.0004   0.080
+28        mmlu                   crh     ap                 interaction    0.0038 -0.0070  0.0143   0.512
+29        mmlu                   crh     ap  dependence_in_lineage_high   -0.0032 -0.0096  0.0038   0.328
+30        mmlu                   crh     ap   dependence_in_lineage_low   -0.0070 -0.0160  0.0015   0.092
+52        mmlu                  catd     ap             dependence_main   -0.0058 -0.0116 -0.0001   0.044
+54        mmlu                  catd     ap                 interaction    0.0020 -0.0083  0.0121   0.652
+55        mmlu                  catd     ap  dependence_in_lineage_high   -0.0048 -0.0114  0.0016   0.160
+56        mmlu                  catd     ap   dependence_in_lineage_low   -0.0068 -0.0152  0.0023   0.140
+78        mmlu         ds_onecoin_lo     ap             dependence_main   -0.0036 -0.0089  0.0014   0.152
+80        mmlu         ds_onecoin_lo     ap                 interaction   -0.0038 -0.0153  0.0065   0.440
+81        mmlu         ds_onecoin_lo     ap  dependence_in_lineage_high   -0.0054 -0.0148  0.0022   0.176
+82        mmlu         ds_onecoin_lo     ap   dependence_in_lineage_low   -0.0017 -0.0086  0.0050   0.560
+104       mmlu            ds_full_lo     ap             dependence_main   -0.0142 -0.0207 -0.0072   0.000
+106       mmlu            ds_full_lo     ap                 interaction   -0.0131 -0.0266 -0.0008   0.036
+107       mmlu            ds_full_lo     ap  dependence_in_lineage_high   -0.0207 -0.0301 -0.0108   0.000
+108       mmlu            ds_full_lo     ap   dependence_in_lineage_low   -0.0076 -0.0171  0.0007   0.080
+130       mmlu         accu_nodep_lo     ap             dependence_main   -0.0036 -0.0093  0.0011   0.148
+132       mmlu         accu_nodep_lo     ap                 interaction   -0.0038 -0.0161  0.0067   0.488
+133       mmlu         accu_nodep_lo     ap  dependence_in_lineage_high   -0.0054 -0.0149  0.0021   0.188
+134       mmlu         accu_nodep_lo     ap   dependence_in_lineage_low   -0.0017 -0.0078  0.0048   0.556
+156       mmlu         accu_depen_lo     ap             dependence_main    0.0040 -0.0025  0.0101   0.176
+158       mmlu         accu_depen_lo     ap                 interaction   -0.0060 -0.0185  0.0059   0.296
+159       mmlu         accu_depen_lo     ap  dependence_in_lineage_high    0.0011 -0.0082  0.0095   0.764
+160       mmlu         accu_depen_lo     ap   dependence_in_lineage_low    0.0070 -0.0007  0.0163   0.088
+182       mmlu      accu_depen_nu_lo     ap             dependence_main    0.0024 -0.0030  0.0076   0.396
+184       mmlu      accu_depen_nu_lo     ap                 interaction   -0.0042 -0.0148  0.0054   0.400
+185       mmlu      accu_depen_nu_lo     ap  dependence_in_lineage_high    0.0003 -0.0075  0.0075   0.948
+186       mmlu      accu_depen_nu_lo     ap   dependence_in_lineage_low    0.0045 -0.0031  0.0114   0.192
+208       mmlu     accu_depen_key_lo     ap             dependence_main    0.0049 -0.0019  0.0117   0.192
+210       mmlu     accu_depen_key_lo     ap                 interaction   -0.0048 -0.0192  0.0089   0.432
+211       mmlu     accu_depen_key_lo     ap  dependence_in_lineage_high    0.0025 -0.0082  0.0125   0.684
+212       mmlu     accu_depen_key_lo     ap   dependence_in_lineage_low    0.0073 -0.0017  0.0168   0.112
+234       mmlu  accu_depen_nu_key_lo     ap             dependence_main    0.0023 -0.0035  0.0073   0.452
+236       mmlu  accu_depen_nu_key_lo     ap                 interaction   -0.0003 -0.0122  0.0093   0.912
+237       mmlu  accu_depen_nu_key_lo     ap  dependence_in_lineage_high    0.0021 -0.0060  0.0100   0.640
+238       mmlu  accu_depen_nu_key_lo     ap   dependence_in_lineage_low    0.0024 -0.0045  0.0100   0.536
+260       mmlu               glad_lo     ap             dependence_main   -0.0039 -0.0091  0.0011   0.136
+262       mmlu               glad_lo     ap                 interaction   -0.0062 -0.0194  0.0049   0.300
+263       mmlu               glad_lo     ap  dependence_in_lineage_high   -0.0070 -0.0161  0.0011   0.092
+264       mmlu               glad_lo     ap   dependence_in_lineage_low   -0.0008 -0.0075  0.0069   0.804
+286      gsm8k                    mv     ap             dependence_main   -0.0110 -0.0238  0.0022   0.108
+288      gsm8k                    mv     ap                 interaction   -0.0130 -0.0385  0.0132   0.348
+289      gsm8k                    mv     ap  dependence_in_lineage_high   -0.0176 -0.0373  0.0044   0.120
+290      gsm8k                    mv     ap   dependence_in_lineage_low   -0.0045 -0.0197  0.0100   0.484
+312      gsm8k                   crh     ap             dependence_main   -0.0118 -0.0250  0.0011   0.064
+314      gsm8k                   crh     ap                 interaction   -0.0124 -0.0385  0.0122   0.296
+315      gsm8k                   crh     ap  dependence_in_lineage_high   -0.0180 -0.0400  0.0034   0.084
+316      gsm8k                   crh     ap   dependence_in_lineage_low   -0.0056 -0.0200  0.0085   0.416
+338      gsm8k                  catd     ap             dependence_main   -0.0133 -0.0270 -0.0010   0.036
+340      gsm8k                  catd     ap                 interaction   -0.0117 -0.0382  0.0146   0.360
+341      gsm8k                  catd     ap  dependence_in_lineage_high   -0.0191 -0.0418  0.0032   0.068
+342      gsm8k                  catd     ap   dependence_in_lineage_low   -0.0074 -0.0251  0.0065   0.284
+364      gsm8k         ds_onecoin_lo     ap             dependence_main   -0.0240 -0.0438 -0.0087   0.000
+366      gsm8k         ds_onecoin_lo     ap                 interaction   -0.0214 -0.0428 -0.0022   0.024
+367      gsm8k         ds_onecoin_lo     ap  dependence_in_lineage_high   -0.0347 -0.0611 -0.0124   0.000
+368      gsm8k         ds_onecoin_lo     ap   dependence_in_lineage_low   -0.0133 -0.0297 -0.0008   0.032
+390      gsm8k    ds_onecoin_nf10_lo     ap             dependence_main   -0.0256 -0.0426 -0.0113   0.000
+392      gsm8k    ds_onecoin_nf10_lo     ap                 interaction   -0.0205 -0.0444 -0.0020   0.044
+393      gsm8k    ds_onecoin_nf10_lo     ap  dependence_in_lineage_high   -0.0358 -0.0612 -0.0142   0.000
+394      gsm8k    ds_onecoin_nf10_lo     ap   dependence_in_lineage_low   -0.0154 -0.0288 -0.0021   0.028
+416      gsm8k         accu_nodep_lo     ap             dependence_main   -0.0256 -0.0423 -0.0111   0.000
+418      gsm8k         accu_nodep_lo     ap                 interaction   -0.0205 -0.0444 -0.0008   0.036
+419      gsm8k         accu_nodep_lo     ap  dependence_in_lineage_high   -0.0359 -0.0608 -0.0137   0.000
+420      gsm8k         accu_nodep_lo     ap   dependence_in_lineage_low   -0.0154 -0.0293 -0.0017   0.016
+442      gsm8k         accu_depen_lo     ap             dependence_main   -0.0259 -0.0422 -0.0120   0.000
+444      gsm8k         accu_depen_lo     ap                 interaction   -0.0166 -0.0369 -0.0008   0.036
+445      gsm8k         accu_depen_lo     ap  dependence_in_lineage_high   -0.0342 -0.0594 -0.0143   0.000
+446      gsm8k         accu_depen_lo     ap   dependence_in_lineage_low   -0.0176 -0.0290 -0.0060   0.000
+468      gsm8k      accu_depen_nu_lo     ap             dependence_main   -0.0254 -0.0421 -0.0107   0.000
+470      gsm8k      accu_depen_nu_lo     ap                 interaction   -0.0167 -0.0384  0.0001   0.052
+471      gsm8k      accu_depen_nu_lo     ap  dependence_in_lineage_high   -0.0337 -0.0598 -0.0126   0.000
+472      gsm8k      accu_depen_nu_lo     ap   dependence_in_lineage_low   -0.0170 -0.0290 -0.0053   0.000
+494      gsm8k     accu_depen_key_lo     ap             dependence_main   -0.0232 -0.0391 -0.0096   0.000
+496      gsm8k     accu_depen_key_lo     ap                 interaction   -0.0091 -0.0281  0.0070   0.252
+497      gsm8k     accu_depen_key_lo     ap  dependence_in_lineage_high   -0.0277 -0.0512 -0.0097   0.000
+498      gsm8k     accu_depen_key_lo     ap   dependence_in_lineage_low   -0.0186 -0.0307 -0.0069   0.000
+520      gsm8k  accu_depen_nu_key_lo     ap             dependence_main   -0.0234 -0.0398 -0.0099   0.000
+522      gsm8k  accu_depen_nu_key_lo     ap                 interaction   -0.0123 -0.0320  0.0040   0.160
+523      gsm8k  accu_depen_nu_key_lo     ap  dependence_in_lineage_high   -0.0295 -0.0536 -0.0112   0.000
+524      gsm8k  accu_depen_nu_key_lo     ap   dependence_in_lineage_low   -0.0172 -0.0295 -0.0064   0.004
+546      gsm8k               glad_lo     ap             dependence_main   -0.0339 -0.0633 -0.0108   0.000
+548      gsm8k               glad_lo     ap                 interaction   -0.0452 -0.0964 -0.0095   0.020
+549      gsm8k               glad_lo     ap  dependence_in_lineage_high   -0.0565 -0.1104 -0.0162   0.000
+550      gsm8k               glad_lo     ap   dependence_in_lineage_low   -0.0112 -0.0262  0.0019   0.104
+572  hellaswag                    mv     ap             dependence_main   -0.0013 -0.0036  0.0007   0.188
+574  hellaswag                    mv     ap                 interaction   -0.0012 -0.0047  0.0022   0.504
+575  hellaswag                    mv     ap  dependence_in_lineage_high   -0.0019 -0.0053  0.0007   0.160
+576  hellaswag                    mv     ap   dependence_in_lineage_low   -0.0007 -0.0035  0.0018   0.568
+598  hellaswag                   crh     ap             dependence_main   -0.0013 -0.0038  0.0006   0.176
+600  hellaswag                   crh     ap                 interaction   -0.0015 -0.0053  0.0021   0.392
+601  hellaswag                   crh     ap  dependence_in_lineage_high   -0.0021 -0.0055  0.0006   0.136
+602  hellaswag                   crh     ap   dependence_in_lineage_low   -0.0006 -0.0036  0.0021   0.624
+624  hellaswag                  catd     ap             dependence_main   -0.0012 -0.0035  0.0009   0.268
+626  hellaswag                  catd     ap                 interaction   -0.0019 -0.0057  0.0021   0.332
+627  hellaswag                  catd     ap  dependence_in_lineage_high   -0.0021 -0.0051  0.0007   0.136
+628  hellaswag                  catd     ap   dependence_in_lineage_low   -0.0002 -0.0032  0.0023   0.876
+650  hellaswag         ds_onecoin_lo     ap             dependence_main   -0.0020 -0.0050  0.0004   0.124
+652  hellaswag         ds_onecoin_lo     ap                 interaction   -0.0036 -0.0085  0.0008   0.084
+653  hellaswag         ds_onecoin_lo     ap  dependence_in_lineage_high   -0.0038 -0.0085 -0.0002   0.040
+654  hellaswag         ds_onecoin_lo     ap   dependence_in_lineage_low   -0.0002 -0.0034  0.0027   0.868
+676  hellaswag            ds_full_lo     ap             dependence_main   -0.0014 -0.0048  0.0012   0.244
+678  hellaswag            ds_full_lo     ap                 interaction   -0.0069 -0.0125 -0.0016   0.020
+679  hellaswag            ds_full_lo     ap  dependence_in_lineage_high   -0.0048 -0.0099 -0.0010   0.028
+680  hellaswag            ds_full_lo     ap   dependence_in_lineage_low    0.0021 -0.0019  0.0058   0.280
+702  hellaswag         accu_nodep_lo     ap             dependence_main   -0.0020 -0.0051  0.0006   0.116
+704  hellaswag         accu_nodep_lo     ap                 interaction   -0.0036 -0.0087  0.0007   0.100
+705  hellaswag         accu_nodep_lo     ap  dependence_in_lineage_high   -0.0038 -0.0085 -0.0005   0.032
+706  hellaswag         accu_nodep_lo     ap   dependence_in_lineage_low   -0.0002 -0.0032  0.0029   0.876
+728  hellaswag         accu_depen_lo     ap             dependence_main   -0.0031 -0.0071  0.0003   0.068
+730  hellaswag         accu_depen_lo     ap                 interaction   -0.0011 -0.0085  0.0058   0.744
+731  hellaswag         accu_depen_lo     ap  dependence_in_lineage_high   -0.0036 -0.0089  0.0010   0.108
+732  hellaswag         accu_depen_lo     ap   dependence_in_lineage_low   -0.0026 -0.0081  0.0025   0.348
+754  hellaswag      accu_depen_nu_lo     ap             dependence_main   -0.0040 -0.0090 -0.0005   0.028
+756  hellaswag      accu_depen_nu_lo     ap                 interaction   -0.0099 -0.0192 -0.0017   0.016
+757  hellaswag      accu_depen_nu_lo     ap  dependence_in_lineage_high   -0.0090 -0.0172 -0.0026   0.000
+758  hellaswag      accu_depen_nu_lo     ap   dependence_in_lineage_low    0.0009 -0.0036  0.0053   0.712
+780  hellaswag     accu_depen_key_lo     ap             dependence_main   -0.0036 -0.0084  0.0001   0.060
+782  hellaswag     accu_depen_key_lo     ap                 interaction   -0.0004 -0.0086  0.0069   0.896
+783  hellaswag     accu_depen_key_lo     ap  dependence_in_lineage_high   -0.0038 -0.0093  0.0010   0.136
+784  hellaswag     accu_depen_key_lo     ap   dependence_in_lineage_low   -0.0034 -0.0101  0.0027   0.224
+806  hellaswag  accu_depen_nu_key_lo     ap             dependence_main   -0.0047 -0.0094 -0.0010   0.020
+808  hellaswag  accu_depen_nu_key_lo     ap                 interaction   -0.0122 -0.0217 -0.0037   0.004
+809  hellaswag  accu_depen_nu_key_lo     ap  dependence_in_lineage_high   -0.0108 -0.0187 -0.0039   0.004
+810  hellaswag  accu_depen_nu_key_lo     ap   dependence_in_lineage_low    0.0014 -0.0040  0.0065   0.620
+832  hellaswag               glad_lo     ap             dependence_main    0.0013 -0.0028  0.0052   0.508
+834  hellaswag               glad_lo     ap                 interaction   -0.0002 -0.0070  0.0066   0.932
+835  hellaswag               glad_lo     ap  dependence_in_lineage_high    0.0012 -0.0048  0.0073   0.700
+836  hellaswag               glad_lo     ap   dependence_in_lineage_low    0.0014 -0.0021  0.0058   0.500
+         bench                method  metric         x                  effect  estimate      lo      hi  p_boot  R_design_mean
+0         mmlu                    mv      ap  R_design          slope_per_0.05    0.0061 -0.0011  0.0131   0.096            NaN
+1         mmlu                    mv      ap     level  top_minus_bottom_level    0.0108 -0.0017  0.0229   0.108            NaN
+2         mmlu                    mv      ap    R_eval          slope_per_0.05    0.0041 -0.0001  0.0076   0.056            NaN
+9         mmlu                    mv  ap_key  R_design          slope_per_0.05    0.0114 -0.0063  0.0283   0.252            NaN
+10        mmlu                    mv  ap_key     level  top_minus_bottom_level    0.0218 -0.0098  0.0510   0.184            NaN
+11        mmlu                    mv  ap_key    R_eval          slope_per_0.05    0.0077 -0.0006  0.0159   0.084            NaN
+18        mmlu                   crh      ap  R_design          slope_per_0.05    0.0047 -0.0027  0.0113   0.244            NaN
+19        mmlu                   crh      ap     level  top_minus_bottom_level    0.0085 -0.0047  0.0202   0.248            NaN
+20        mmlu                   crh      ap    R_eval          slope_per_0.05    0.0031 -0.0010  0.0067   0.128            NaN
+27        mmlu                   crh  ap_key  R_design          slope_per_0.05    0.0072 -0.0098  0.0249   0.488            NaN
+28        mmlu                   crh  ap_key     level  top_minus_bottom_level    0.0148 -0.0165  0.0451   0.360            NaN
+29        mmlu                   crh  ap_key    R_eval          slope_per_0.05    0.0050 -0.0044  0.0135   0.304            NaN
+36        mmlu                  catd      ap  R_design          slope_per_0.05    0.0041 -0.0047  0.0113   0.364            NaN
+37        mmlu                  catd      ap     level  top_minus_bottom_level    0.0100 -0.0054  0.0225   0.184            NaN
+38        mmlu                  catd      ap    R_eval          slope_per_0.05    0.0031 -0.0013  0.0073   0.196            NaN
+45        mmlu                  catd  ap_key  R_design          slope_per_0.05    0.0058 -0.0135  0.0222   0.512            NaN
+46        mmlu                  catd  ap_key     level  top_minus_bottom_level    0.0161 -0.0157  0.0460   0.360            NaN
+47        mmlu                  catd  ap_key    R_eval          slope_per_0.05    0.0046 -0.0053  0.0139   0.404            NaN
+54        mmlu         ds_onecoin_lo      ap  R_design          slope_per_0.05   -0.0026 -0.0102  0.0046   0.500            NaN
+55        mmlu         ds_onecoin_lo      ap     level  top_minus_bottom_level   -0.0053 -0.0177  0.0067   0.408            NaN
+56        mmlu         ds_onecoin_lo      ap    R_eval          slope_per_0.05   -0.0012 -0.0056  0.0028   0.580            NaN
+63        mmlu         ds_onecoin_lo  ap_key  R_design          slope_per_0.05   -0.0146 -0.0341  0.0034   0.136            NaN
+64        mmlu         ds_onecoin_lo  ap_key     level  top_minus_bottom_level   -0.0270 -0.0582  0.0029   0.072            NaN
+65        mmlu         ds_onecoin_lo  ap_key    R_eval          slope_per_0.05   -0.0082 -0.0182  0.0019   0.132            NaN
+72        mmlu            ds_full_lo      ap  R_design          slope_per_0.05    0.0004 -0.0129  0.0149   0.940            NaN
+73        mmlu            ds_full_lo      ap     level  top_minus_bottom_level   -0.0002 -0.0230  0.0235   0.984            NaN
+74        mmlu            ds_full_lo      ap    R_eval          slope_per_0.05   -0.0000 -0.0074  0.0078   0.980            NaN
+81        mmlu            ds_full_lo  ap_key  R_design          slope_per_0.05   -0.0007 -0.0349  0.0323   0.932            NaN
+82        mmlu            ds_full_lo  ap_key     level  top_minus_bottom_level   -0.0024 -0.0615  0.0513   0.892            NaN
+83        mmlu            ds_full_lo  ap_key    R_eval          slope_per_0.05   -0.0017 -0.0224  0.0171   0.836            NaN
+90        mmlu         accu_nodep_lo      ap  R_design          slope_per_0.05   -0.0024 -0.0102  0.0055   0.528            NaN
+91        mmlu         accu_nodep_lo      ap     level  top_minus_bottom_level   -0.0050 -0.0179  0.0077   0.420            NaN
+92        mmlu         accu_nodep_lo      ap    R_eval          slope_per_0.05   -0.0011 -0.0056  0.0028   0.616            NaN
+99        mmlu         accu_nodep_lo  ap_key  R_design          slope_per_0.05   -0.0143 -0.0322  0.0041   0.132            NaN
+100       mmlu         accu_nodep_lo  ap_key     level  top_minus_bottom_level   -0.0264 -0.0591  0.0052   0.092            NaN
+101       mmlu         accu_nodep_lo  ap_key    R_eval          slope_per_0.05   -0.0080 -0.0180  0.0020   0.132            NaN
+108       mmlu         accu_depen_lo      ap  R_design          slope_per_0.05   -0.0026 -0.0122  0.0061   0.588            NaN
+109       mmlu         accu_depen_lo      ap     level  top_minus_bottom_level   -0.0102 -0.0288  0.0064   0.240            NaN
+110       mmlu         accu_depen_lo      ap    R_eval          slope_per_0.05   -0.0013 -0.0045  0.0020   0.548            NaN
+117       mmlu         accu_depen_lo  ap_key  R_design          slope_per_0.05   -0.0083 -0.0287  0.0128   0.508            NaN
+118       mmlu         accu_depen_lo  ap_key     level  top_minus_bottom_level   -0.0242 -0.0666  0.0133   0.276            NaN
+119       mmlu         accu_depen_lo  ap_key    R_eval          slope_per_0.05   -0.0043 -0.0128  0.0039   0.340            NaN
+126       mmlu      accu_depen_nu_lo      ap  R_design          slope_per_0.05    0.0013 -0.0051  0.0077   0.708            NaN
+127       mmlu      accu_depen_nu_lo      ap     level  top_minus_bottom_level   -0.0010 -0.0133  0.0109   0.876            NaN
+128       mmlu      accu_depen_nu_lo      ap    R_eval          slope_per_0.05    0.0007 -0.0023  0.0032   0.596            NaN
+135       mmlu      accu_depen_nu_lo  ap_key  R_design          slope_per_0.05   -0.0021 -0.0181  0.0141   0.848            NaN
+136       mmlu      accu_depen_nu_lo  ap_key     level  top_minus_bottom_level   -0.0088 -0.0392  0.0228   0.580            NaN
+137       mmlu      accu_depen_nu_lo  ap_key    R_eval          slope_per_0.05   -0.0012 -0.0088  0.0054   0.712            NaN
+144       mmlu     accu_depen_key_lo      ap  R_design          slope_per_0.05    0.0066 -0.0050  0.0183   0.284            NaN
+145       mmlu     accu_depen_key_lo      ap     level  top_minus_bottom_level    0.0091 -0.0120  0.0296   0.408            NaN
+146       mmlu     accu_depen_key_lo      ap    R_eval          slope_per_0.05    0.0040 -0.0006  0.0086   0.088            NaN
+153       mmlu     accu_depen_key_lo  ap_key  R_design          slope_per_0.05    0.0136 -0.0130  0.0419   0.296            NaN
+154       mmlu     accu_depen_key_lo  ap_key     level  top_minus_bottom_level    0.0203 -0.0289  0.0716   0.420            NaN
+155       mmlu     accu_depen_key_lo  ap_key    R_eval          slope_per_0.05    0.0088 -0.0021  0.0196   0.104            NaN
+162       mmlu  accu_depen_nu_key_lo      ap  R_design          slope_per_0.05    0.0014 -0.0061  0.0094   0.652            NaN
+163       mmlu  accu_depen_nu_key_lo      ap     level  top_minus_bottom_level   -0.0007 -0.0140  0.0146   0.988            NaN
+164       mmlu  accu_depen_nu_key_lo      ap    R_eval          slope_per_0.05    0.0007 -0.0030  0.0044   0.620            NaN
+171       mmlu  accu_depen_nu_key_lo  ap_key  R_design          slope_per_0.05   -0.0019 -0.0225  0.0166   0.844            NaN
+172       mmlu  accu_depen_nu_key_lo  ap_key     level  top_minus_bottom_level   -0.0093 -0.0468  0.0252   0.548            NaN
+173       mmlu  accu_depen_nu_key_lo  ap_key    R_eval          slope_per_0.05   -0.0012 -0.0111  0.0078   0.772            NaN
+180       mmlu               glad_lo      ap  R_design          slope_per_0.05   -0.0038 -0.0126  0.0047   0.356            NaN
+181       mmlu               glad_lo      ap     level  top_minus_bottom_level   -0.0055 -0.0203  0.0077   0.396            NaN
+182       mmlu               glad_lo      ap    R_eval          slope_per_0.05   -0.0018 -0.0069  0.0027   0.444            NaN
+189       mmlu               glad_lo  ap_key  R_design          slope_per_0.05   -0.0175 -0.0362 -0.0001   0.048            NaN
+190       mmlu               glad_lo  ap_key     level  top_minus_bottom_level   -0.0280 -0.0629  0.0032   0.068            NaN
+191       mmlu               glad_lo  ap_key    R_eval          slope_per_0.05   -0.0096 -0.0206  0.0006   0.068            NaN
+198       mmlu                irt4pl      ap  R_design          slope_per_0.05   -0.0076 -0.0204  0.0042   0.164            NaN
+199       mmlu                irt4pl      ap     level  top_minus_bottom_level   -0.0034 -0.0217  0.0146   0.696            NaN
+200       mmlu                irt4pl      ap    R_eval          slope_per_0.05   -0.0037 -0.0107  0.0036   0.272            NaN
+207       mmlu                irt4pl  ap_key  R_design          slope_per_0.05    0.0016 -0.0158  0.0249   0.892            NaN
+208       mmlu                irt4pl  ap_key     level  top_minus_bottom_level    0.0106 -0.0146  0.0431   0.480            NaN
+209       mmlu                irt4pl  ap_key    R_eval          slope_per_0.05    0.0020 -0.0088  0.0159   0.776            NaN
+216      gsm8k                    mv      ap  R_design          slope_per_0.05   -0.0068 -0.0110 -0.0036   0.000            NaN
+217      gsm8k                    mv      ap     level  top_minus_bottom_level   -0.0874 -0.1419 -0.0438   0.000            NaN
+218      gsm8k                    mv      ap    R_eval          slope_per_0.05   -0.0153 -0.0249 -0.0080   0.000            NaN
+225      gsm8k                    mv  ap_key  R_design          slope_per_0.05   -0.0090 -0.0249  0.0002   0.056            NaN
+226      gsm8k                    mv  ap_key     level  top_minus_bottom_level   -0.1138 -0.3094 -0.0030   0.032            NaN
+227      gsm8k                    mv  ap_key    R_eval          slope_per_0.05   -0.0218 -0.0564 -0.0009   0.036            NaN
+234      gsm8k                   crh      ap  R_design          slope_per_0.05   -0.0070 -0.0115 -0.0038   0.000            NaN
+235      gsm8k                   crh      ap     level  top_minus_bottom_level   -0.0895 -0.1462 -0.0457   0.000            NaN
+236      gsm8k                   crh      ap    R_eval          slope_per_0.05   -0.0156 -0.0252 -0.0081   0.000            NaN
+243      gsm8k                   crh  ap_key  R_design          slope_per_0.05   -0.0094 -0.0257  0.0000   0.056            NaN
+244      gsm8k                   crh  ap_key     level  top_minus_bottom_level   -0.1201 -0.3194 -0.0106   0.020            NaN
+245      gsm8k                   crh  ap_key    R_eval          slope_per_0.05   -0.0228 -0.0585 -0.0016   0.036            NaN
+252      gsm8k                  catd      ap  R_design          slope_per_0.05   -0.0073 -0.0120 -0.0039   0.000            NaN
+253      gsm8k                  catd      ap     level  top_minus_bottom_level   -0.0951 -0.1540 -0.0490   0.000            NaN
+254      gsm8k                  catd      ap    R_eval          slope_per_0.05   -0.0162 -0.0259 -0.0086   0.000            NaN
+261      gsm8k                  catd  ap_key  R_design          slope_per_0.05   -0.0098 -0.0256 -0.0001   0.048            NaN
+262      gsm8k                  catd  ap_key     level  top_minus_bottom_level   -0.1255 -0.3248 -0.0135   0.020            NaN
+263      gsm8k                  catd  ap_key    R_eval          slope_per_0.05   -0.0234 -0.0593 -0.0022   0.020            NaN
+270      gsm8k         ds_onecoin_lo      ap  R_design          slope_per_0.05   -0.0053 -0.0094 -0.0021   0.000            NaN
+271      gsm8k         ds_onecoin_lo      ap     level  top_minus_bottom_level   -0.0713 -0.1254 -0.0276   0.000            NaN
+272      gsm8k         ds_onecoin_lo      ap    R_eval          slope_per_0.05   -0.0110 -0.0200 -0.0044   0.004            NaN
+279      gsm8k         ds_onecoin_lo  ap_key  R_design          slope_per_0.05   -0.0068 -0.0192 -0.0019   0.000            NaN
+280      gsm8k         ds_onecoin_lo  ap_key     level  top_minus_bottom_level   -0.0931 -0.2467 -0.0272   0.000            NaN
+281      gsm8k         ds_onecoin_lo  ap_key    R_eval          slope_per_0.05   -0.0136 -0.0406 -0.0034   0.000            NaN
+288      gsm8k    ds_onecoin_nf10_lo      ap  R_design          slope_per_0.05   -0.0066 -0.0097 -0.0036   0.000            NaN
+289      gsm8k    ds_onecoin_nf10_lo      ap     level  top_minus_bottom_level   -0.0868 -0.1305 -0.0455   0.000            NaN
+290      gsm8k    ds_onecoin_nf10_lo      ap    R_eval          slope_per_0.05   -0.0141 -0.0210 -0.0075   0.000            NaN
+297      gsm8k    ds_onecoin_nf10_lo  ap_key  R_design          slope_per_0.05   -0.0156 -0.0265 -0.0041   0.000            NaN
+298      gsm8k    ds_onecoin_nf10_lo  ap_key     level  top_minus_bottom_level   -0.2058 -0.3556 -0.0576   0.000            NaN
+299      gsm8k    ds_onecoin_nf10_lo  ap_key    R_eval          slope_per_0.05   -0.0355 -0.0609 -0.0084   0.000            NaN
+306      gsm8k         accu_nodep_lo      ap  R_design          slope_per_0.05   -0.0066 -0.0097 -0.0035   0.000            NaN
+307      gsm8k         accu_nodep_lo      ap     level  top_minus_bottom_level   -0.0868 -0.1327 -0.0448   0.000            NaN
+308      gsm8k         accu_nodep_lo      ap    R_eval          slope_per_0.05   -0.0141 -0.0210 -0.0075   0.000            NaN
+315      gsm8k         accu_nodep_lo  ap_key  R_design          slope_per_0.05   -0.0156 -0.0260 -0.0041   0.000            NaN
+316      gsm8k         accu_nodep_lo  ap_key     level  top_minus_bottom_level   -0.2058 -0.3527 -0.0601   0.000            NaN
+317      gsm8k         accu_nodep_lo  ap_key    R_eval          slope_per_0.05   -0.0355 -0.0609 -0.0084   0.000            NaN
+324      gsm8k         accu_depen_lo      ap  R_design          slope_per_0.05    0.0025 -0.0011  0.0059   0.148            NaN
+325      gsm8k         accu_depen_lo      ap     level  top_minus_bottom_level    0.0277 -0.0169  0.0646   0.188            NaN
+326      gsm8k         accu_depen_lo      ap    R_eval          slope_per_0.05    0.0049 -0.0026  0.0123   0.180            NaN
+333      gsm8k         accu_depen_lo  ap_key  R_design          slope_per_0.05    0.0047 -0.0023  0.0134   0.144            NaN
+334      gsm8k         accu_depen_lo  ap_key     level  top_minus_bottom_level    0.0319 -0.0272  0.1143   0.240            NaN
+335      gsm8k         accu_depen_lo  ap_key    R_eval          slope_per_0.05    0.0085 -0.0056  0.0265   0.212            NaN
+342      gsm8k      accu_depen_nu_lo      ap  R_design          slope_per_0.05   -0.0051 -0.0082 -0.0023   0.000            NaN
+343      gsm8k      accu_depen_nu_lo      ap     level  top_minus_bottom_level   -0.0640 -0.1076 -0.0225   0.000            NaN
+344      gsm8k      accu_depen_nu_lo      ap    R_eval          slope_per_0.05   -0.0111 -0.0172 -0.0057   0.000            NaN
+351      gsm8k      accu_depen_nu_lo  ap_key  R_design          slope_per_0.05   -0.0139 -0.0238 -0.0035   0.000            NaN
+352      gsm8k      accu_depen_nu_lo  ap_key     level  top_minus_bottom_level   -0.1914 -0.3226 -0.0509   0.000            NaN
+353      gsm8k      accu_depen_nu_lo  ap_key    R_eval          slope_per_0.05   -0.0315 -0.0515 -0.0084   0.000            NaN
+360      gsm8k     accu_depen_key_lo      ap  R_design          slope_per_0.05   -0.0083 -0.0129 -0.0044   0.000            NaN
+361      gsm8k     accu_depen_key_lo      ap     level  top_minus_bottom_level   -0.1032 -0.1680 -0.0503   0.004            NaN
+362      gsm8k     accu_depen_key_lo      ap    R_eval          slope_per_0.05   -0.0191 -0.0294 -0.0096   0.000            NaN
+369      gsm8k     accu_depen_key_lo  ap_key  R_design          slope_per_0.05   -0.0263 -0.0421 -0.0092   0.000            NaN
+370      gsm8k     accu_depen_key_lo  ap_key     level  top_minus_bottom_level   -0.3540 -0.5865 -0.1152   0.004            NaN
+371      gsm8k     accu_depen_key_lo  ap_key    R_eval          slope_per_0.05   -0.0623 -0.0967 -0.0202   0.000            NaN
+378      gsm8k  accu_depen_nu_key_lo      ap  R_design          slope_per_0.05   -0.0064 -0.0097 -0.0035   0.000            NaN
+379      gsm8k  accu_depen_nu_key_lo      ap     level  top_minus_bottom_level   -0.0791 -0.1245 -0.0399   0.000            NaN
+380      gsm8k  accu_depen_nu_key_lo      ap    R_eval          slope_per_0.05   -0.0139 -0.0211 -0.0074   0.000            NaN
+387      gsm8k  accu_depen_nu_key_lo  ap_key  R_design          slope_per_0.05   -0.0162 -0.0274 -0.0041   0.000            NaN
+388      gsm8k  accu_depen_nu_key_lo  ap_key     level  top_minus_bottom_level   -0.2158 -0.3601 -0.0556   0.000            NaN
+389      gsm8k  accu_depen_nu_key_lo  ap_key    R_eval          slope_per_0.05   -0.0371 -0.0619 -0.0093   0.000            NaN
+396      gsm8k               glad_lo      ap  R_design          slope_per_0.05   -0.0065 -0.0096 -0.0034   0.000            NaN
+397      gsm8k               glad_lo      ap     level  top_minus_bottom_level   -0.0864 -0.1297 -0.0447   0.000            NaN
+398      gsm8k               glad_lo      ap    R_eval          slope_per_0.05   -0.0138 -0.0203 -0.0074   0.000            NaN
+405      gsm8k               glad_lo  ap_key  R_design          slope_per_0.05   -0.0159 -0.0276 -0.0038   0.000            NaN
+406      gsm8k               glad_lo  ap_key     level  top_minus_bottom_level   -0.2132 -0.3630 -0.0568   0.000            NaN
+407      gsm8k               glad_lo  ap_key    R_eval          slope_per_0.05   -0.0360 -0.0616 -0.0071   0.000            NaN
+414      gsm8k                irt4pl      ap  R_design          slope_per_0.05   -0.0090 -0.0146 -0.0042   0.000            NaN
+415      gsm8k                irt4pl      ap     level  top_minus_bottom_level   -0.1142 -0.1815 -0.0524   0.000            NaN
+416      gsm8k                irt4pl      ap    R_eval          slope_per_0.05   -0.0185 -0.0303 -0.0084   0.000            NaN
+423      gsm8k                irt4pl  ap_key  R_design          slope_per_0.05   -0.0196 -0.0432 -0.0036   0.004            NaN
+424      gsm8k                irt4pl  ap_key     level  top_minus_bottom_level   -0.2739 -0.5576 -0.0569   0.000            NaN
+425      gsm8k                irt4pl  ap_key    R_eval          slope_per_0.05   -0.0395 -0.0875 -0.0071   0.008            NaN
+432  hellaswag                    mv      ap  R_design          slope_per_0.05   -0.0010 -0.0017 -0.0004   0.000            NaN
+433  hellaswag                    mv      ap     level  top_minus_bottom_level   -0.0141 -0.0242 -0.0063   0.000            NaN
+434  hellaswag                    mv      ap    R_eval          slope_per_0.05   -0.0011 -0.0020 -0.0005   0.000            NaN
+441  hellaswag                    mv  ap_key  R_design          slope_per_0.05   -0.0016 -0.0027 -0.0008   0.000            NaN
+442  hellaswag                    mv  ap_key     level  top_minus_bottom_level   -0.0232 -0.0374 -0.0121   0.000            NaN
+443  hellaswag                    mv  ap_key    R_eval          slope_per_0.05   -0.0019 -0.0031 -0.0009   0.000            NaN
+450  hellaswag                   crh      ap  R_design          slope_per_0.05   -0.0010 -0.0017 -0.0004   0.000            NaN
+451  hellaswag                   crh      ap     level  top_minus_bottom_level   -0.0140 -0.0240 -0.0062   0.000            NaN
+452  hellaswag                   crh      ap    R_eval          slope_per_0.05   -0.0011 -0.0020 -0.0004   0.000            NaN
+459  hellaswag                   crh  ap_key  R_design          slope_per_0.05   -0.0016 -0.0027 -0.0008   0.000            NaN
+460  hellaswag                   crh  ap_key     level  top_minus_bottom_level   -0.0231 -0.0374 -0.0124   0.000            NaN
+461  hellaswag                   crh  ap_key    R_eval          slope_per_0.05   -0.0019 -0.0031 -0.0010   0.000            NaN
+468  hellaswag                  catd      ap  R_design          slope_per_0.05   -0.0010 -0.0017 -0.0004   0.000            NaN
+469  hellaswag                  catd      ap     level  top_minus_bottom_level   -0.0144 -0.0239 -0.0068   0.000            NaN
+470  hellaswag                  catd      ap    R_eval          slope_per_0.05   -0.0012 -0.0020 -0.0005   0.000            NaN
+477  hellaswag                  catd  ap_key  R_design          slope_per_0.05   -0.0017 -0.0028 -0.0009   0.000            NaN
+478  hellaswag                  catd  ap_key     level  top_minus_bottom_level   -0.0237 -0.0384 -0.0133   0.000            NaN
+479  hellaswag                  catd  ap_key    R_eval          slope_per_0.05   -0.0019 -0.0032 -0.0010   0.000            NaN
+486  hellaswag         ds_onecoin_lo      ap  R_design          slope_per_0.05   -0.0011 -0.0019 -0.0005   0.000            NaN
+487  hellaswag         ds_onecoin_lo      ap     level  top_minus_bottom_level   -0.0159 -0.0265 -0.0080   0.000            NaN
+488  hellaswag         ds_onecoin_lo      ap    R_eval          slope_per_0.05   -0.0013 -0.0022 -0.0006   0.000            NaN
+495  hellaswag         ds_onecoin_lo  ap_key  R_design          slope_per_0.05   -0.0018 -0.0031 -0.0010   0.000            NaN
+496  hellaswag         ds_onecoin_lo  ap_key     level  top_minus_bottom_level   -0.0259 -0.0416 -0.0147   0.000            NaN
+497  hellaswag         ds_onecoin_lo  ap_key    R_eval          slope_per_0.05   -0.0021 -0.0035 -0.0011   0.000            NaN
+504  hellaswag            ds_full_lo      ap  R_design          slope_per_0.05   -0.0006 -0.0016  0.0002   0.152            NaN
+505  hellaswag            ds_full_lo      ap     level  top_minus_bottom_level   -0.0072 -0.0228  0.0046   0.236            NaN
+506  hellaswag            ds_full_lo      ap    R_eval          slope_per_0.05   -0.0006 -0.0016  0.0002   0.168            NaN
+513  hellaswag            ds_full_lo  ap_key  R_design          slope_per_0.05   -0.0011 -0.0026  0.0001   0.076            NaN
+514  hellaswag            ds_full_lo  ap_key     level  top_minus_bottom_level   -0.0135 -0.0359  0.0039   0.168            NaN
+515  hellaswag            ds_full_lo  ap_key    R_eval          slope_per_0.05   -0.0011 -0.0026 -0.0000   0.040            NaN
+522  hellaswag         accu_nodep_lo      ap  R_design          slope_per_0.05   -0.0011 -0.0019 -0.0005   0.000            NaN
+523  hellaswag         accu_nodep_lo      ap     level  top_minus_bottom_level   -0.0159 -0.0263 -0.0079   0.000            NaN
+524  hellaswag         accu_nodep_lo      ap    R_eval          slope_per_0.05   -0.0013 -0.0022 -0.0006   0.000            NaN
+531  hellaswag         accu_nodep_lo  ap_key  R_design          slope_per_0.05   -0.0018 -0.0031 -0.0009   0.000            NaN
+532  hellaswag         accu_nodep_lo  ap_key     level  top_minus_bottom_level   -0.0259 -0.0421 -0.0145   0.000            NaN
+533  hellaswag         accu_nodep_lo  ap_key    R_eval          slope_per_0.05   -0.0021 -0.0035 -0.0011   0.000            NaN
+540  hellaswag         accu_depen_lo      ap  R_design          slope_per_0.05   -0.0001 -0.0009  0.0010   0.892            NaN
+541  hellaswag         accu_depen_lo      ap     level  top_minus_bottom_level   -0.0010 -0.0118  0.0127   0.892            NaN
+542  hellaswag         accu_depen_lo      ap    R_eval          slope_per_0.05   -0.0001 -0.0010  0.0011   0.872            NaN
+549  hellaswag         accu_depen_lo  ap_key  R_design          slope_per_0.05   -0.0002 -0.0015  0.0011   0.668            NaN
+550  hellaswag         accu_depen_lo  ap_key     level  top_minus_bottom_level   -0.0032 -0.0209  0.0121   0.588            NaN
+551  hellaswag         accu_depen_lo  ap_key    R_eval          slope_per_0.05   -0.0002 -0.0018  0.0011   0.628            NaN
+558  hellaswag      accu_depen_nu_lo      ap  R_design          slope_per_0.05   -0.0001 -0.0009  0.0010   0.868            NaN
+559  hellaswag      accu_depen_nu_lo      ap     level  top_minus_bottom_level   -0.0010 -0.0116  0.0129   0.868            NaN
+560  hellaswag      accu_depen_nu_lo      ap    R_eval          slope_per_0.05   -0.0001 -0.0010  0.0011   0.860            NaN
+567  hellaswag      accu_depen_nu_lo  ap_key  R_design          slope_per_0.05   -0.0002 -0.0015  0.0010   0.648            NaN
+568  hellaswag      accu_depen_nu_lo  ap_key     level  top_minus_bottom_level   -0.0033 -0.0199  0.0118   0.580            NaN
+569  hellaswag      accu_depen_nu_lo  ap_key    R_eval          slope_per_0.05   -0.0003 -0.0018  0.0010   0.600            NaN
+576  hellaswag     accu_depen_key_lo      ap  R_design          slope_per_0.05   -0.0001 -0.0009  0.0010   0.920            NaN
+577  hellaswag     accu_depen_key_lo      ap     level  top_minus_bottom_level   -0.0010 -0.0122  0.0127   0.888            NaN
+578  hellaswag     accu_depen_key_lo      ap    R_eval          slope_per_0.05   -0.0001 -0.0010  0.0011   0.876            NaN
+585  hellaswag     accu_depen_key_lo  ap_key  R_design          slope_per_0.05   -0.0002 -0.0015  0.0010   0.696            NaN
+586  hellaswag     accu_depen_key_lo  ap_key     level  top_minus_bottom_level   -0.0032 -0.0200  0.0114   0.564            NaN
+587  hellaswag     accu_depen_key_lo  ap_key    R_eval          slope_per_0.05   -0.0002 -0.0018  0.0011   0.628            NaN
+594  hellaswag  accu_depen_nu_key_lo      ap  R_design          slope_per_0.05   -0.0001 -0.0009  0.0010   0.912            NaN
+595  hellaswag  accu_depen_nu_key_lo      ap     level  top_minus_bottom_level   -0.0010 -0.0120  0.0130   0.904            NaN
+596  hellaswag  accu_depen_nu_key_lo      ap    R_eval          slope_per_0.05   -0.0001 -0.0010  0.0011   0.876            NaN
+603  hellaswag  accu_depen_nu_key_lo  ap_key  R_design          slope_per_0.05   -0.0002 -0.0015  0.0010   0.672            NaN
+604  hellaswag  accu_depen_nu_key_lo  ap_key     level  top_minus_bottom_level   -0.0032 -0.0205  0.0119   0.560            NaN
+605  hellaswag  accu_depen_nu_key_lo  ap_key    R_eval          slope_per_0.05   -0.0002 -0.0018  0.0011   0.628            NaN
+612  hellaswag               glad_lo      ap  R_design          slope_per_0.05   -0.0011 -0.0019 -0.0005   0.000            NaN
+613  hellaswag               glad_lo      ap     level  top_minus_bottom_level   -0.0156 -0.0262 -0.0077   0.000            NaN
+614  hellaswag               glad_lo      ap    R_eval          slope_per_0.05   -0.0013 -0.0021 -0.0006   0.000            NaN
+621  hellaswag               glad_lo  ap_key  R_design          slope_per_0.05   -0.0018 -0.0030 -0.0009   0.000            NaN
+622  hellaswag               glad_lo  ap_key     level  top_minus_bottom_level   -0.0255 -0.0407 -0.0143   0.000            NaN
+623  hellaswag               glad_lo  ap_key    R_eval          slope_per_0.05   -0.0021 -0.0034 -0.0012   0.000            NaN
+630  hellaswag                irt4pl      ap  R_design          slope_per_0.05   -0.0017 -0.0027 -0.0009   0.000            NaN
+631  hellaswag                irt4pl      ap     level  top_minus_bottom_level   -0.0210 -0.0334 -0.0097   0.000            NaN
+632  hellaswag                irt4pl      ap    R_eval          slope_per_0.05   -0.0019 -0.0029 -0.0009   0.000            NaN
+639  hellaswag                irt4pl  ap_key  R_design          slope_per_0.05   -0.0028 -0.0043 -0.0016   0.000            NaN
+640  hellaswag                irt4pl  ap_key     level  top_minus_bottom_level   -0.0349 -0.0548 -0.0176   0.000            NaN
+641  hellaswag                irt4pl  ap_key    R_eval          slope_per_0.05   -0.0031 -0.0048 -0.0017   0.000            NaN
+        bench       curation              method  metric  curated  matched_mean  acc_curated  acc_matched                 effect  estimate      lo      hi  p_boot
+0        mmlu     corr_dedup                  mv      ap   0.1295        0.1248       0.4880       0.4979  curated_minus_matched    0.0047  0.0010  0.0093   0.004
+1        mmlu     corr_dedup                  mv  ap_key   0.1135        0.1017       0.4880       0.4979  curated_minus_matched    0.0118  0.0043  0.0213   0.000
+2        mmlu     corr_dedup                 crh      ap   0.1324        0.1273       0.4880       0.4979  curated_minus_matched    0.0051  0.0010  0.0100   0.008
+3        mmlu     corr_dedup                 crh  ap_key   0.1187        0.1062       0.4880       0.4979  curated_minus_matched    0.0126  0.0034  0.0235   0.004
+4        mmlu     corr_dedup                catd      ap   0.1544        0.1437       0.4880       0.4979  curated_minus_matched    0.0108  0.0044  0.0180   0.000
+5        mmlu     corr_dedup                catd  ap_key   0.1642        0.1388       0.4880       0.4979  curated_minus_matched    0.0253  0.0105  0.0463   0.004
+6        mmlu     corr_dedup       ds_onecoin_lo      ap   0.1848        0.1806       0.4880       0.4979  curated_minus_matched    0.0042 -0.0016  0.0099   0.160
+7        mmlu     corr_dedup       ds_onecoin_lo  ap_key   0.2339        0.2238       0.4880       0.4979  curated_minus_matched    0.0102 -0.0004  0.0239   0.064
+8        mmlu     corr_dedup       accu_nodep_lo      ap   0.1848        0.1806       0.4880       0.4979  curated_minus_matched    0.0043 -0.0012  0.0098   0.148
+9        mmlu     corr_dedup       accu_nodep_lo  ap_key   0.2339        0.2237       0.4880       0.4979  curated_minus_matched    0.0102 -0.0006  0.0240   0.060
+10       mmlu     corr_dedup             glad_lo      ap   0.1887        0.1828       0.4880       0.4979  curated_minus_matched    0.0060 -0.0022  0.0141   0.168
+11       mmlu     corr_dedup             glad_lo  ap_key   0.2471        0.2322       0.4880       0.4979  curated_minus_matched    0.0148 -0.0037  0.0343   0.128
+12       mmlu  small_diverse                  mv      ap   0.1893        0.1856       0.6752       0.6662  curated_minus_matched    0.0038 -0.0090  0.0192   0.632
+13       mmlu  small_diverse                  mv  ap_key   0.2319        0.2349       0.6752       0.6662  curated_minus_matched   -0.0029 -0.0407  0.0283   0.804
+14       mmlu  small_diverse                 crh      ap   0.1888        0.1870       0.6752       0.6662  curated_minus_matched    0.0018 -0.0119  0.0161   0.872
+15       mmlu  small_diverse                 crh  ap_key   0.2325        0.2401       0.6752       0.6662  curated_minus_matched   -0.0076 -0.0426  0.0229   0.608
+16       mmlu  small_diverse                catd      ap   0.1873        0.1847       0.6752       0.6662  curated_minus_matched    0.0026 -0.0116  0.0169   0.736
+17       mmlu  small_diverse                catd  ap_key   0.2310        0.2374       0.6752       0.6662  curated_minus_matched   -0.0064 -0.0448  0.0238   0.648
+18       mmlu  small_diverse       ds_onecoin_lo      ap   0.2053        0.2053       0.6752       0.6662  curated_minus_matched    0.0000 -0.0117  0.0128   0.992
+19       mmlu  small_diverse       ds_onecoin_lo  ap_key   0.2718        0.2793       0.6752       0.6662  curated_minus_matched   -0.0075 -0.0356  0.0248   0.696
+20       mmlu  small_diverse       accu_nodep_lo      ap   0.2053        0.2053       0.6752       0.6662  curated_minus_matched    0.0000 -0.0122  0.0125   0.976
+21       mmlu  small_diverse       accu_nodep_lo  ap_key   0.2718        0.2793       0.6752       0.6662  curated_minus_matched   -0.0075 -0.0384  0.0262   0.700
+22       mmlu  small_diverse             glad_lo      ap   0.1971        0.1990       0.6752       0.6662  curated_minus_matched   -0.0019 -0.0141  0.0106   0.736
+23       mmlu  small_diverse             glad_lo  ap_key   0.2569        0.2671       0.6752       0.6662  curated_minus_matched   -0.0102 -0.0397  0.0211   0.560
+24      gsm8k     corr_dedup                  mv      ap   0.2211        0.2241       0.3516       0.3420  curated_minus_matched   -0.0030 -0.0067  0.0003   0.072
+25      gsm8k     corr_dedup                  mv  ap_key   0.1427        0.1436       0.3516       0.3420  curated_minus_matched   -0.0009 -0.0126  0.0119   0.552
+26      gsm8k     corr_dedup                 crh      ap   0.2223        0.2251       0.3516       0.3420  curated_minus_matched   -0.0029 -0.0066  0.0008   0.120
+27      gsm8k     corr_dedup                 crh  ap_key   0.1440        0.1455       0.3516       0.3420  curated_minus_matched   -0.0015 -0.0149  0.0163   0.516
+28      gsm8k     corr_dedup                catd      ap   0.2338        0.2366       0.3516       0.3420  curated_minus_matched   -0.0028 -0.0073  0.0010   0.136
+29      gsm8k     corr_dedup                catd  ap_key   0.1665        0.1677       0.3516       0.3420  curated_minus_matched   -0.0013 -0.0162  0.0138   0.556
+30      gsm8k     corr_dedup       ds_onecoin_lo      ap   0.2268        0.2324       0.3516       0.3420  curated_minus_matched   -0.0055 -0.0125 -0.0007   0.024
+31      gsm8k     corr_dedup       ds_onecoin_lo  ap_key   0.1816        0.1874       0.3516       0.3420  curated_minus_matched   -0.0057 -0.0351  0.0054   0.428
+32      gsm8k     corr_dedup  ds_onecoin_nf10_lo      ap   0.2346        0.2389       0.3516       0.3420  curated_minus_matched   -0.0042 -0.0096  0.0003   0.072
+33      gsm8k     corr_dedup  ds_onecoin_nf10_lo  ap_key   0.2208        0.2199       0.3516       0.3420  curated_minus_matched    0.0009 -0.0088  0.0149   0.956
+34      gsm8k     corr_dedup       accu_nodep_lo      ap   0.2346        0.2389       0.3516       0.3420  curated_minus_matched   -0.0043 -0.0097  0.0004   0.084
+35      gsm8k     corr_dedup       accu_nodep_lo  ap_key   0.2208        0.2199       0.3516       0.3420  curated_minus_matched    0.0009 -0.0077  0.0135   0.968
+36      gsm8k     corr_dedup             glad_lo      ap   0.2376        0.2445       0.3516       0.3420  curated_minus_matched   -0.0069 -0.0142 -0.0009   0.004
+37      gsm8k     corr_dedup             glad_lo  ap_key   0.2691        0.3063       0.3516       0.3420  curated_minus_matched   -0.0373 -0.1124  0.0053   0.256
+38      gsm8k  small_diverse                  mv      ap   0.2581        0.2528       0.6830       0.6747  curated_minus_matched    0.0053 -0.0111  0.0275   0.532
+39      gsm8k  small_diverse                  mv  ap_key   0.1456        0.1574       0.6830       0.6747  curated_minus_matched   -0.0119 -0.0460  0.0212   0.488
+40      gsm8k  small_diverse                 crh      ap   0.2607        0.2534       0.6830       0.6747  curated_minus_matched    0.0073 -0.0111  0.0284   0.368
+41      gsm8k  small_diverse                 crh  ap_key   0.1484        0.1585       0.6830       0.6747  curated_minus_matched   -0.0101 -0.0483  0.0266   0.532
+42      gsm8k  small_diverse                catd      ap   0.2659        0.2552       0.6830       0.6747  curated_minus_matched    0.0106 -0.0063  0.0320   0.248
+43      gsm8k  small_diverse                catd  ap_key   0.1580        0.1607       0.6830       0.6747  curated_minus_matched   -0.0027 -0.0459  0.0304   0.828
+44      gsm8k  small_diverse       ds_onecoin_lo      ap   0.2202        0.2217       0.6830       0.6747  curated_minus_matched   -0.0015 -0.0187  0.0178   0.868
+45      gsm8k  small_diverse       ds_onecoin_lo  ap_key   0.0925        0.1036       0.6830       0.6747  curated_minus_matched   -0.0111 -0.0647  0.0261   0.532
+46      gsm8k  small_diverse  ds_onecoin_nf10_lo      ap   0.2519        0.2491       0.6830       0.6747  curated_minus_matched    0.0028 -0.0095  0.0142   0.532
+47      gsm8k  small_diverse  ds_onecoin_nf10_lo  ap_key   0.2979        0.3032       0.6830       0.6747  curated_minus_matched   -0.0053 -0.0710  0.0632   0.948
+48      gsm8k  small_diverse       accu_nodep_lo      ap   0.2519        0.2491       0.6830       0.6747  curated_minus_matched    0.0028 -0.0086  0.0144   0.552
+49      gsm8k  small_diverse       accu_nodep_lo  ap_key   0.2979        0.3032       0.6830       0.6747  curated_minus_matched   -0.0053 -0.0635  0.0566   0.936
+50      gsm8k  small_diverse             glad_lo      ap   0.2531        0.2495       0.6830       0.6747  curated_minus_matched    0.0036 -0.0068  0.0138   0.476
+51      gsm8k  small_diverse             glad_lo  ap_key   0.3199        0.3069       0.6830       0.6747  curated_minus_matched    0.0130 -0.0366  0.0536   0.460
+52  hellaswag     corr_dedup                  mv      ap   0.0848        0.0850       0.6531       0.6628  curated_minus_matched   -0.0002 -0.0024  0.0020   0.844
+53  hellaswag     corr_dedup                  mv  ap_key   0.1146        0.1149       0.6531       0.6628  curated_minus_matched   -0.0003 -0.0030  0.0025   0.884
+54  hellaswag     corr_dedup                 crh      ap   0.0861        0.0861       0.6531       0.6628  curated_minus_matched    0.0000 -0.0024  0.0031   0.964
+55  hellaswag     corr_dedup                 crh  ap_key   0.1166        0.1166       0.6531       0.6628  curated_minus_matched    0.0000 -0.0027  0.0032   0.900
+56  hellaswag     corr_dedup                catd      ap   0.0906        0.0905       0.6531       0.6628  curated_minus_matched    0.0001 -0.0029  0.0035   0.896
+57  hellaswag     corr_dedup                catd  ap_key   0.1241        0.1243       0.6531       0.6628  curated_minus_matched   -0.0002 -0.0031  0.0033   0.964
+58  hellaswag     corr_dedup       ds_onecoin_lo      ap   0.0897        0.0894       0.6531       0.6628  curated_minus_matched    0.0003 -0.0029  0.0054   0.904
+59  hellaswag     corr_dedup       ds_onecoin_lo  ap_key   0.1229        0.1222       0.6531       0.6628  curated_minus_matched    0.0007 -0.0034  0.0050   0.752
+60  hellaswag     corr_dedup       accu_nodep_lo      ap   0.0897        0.0894       0.6531       0.6628  curated_minus_matched    0.0003 -0.0033  0.0050   0.828
+61  hellaswag     corr_dedup       accu_nodep_lo  ap_key   0.1229        0.1222       0.6531       0.6628  curated_minus_matched    0.0007 -0.0033  0.0053   0.780
+62  hellaswag     corr_dedup             glad_lo      ap   0.0887        0.0898       0.6531       0.6628  curated_minus_matched   -0.0011 -0.0043  0.0021   0.524
+63  hellaswag     corr_dedup             glad_lo  ap_key   0.1209        0.1231       0.6531       0.6628  curated_minus_matched   -0.0022 -0.0059  0.0013   0.268
+64  hellaswag  small_diverse                  mv      ap   0.0968        0.0982       0.8743       0.8647  curated_minus_matched   -0.0014 -0.0046  0.0015   0.344
+65  hellaswag  small_diverse                  mv  ap_key   0.1390        0.1397       0.8743       0.8647  curated_minus_matched   -0.0007 -0.0057  0.0043   0.696
+66  hellaswag  small_diverse                 crh      ap   0.0968        0.0985       0.8743       0.8647  curated_minus_matched   -0.0017 -0.0049  0.0012   0.256
+67  hellaswag  small_diverse                 crh  ap_key   0.1391        0.1402       0.8743       0.8647  curated_minus_matched   -0.0012 -0.0061  0.0033   0.632
+68  hellaswag  small_diverse                catd      ap   0.0970        0.0992       0.8743       0.8647  curated_minus_matched   -0.0022 -0.0056  0.0010   0.160
+69  hellaswag  small_diverse                catd  ap_key   0.1396        0.1415       0.8743       0.8647  curated_minus_matched   -0.0019 -0.0070  0.0026   0.364
+70  hellaswag  small_diverse       ds_onecoin_lo      ap   0.0965        0.0971       0.8743       0.8647  curated_minus_matched   -0.0006 -0.0035  0.0022   0.676
+71  hellaswag  small_diverse       ds_onecoin_lo  ap_key   0.1378        0.1376       0.8743       0.8647  curated_minus_matched    0.0002 -0.0051  0.0052   0.960
+72  hellaswag  small_diverse       accu_nodep_lo      ap   0.0965        0.0971       0.8743       0.8647  curated_minus_matched   -0.0006 -0.0035  0.0023   0.620
+73  hellaswag  small_diverse       accu_nodep_lo  ap_key   0.1378        0.1376       0.8743       0.8647  curated_minus_matched    0.0002 -0.0045  0.0049   0.968
+74  hellaswag  small_diverse             glad_lo      ap   0.0961        0.0971       0.8743       0.8647  curated_minus_matched   -0.0009 -0.0038  0.0016   0.564
+75  hellaswag  small_diverse             glad_lo  ap_key   0.1371        0.1375       0.8743       0.8647  curated_minus_matched   -0.0004 -0.0052  0.0045   0.836
+                                         rep  delta_key_errors  delta_other_defects  delta_clean  top200_overlap
+bench     family condition                                                                                      
+gsm8k     cell   lineage_high__dep_high  9.5           -14.680               12.644       27.258           0.909
+                 lineage_high__dep_low   9.5            -9.332                9.376       19.829           0.926
+                 lineage_low__dep_high   9.5           -11.617               13.361       26.239           0.870
+                 lineage_low__dep_low    9.5            -6.031                6.141       12.194           0.936
+                 random                  9.5            -8.180                8.924       18.254           0.926
+          dose   level0                  4.5          -101.271              131.116      253.711           0.474
+                 level1                  4.5           -95.932              127.773      250.557           0.477
+                 level2                  4.5           -94.887              124.686      250.202           0.496
+                 level3                  4.5           -89.138              123.829      251.916           0.509
+                 level4                  4.5           -74.446              117.592      248.338           0.617
+                 level5                  4.5          -108.454              117.758      260.272           0.612
+hellaswag cell   lineage_high__dep_high  9.5            67.163                  NaN      284.341           0.488
+                 lineage_high__dep_low   9.5            51.833                  NaN      242.696           0.442
+                 lineage_low__dep_high   9.5            80.921                  NaN      279.954           0.585
+                 lineage_low__dep_low    9.5            54.363                  NaN      238.973           0.580
+                 random                  9.5            53.128                  NaN      224.774           0.344
+          dose   level0                  4.5           136.649                  NaN      345.257           0.648
+                 level1                  4.5           142.930                  NaN      376.317           0.634
+                 level2                  4.5           147.068                  NaN      395.243           0.501
+                 level3                  4.5           150.233                  NaN      410.652           0.404
+                 level4                  4.5           153.813                  NaN      425.342           0.274
+                 level5                  4.5           164.771                  NaN      450.320           0.388
+mmlu      cell   lineage_high__dep_high  9.5          -104.279               25.038       67.565           0.687
+                 lineage_high__dep_low   9.5           -85.429               22.970       63.099           0.711
+                 lineage_low__dep_high   9.5           -95.925               15.187       69.521           0.686
+                 lineage_low__dep_low    9.5           -81.632               20.310       62.429           0.645
+                 random                  9.5           -67.311               17.722       52.043           0.631
+          dose   level0                  4.5          -101.043               39.863       96.313           0.720
+                 level1                  4.5          -105.585               49.274      109.264           0.686
+                 level2                  4.5          -109.704               53.786      117.692           0.624
+                 level3                  4.5          -107.296               49.922      114.986           0.653
+                 level4                  4.5          -104.731               43.918      110.981           0.666
+                 level5                  4.5          -111.071               40.947      115.657           0.620

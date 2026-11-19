@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "ds_full_lo", "param": "iters", "value": "100", "default": "50", "is_default": false, "ap": 0.19686277858997098, "pk": 0.34, "ap_key": 0.2400207975377879, "sec": 4.149529933929443}

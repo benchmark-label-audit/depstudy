@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "ds_onecoin_lo", "param": "prior_acc", "value": "0.5", "default": "0.7", "is_default": false, "ap": 0.22216720360559158, "pk": 0.35, "ap_key": 0.31403212187220775, "sec": 1.285111904144287}

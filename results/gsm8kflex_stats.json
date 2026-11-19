@@ -1,0 +1,13 @@
+{
+ "models_strict": 2999,
+ "models_flex": 2999,
+ "items_strict": 1319,
+ "items_flex": 1319,
+ "unparseable_strict": 0.37998286515014734,
+ "unparseable_flex": 0.09385488870310826,
+ "median_acc_strict": 0.32752084912812734,
+ "median_acc_flex": 0.3502653525398029,
+ "models_below_2pct_strict": 577,
+ "models_below_2pct_flex": 320,
+ "spearman_acc_strict_flex": 0.9785426102520179
+}

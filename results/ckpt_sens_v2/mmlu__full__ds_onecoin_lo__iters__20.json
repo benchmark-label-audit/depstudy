@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "full", "method": "ds_onecoin_lo", "param": "iters", "value": "20", "default": "50", "is_default": false, "ap": 0.1904668603117042, "pk": 0.28, "ap_key": 0.24622396643909386, "sec": 10.925331354141235}

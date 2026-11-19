@@ -1,0 +1,32 @@
+{'bench': 'mmlu', 'variant': 'both', 'k': 200, 'n_fixed': 336, 'E0': 0.01034678053110838, 'audit': 'random', 'share_removed': 0.033556313931941986, 'lo': -0.005990242958068848, 'hi': 0.07692012786865234}
+{'bench': 'mmlu', 'variant': 'rekey', 'k': 200, 'n_fixed': 98, 'E0': 0.005506659857928753, 'audit': 'random', 'share_removed': 0.033800698339939116, 'lo': -0.014560222625732422, 'hi': 0.09985854178667065}
+{'bench': 'mmlu', 'variant': 'drop', 'k': 200, 'n_fixed': 238, 'E0': 0.004720071796327829, 'audit': 'random', 'share_removed': 0.03310540002584458, 'lo': -0.02328733801841736, 'hi': 0.0964570477604866}
+{'bench': 'gsm8k', 'variant': 'both', 'k': 100, 'n_fixed': 120, 'E0': 0.01090819388628006, 'audit': 'random', 'share_removed': 0.06911639648675919, 'lo': -0.011786669492721558, 'hi': 0.15598962157964705}
+{'bench': 'gsm8k', 'variant': 'rekey', 'k': 100, 'n_fixed': 10, 'E0': 0.0011406376725062728, 'audit': 'random', 'share_removed': 0.05860630238056183, 'lo': -0.14051389694213867, 'hi': 0.38630247116088867}
+{'bench': 'gsm8k', 'variant': 'drop', 'k': 100, 'n_fixed': 110, 'E0': 0.00982910767197609, 'audit': 'random', 'share_removed': 0.06670997482538223, 'lo': -0.013779422640800475, 'hi': 0.15400555878877636}
+    bench variant    k  n_fixed      E0                            audit  share_removed      lo      hi
+0    mmlu    both  200      336  0.0103       ds_onecoin_lo@small_strong         0.6027     NaN     NaN
+1    mmlu    both  200      336  0.0103                 crh@small_strong         0.5541     NaN     NaN
+2    mmlu    both  200      336  0.0103               ds_onecoin_lo@full         0.5690     NaN     NaN
+3    mmlu    both  200      336  0.0103                           random         0.0336 -0.0060  0.0769
+4    mmlu   rekey  200       98  0.0055       ds_onecoin_lo@small_strong         0.8484     NaN     NaN
+5    mmlu   rekey  200       98  0.0055                 crh@small_strong         0.7939     NaN     NaN
+6    mmlu   rekey  200       98  0.0055               ds_onecoin_lo@full         0.7792     NaN     NaN
+7    mmlu   rekey  200       98  0.0055                           random         0.0338 -0.0146  0.0999
+8    mmlu    drop  200      238  0.0047       ds_onecoin_lo@small_strong         0.2945     NaN     NaN
+9    mmlu    drop  200      238  0.0047                 crh@small_strong         0.2784     NaN     NaN
+10   mmlu    drop  200      238  0.0047               ds_onecoin_lo@full         0.3048     NaN     NaN
+11   mmlu    drop  200      238  0.0047                           random         0.0331 -0.0233  0.0965
+12  gsm8k    both  100      120  0.0109  ds_onecoin_nf10_lo@small_strong         0.7101     NaN     NaN
+13  gsm8k    both  100      120  0.0109                 crh@small_strong         0.7560     NaN     NaN
+14  gsm8k    both  100      120  0.0109          ds_onecoin_nf10_lo@full         0.6011     NaN     NaN
+15  gsm8k    both  100      120  0.0109                           random         0.0691 -0.0118  0.1560
+16  gsm8k   rekey  100       10  0.0011  ds_onecoin_nf10_lo@small_strong         0.5747     NaN     NaN
+17  gsm8k   rekey  100       10  0.0011                 crh@small_strong         0.5366     NaN     NaN
+18  gsm8k   rekey  100       10  0.0011          ds_onecoin_nf10_lo@full         0.5729     NaN     NaN
+19  gsm8k   rekey  100       10  0.0011                           random         0.0586 -0.1405  0.3863
+20  gsm8k    drop  100      110  0.0098  ds_onecoin_nf10_lo@small_strong         0.6615     NaN     NaN
+21  gsm8k    drop  100      110  0.0098                 crh@small_strong         0.7219     NaN     NaN
+22  gsm8k    drop  100      110  0.0098          ds_onecoin_nf10_lo@full         0.5323     NaN     NaN
+23  gsm8k    drop  100      110  0.0098                           random         0.0667 -0.0138  0.1540
+exit 0

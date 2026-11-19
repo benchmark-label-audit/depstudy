@@ -1,0 +1,140 @@
+{
+ "annotated": 500,
+ "kappa_wrong": 0.1355721393034828,
+ "kappa_multi": 0.1144234984655851,
+ "agree_wrong": 0.722,
+ "new_wrong_given_orig_wrong": 0.12666666666666668,
+ "new_wrong_given_orig_clean": 0.01,
+ "new_multi_given_orig_multi_only": 0.09333333333333334,
+ "new_multi_given_orig_clean": 0.01,
+ "ap_on_sample": {
+  "full/mv": {
+   "orig": 0.4864901425815665,
+   "new": 0.17393600768336118,
+   "agreed": 0.22129849837296087,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "full/crh": {
+   "orig": 0.485073511410706,
+   "new": 0.1747105772369767,
+   "agreed": 0.22228801695077252,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "full/ds_onecoin_lo": {
+   "orig": 0.4772970450191884,
+   "new": 0.1257940280022625,
+   "agreed": 0.17614123943497223,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "full/glad_lo": {
+   "orig": 0.4816070119939964,
+   "new": 0.15885594477081566,
+   "agreed": 0.18169744399655569,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "full/irt4pl": {
+   "orig": 0.41533122955482676,
+   "new": 0.18698094674041105,
+   "agreed": 0.2613198641979963,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "full/entropy": {
+   "orig": 0.40630624743108584,
+   "new": 0.0946971471720186,
+   "agreed": 0.12740368931549764,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "small_strong/mv": {
+   "orig": 0.49475954014156864,
+   "new": 0.15334126322038213,
+   "agreed": 0.22664656555757445,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "small_strong/crh": {
+   "orig": 0.494295137078176,
+   "new": 0.15250969936826525,
+   "agreed": 0.2252537313397164,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "small_strong/ds_onecoin_lo": {
+   "orig": 0.49341776423357175,
+   "new": 0.15297149237511734,
+   "agreed": 0.22329102686518615,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "small_strong/glad_lo": {
+   "orig": 0.4928843764191945,
+   "new": 0.15150073692513275,
+   "agreed": 0.22141495226830496,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "small_strong/irt4pl": {
+   "orig": 0.4239631990196624,
+   "new": 0.17979487428920737,
+   "agreed": 0.22275100000339138,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "small_strong/entropy": {
+   "orig": 0.45921418651196766,
+   "new": 0.17570740444475458,
+   "agreed": 0.21714750374478842,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "offbench_strong/mv": {
+   "orig": 0.47186666868967025,
+   "new": 0.13199867921316008,
+   "agreed": 0.18480235859458294,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "offbench_strong/crh": {
+   "orig": 0.4715965608316456,
+   "new": 0.1313492441323922,
+   "agreed": 0.18395331055172584,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "offbench_strong/ds_onecoin_lo": {
+   "orig": 0.4678750959229117,
+   "new": 0.13943894440483665,
+   "agreed": 0.19267835418844648,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "offbench_strong/glad_lo": {
+   "orig": 0.46799970518371253,
+   "new": 0.13890876019671922,
+   "agreed": 0.19147710927026954,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "offbench_strong/irt4pl": {
+   "orig": 0.45097051894882934,
+   "new": 0.1135654638931576,
+   "agreed": 0.15346329525816294,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  },
+  "offbench_strong/entropy": {
+   "orig": 0.4613239009380133,
+   "new": 0.15606124408650135,
+   "agreed": 0.238767957345949,
+   "base_orig": 0.3,
+   "base_agreed": 0.05263157894736842
+  }
+ },
+ "n_agreed": 361,
+ "n_agreed_wrong": 19
+}

@@ -1,0 +1,4 @@
+held_out,selected,selected_ap,default_ap,best_single,best_single_ap,default_rank_among_multi_on_train,n_multi
+mmlu,DS+glad_lo+irt4pl,0.21025974394299665,0.2195882681272706,DS,0.200898090778515,5,56
+gsm8k,crh+glad_lo+irt4pl,0.27966399065757774,0.28108370525456955,irt4pl,0.25751854132091356,2,56
+hellaswag,catd+glad_lo+irt4pl,0.09935264723462167,0.10138617102393697,catd,0.0954421628223665,3,56

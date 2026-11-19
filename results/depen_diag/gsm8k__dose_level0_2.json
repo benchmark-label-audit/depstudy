@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "tag": "dose_level0_2", "n_models": 100, "n_false": 10, "uniform_rate": 0.1, "meanD_uni": 0.9992075907355822, "shareD50_uni": 0.9991919191919192, "same_false_rate_uni": 0.30999917987224235, "meanD_nu": 0.014763650834057906, "shareD50_nu": 0.014747474747474747, "same_false_rate_nu": 0.2139653970522128, "sec": 2.265974283218384}

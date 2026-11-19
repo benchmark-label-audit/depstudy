@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "irt4pl", "param": "min_r", "value": "0.0", "default": "0.2", "is_default": false, "ap": 0.201306894636295, "pk": 0.335, "ap_key": 0.23042561480114038, "sec": 28.739235162734985}

@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "catd", "param": "alpha", "value": "0.01", "default": "0.05", "is_default": false, "ap": 0.22445659341518226, "pk": 0.35, "ap_key": 0.31612133456770847, "sec": 1.896698236465454}

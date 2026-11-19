@@ -1,0 +1,16 @@
+{
+ "strict": {
+  "crh_strong_minus_full_ap": 0.05698611898977021,
+  "ensemble_strong_ap": 0.31287615870305874,
+  "irt_full_ap": 0.26077020111117044,
+  "crh_helm_minus_v1strongk_keyap": 0.43183401107974295,
+  "ds_helm_plus_v1all_minus_helm_keyap": -0.48434532969483785
+ },
+ "lenient": {
+  "crh_strong_minus_full_ap": 0.052684165051535226,
+  "ensemble_strong_ap": 0.2965835689554861,
+  "irt_full_ap": 0.2666036554588341,
+  "crh_helm_minus_v1strongk_keyap": 0.41748671818825034,
+  "ds_helm_plus_v1all_minus_helm_keyap": -0.5091829675333773
+ }
+}

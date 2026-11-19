@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "crh", "param": "iters", "value": "50", "default": "20", "is_default": false, "ap": 0.22517979465090648, "pk": 0.345, "ap_key": 0.3148118973858542, "sec": 0.4241364002227783}

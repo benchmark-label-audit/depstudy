@@ -1,0 +1,18 @@
+Bird     tasks=   108 workers=   39 K= 2 edges=   4212 acc(mean of seeds)=0.7963 time=1.2s max|logit-ref|=2.86e-06
+CF       tasks=   300 workers=  461 K= 5 edges=   1720 acc(mean of seeds)=0.8807 time=0.0s max|logit-ref|=3.81e-06
+CF_star  tasks=   300 workers=  110 K= 5 edges=   6030 acc(mean of seeds)=0.8587 time=0.1s max|logit-ref|=4.17e-06
+Dog      tasks=   807 workers=  109 K= 4 edges=   8070 acc(mean of seeds)=0.8226 time=0.0s max|logit-ref|=5.72e-06
+Face     tasks=   584 workers=   27 K= 4 edges=   5242 acc(mean of seeds)=0.6414 time=0.0s max|logit-ref|=4.05e-06
+LabelMe  tasks=  1000 workers=   59 K= 8 edges=   2547 acc(mean of seeds)=0.7712 time=0.0s max|logit-ref|=4.05e-06
+MS       tasks=   700 workers=   44 K=10 edges=   2945 acc(mean of seeds)=0.7980 time=0.0s max|logit-ref|=4.53e-06
+PosSent  tasks=  1000 workers=   85 K= 2 edges=  20000 acc(mean of seeds)=0.9508 time=0.1s max|logit-ref|=4.53e-06
+RTE      tasks=   800 workers=  164 K= 2 edges=   8000 acc(mean of seeds)=0.9153 time=0.0s max|logit-ref|=4.77e-06
+SP       tasks=  4999 workers=  203 K= 2 edges=  27746 acc(mean of seeds)=0.8992 time=0.1s max|logit-ref|=8.23e-06
+Senti    tasks= 98980 workers= 1960 K= 5 edges= 569375 acc(mean of seeds)=0.8818 time=1.4s max|logit-ref|=8.58e-06
+Trec     tasks= 19033 workers=  762 K= 2 edges=  88385 acc(mean of seeds)=0.6514 time=0.2s max|logit-ref|=9.06e-06
+Web      tasks=  2665 workers=  177 K= 5 edges=  15567 acc(mean of seeds)=0.8596 time=0.0s max|logit-ref|=7.99e-06
+ZC_all   tasks=  2040 workers=   78 K= 2 edges=  21855 acc(mean of seeds)=0.8338 time=0.1s max|logit-ref|=5.72e-06
+ZC_in    tasks=  2040 workers=   25 K= 2 edges=  11205 acc(mean of seeds)=0.7406 time=0.0s max|logit-ref|=1.10e-05
+ZC_us    tasks=  2040 workers=   74 K= 2 edges=  12190 acc(mean of seeds)=0.8653 time=0.0s max|logit-ref|=9.66e-06
+Average acc over 16 datasets: 0.8229
+peak CUDA memory: 2.46 GiB

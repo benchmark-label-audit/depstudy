@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "full", "method": "accu_nodep_lo", "param": "iters", "value": "50", "default": "5", "is_default": false, "ap": 0.2381726373374373, "pk": 0.3, "ap_key": 0.21893686222823852, "sec": 162.7803189754486}

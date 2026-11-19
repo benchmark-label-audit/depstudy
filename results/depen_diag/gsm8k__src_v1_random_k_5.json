@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "tag": "src_v1_random_k_5", "n_models": 94, "n_false": 10, "uniform_rate": 0.1, "meanD_uni": 0.033988366074626394, "shareD50_uni": 0.0073209791809654545, "same_false_rate_uni": 0.09055360188037449, "meanD_nu": 0.034000291664110185, "shareD50_nu": 0.0073209791809654545, "same_false_rate_nu": 0.09055360188037449, "sec": 2.0826425552368164}

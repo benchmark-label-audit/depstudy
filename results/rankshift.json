@@ -1,0 +1,36 @@
+{
+ "mmlu": {
+  "full_correction": {
+   "tau_all": 0.9889613060540914,
+   "tau_top100": 0.9201505870395498,
+   "mean_disp_top100": 3.22,
+   "max_disp_top100": 42.0,
+   "share_top100_moved_ge5": 0.22,
+   "top10_changed": 1,
+   "disp_all": 38503.0,
+   "n_rekey": 98,
+   "n_drop": 238,
+   "n_models": 2999,
+   "mean_acc_change": 0.01007924135774374,
+   "max_acc_change": 0.01831752061843872,
+   "tau_top100_corrected_order": 0.930634739343905
+  }
+ },
+ "gsm8k": {
+  "full_correction": {
+   "tau_all": 0.993222735746182,
+   "tau_top100": 0.7552926688215827,
+   "mean_disp_top100": 11.08,
+   "max_disp_top100": 62.0,
+   "share_top100_moved_ge5": 0.55,
+   "top10_changed": 0,
+   "disp_all": 25991.0,
+   "n_rekey": 10,
+   "n_drop": 110,
+   "n_models": 2999,
+   "mean_acc_change": 0.010850628837943077,
+   "max_acc_change": 0.03140461444854736,
+   "tau_top100_corrected_order": 0.7543166238080639
+  }
+ }
+}

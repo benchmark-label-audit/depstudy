@@ -1,0 +1,902 @@
+[
+ {
+  "bench": "gsm8k",
+  "condition": "helm_all",
+  "method": "accu_depen",
+  "ap": 0.304975704862607,
+  "pk": 0.5,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_all",
+  "method": "accu_nodep",
+  "ap": 0.3515081422117454,
+  "pk": 0.56,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_all",
+  "method": "crh",
+  "ap": 0.4033741842839031,
+  "pk": 0.56,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_all",
+  "method": "ds_onecoin",
+  "ap": 0.33645655514607975,
+  "pk": 0.56,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_all",
+  "method": "irt4pl",
+  "ap": 0.42004479971160025,
+  "pk": 0.54,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_all",
+  "method": "mv",
+  "ap": 0.3920667398180723,
+  "pk": 0.56,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_all",
+  "method": "accu_nodep",
+  "ap": 0.18629070410764423,
+  "pk": 0.24,
+  "n": 3093.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_all",
+  "method": "crh",
+  "ap": 0.23530953201285165,
+  "pk": 0.36,
+  "n": 3093.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_all",
+  "method": "ds_onecoin",
+  "ap": 0.18420326753821886,
+  "pk": 0.24,
+  "n": 3093.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_all",
+  "method": "irt4pl",
+  "ap": 0.32689741320549964,
+  "pk": 0.46,
+  "n": 3093.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_all",
+  "method": "mv",
+  "ap": 0.23373932125940214,
+  "pk": 0.34,
+  "n": 3093.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_strong100",
+  "method": "accu_depen",
+  "ap": 0.2642073072537826,
+  "pk": 0.44,
+  "n": 194.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_strong100",
+  "method": "accu_nodep",
+  "ap": 0.30165747282827077,
+  "pk": 0.48,
+  "n": 194.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_strong100",
+  "method": "crh",
+  "ap": 0.34581935809419356,
+  "pk": 0.5,
+  "n": 194.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_strong100",
+  "method": "ds_onecoin",
+  "ap": 0.2597641023103024,
+  "pk": 0.48,
+  "n": 194.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_strong100",
+  "method": "irt4pl",
+  "ap": 0.45900560664726303,
+  "pk": 0.64,
+  "n": 194.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_plus_v1_strong100",
+  "method": "mv",
+  "ap": 0.3386595630238961,
+  "pk": 0.5,
+  "n": 194.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_concentrated",
+  "method": "accu_depen",
+  "ap": 0.39756818935784594,
+  "pk": 0.557,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_concentrated",
+  "method": "accu_nodep",
+  "ap": 0.42324848929429376,
+  "pk": 0.583,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_concentrated",
+  "method": "crh",
+  "ap": 0.4168407828644858,
+  "pk": 0.5900000000000001,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_concentrated",
+  "method": "ds_onecoin",
+  "ap": 0.408577199129177,
+  "pk": 0.579,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_concentrated",
+  "method": "irt4pl",
+  "ap": 0.31429972908000775,
+  "pk": 0.40800000000000003,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_concentrated",
+  "method": "mv",
+  "ap": 0.40598111069769327,
+  "pk": 0.58,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_diverse",
+  "method": "accu_depen",
+  "ap": 0.3761688009863099,
+  "pk": 0.515,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_diverse",
+  "method": "accu_nodep",
+  "ap": 0.3901551550767971,
+  "pk": 0.538,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_diverse",
+  "method": "crh",
+  "ap": 0.37479044753408386,
+  "pk": 0.53,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_diverse",
+  "method": "ds_onecoin",
+  "ap": 0.37685306114666245,
+  "pk": 0.528,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_diverse",
+  "method": "irt4pl",
+  "ap": 0.36782108275162384,
+  "pk": 0.51,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "helm_vendor_diverse",
+  "method": "mv",
+  "ap": 0.35988683482141887,
+  "pk": 0.509,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_all",
+  "method": "accu_nodep",
+  "ap": 0.1744947673860816,
+  "pk": 0.24,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_all",
+  "method": "crh",
+  "ap": 0.2057961043125465,
+  "pk": 0.28,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_all",
+  "method": "ds_onecoin",
+  "ap": 0.17228141528386065,
+  "pk": 0.24,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_all",
+  "method": "irt4pl",
+  "ap": 0.25606937408856734,
+  "pk": 0.38,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_all",
+  "method": "mv",
+  "ap": 0.20486503586100518,
+  "pk": 0.28,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_random_k",
+  "method": "accu_depen",
+  "ap": 0.19689240473785966,
+  "pk": 0.29700000000000004,
+  "n": 94.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_random_k",
+  "method": "accu_nodep",
+  "ap": 0.1951792739480282,
+  "pk": 0.292,
+  "n": 94.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_random_k",
+  "method": "crh",
+  "ap": 0.19485638229830884,
+  "pk": 0.28,
+  "n": 94.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_random_k",
+  "method": "ds_onecoin",
+  "ap": 0.1921716563114711,
+  "pk": 0.279,
+  "n": 94.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_random_k",
+  "method": "irt4pl",
+  "ap": 0.20806337877401165,
+  "pk": 0.308,
+  "n": 94.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_random_k",
+  "method": "mv",
+  "ap": 0.19388560465896534,
+  "pk": 0.28,
+  "n": 94.0,
+  "reps": 20
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_strong_k",
+  "method": "accu_depen",
+  "ap": 0.18828893969200747,
+  "pk": 0.3,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_strong_k",
+  "method": "accu_nodep",
+  "ap": 0.19659884685052434,
+  "pk": 0.28,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_strong_k",
+  "method": "crh",
+  "ap": 0.2543694103645279,
+  "pk": 0.4,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_strong_k",
+  "method": "ds_onecoin",
+  "ap": 0.19441470998858504,
+  "pk": 0.24,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_strong_k",
+  "method": "irt4pl",
+  "ap": 0.222321871353587,
+  "pk": 0.32,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "gsm8k",
+  "condition": "v1_strong_k",
+  "method": "mv",
+  "ap": 0.25398515492828494,
+  "pk": 0.4,
+  "n": 94.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "accu_depen",
+  "ap": 0.13420939135001156,
+  "pk": 0.16,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "accu_nodep",
+  "ap": 0.14693758424855405,
+  "pk": 0.19,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "crh",
+  "ap": 0.27301169259289826,
+  "pk": 0.405,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "ds_full",
+  "ap": 0.14742076215060274,
+  "pk": 0.19,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "ds_onecoin",
+  "ap": 0.14767857654994754,
+  "pk": 0.19,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "irt4pl",
+  "ap": 0.17824420470178678,
+  "pk": 0.28,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_all",
+  "method": "mv",
+  "ap": 0.2676101882594085,
+  "pk": 0.4,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_all",
+  "method": "accu_nodep",
+  "ap": 0.09697577609112194,
+  "pk": 0.125,
+  "n": 3080.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_all",
+  "method": "crh",
+  "ap": 0.15517291347077566,
+  "pk": 0.265,
+  "n": 3080.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_all",
+  "method": "ds_full",
+  "ap": 0.09680057695386182,
+  "pk": 0.125,
+  "n": 3080.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_all",
+  "method": "ds_onecoin",
+  "ap": 0.09697577609112194,
+  "pk": 0.125,
+  "n": 3080.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_all",
+  "method": "irt4pl",
+  "ap": 0.1324742022786092,
+  "pk": 0.2,
+  "n": 3080.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_all",
+  "method": "mv",
+  "ap": 0.15180008188914526,
+  "pk": 0.255,
+  "n": 3080.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "accu_depen",
+  "ap": 0.13467277957451523,
+  "pk": 0.15,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "accu_nodep",
+  "ap": 0.12414301196570308,
+  "pk": 0.205,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "crh",
+  "ap": 0.26599048486564536,
+  "pk": 0.39,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "ds_full",
+  "ap": 0.12537840444527296,
+  "pk": 0.21,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "ds_onecoin",
+  "ap": 0.1241311556200447,
+  "pk": 0.205,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "irt4pl",
+  "ap": 0.18461998604093716,
+  "pk": 0.335,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_plus_v1_strong100",
+  "method": "mv",
+  "ap": 0.2634556766461292,
+  "pk": 0.39,
+  "n": 181.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "accu_depen",
+  "ap": 0.24047869133557018,
+  "pk": 0.367,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "accu_nodep",
+  "ap": 0.21890419000935638,
+  "pk": 0.40099999999999997,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "crh",
+  "ap": 0.237453002251283,
+  "pk": 0.41600000000000004,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "ds_full",
+  "ap": 0.21491583542901566,
+  "pk": 0.39525,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "ds_onecoin",
+  "ap": 0.22179825815304421,
+  "pk": 0.382,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "irt4pl",
+  "ap": 0.13967546055063776,
+  "pk": 0.213,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_concentrated",
+  "method": "mv",
+  "ap": 0.23240873224291195,
+  "pk": 0.3875,
+  "n": 20.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "accu_depen",
+  "ap": 0.22749053589358295,
+  "pk": 0.35475,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "accu_nodep",
+  "ap": 0.22009318938075356,
+  "pk": 0.366,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "crh",
+  "ap": 0.21525201448060693,
+  "pk": 0.38475000000000004,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "ds_full",
+  "ap": 0.21382881889772792,
+  "pk": 0.3625,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "ds_onecoin",
+  "ap": 0.21301758936132079,
+  "pk": 0.33775,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "irt4pl",
+  "ap": 0.1399602838656015,
+  "pk": 0.2065,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "helm_vendor_diverse",
+  "method": "mv",
+  "ap": 0.20872242755507556,
+  "pk": 0.35175,
+  "n": 18.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_all",
+  "method": "accu_nodep",
+  "ap": 0.09665012593182055,
+  "pk": 0.125,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_all",
+  "method": "crh",
+  "ap": 0.14510572807139877,
+  "pk": 0.245,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_all",
+  "method": "ds_full",
+  "ap": 0.09615937225536882,
+  "pk": 0.125,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_all",
+  "method": "ds_onecoin",
+  "ap": 0.09665012593182055,
+  "pk": 0.125,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_all",
+  "method": "irt4pl",
+  "ap": 0.11867434179253375,
+  "pk": 0.16,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_all",
+  "method": "mv",
+  "ap": 0.1413448721923435,
+  "pk": 0.245,
+  "n": 2999.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "accu_depen",
+  "ap": 0.1363022615038216,
+  "pk": 0.22625,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "accu_nodep",
+  "ap": 0.09852506295978689,
+  "pk": 0.152,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "crh",
+  "ap": 0.14199630524794954,
+  "pk": 0.22749999999999998,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "ds_full",
+  "ap": 0.09850266794457432,
+  "pk": 0.14875,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "ds_onecoin",
+  "ap": 0.09853382915434503,
+  "pk": 0.152,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "irt4pl",
+  "ap": 0.1101209100349756,
+  "pk": 0.12875,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_random_k",
+  "method": "mv",
+  "ap": 0.13617877354352,
+  "pk": 0.2085,
+  "n": 81.0,
+  "reps": 20
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "accu_depen",
+  "ap": 0.23286282201647404,
+  "pk": 0.36,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "accu_nodep",
+  "ap": 0.12301730539636632,
+  "pk": 0.21,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "crh",
+  "ap": 0.22905563468199347,
+  "pk": 0.345,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "ds_full",
+  "ap": 0.12311518877185004,
+  "pk": 0.21,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "ds_onecoin",
+  "ap": 0.12382588475615201,
+  "pk": 0.21,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "irt4pl",
+  "ap": 0.16604102075861554,
+  "pk": 0.32,
+  "n": 81.0,
+  "reps": 1
+ },
+ {
+  "bench": "mmlu",
+  "condition": "v1_strong_k",
+  "method": "mv",
+  "ap": 0.2217683927019052,
+  "pk": 0.34,
+  "n": 81.0,
+  "reps": 1
+ }
+]

@@ -1,0 +1,1 @@
+{"bench": "mmluhalf0", "tag": "splitdose_p200_f1_level2_3", "n_models": 100, "n_false": 3, "uniform_rate": 0.3333333333333333, "meanD_uni": 0.713810455855564, "shareD50_uni": 0.713939393939394, "same_false_rate_uni": 0.726344818754745, "meanD_nu": 0.23250508762323943, "shareD50_nu": 0.23252525252525252, "same_false_rate_nu": 0.6720554510310485, "sec": 2.001600980758667}

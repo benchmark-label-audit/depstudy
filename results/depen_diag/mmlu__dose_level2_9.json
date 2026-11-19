@@ -1,0 +1,1 @@
+{"bench": "mmlu", "tag": "dose_level2_9", "n_models": 100, "n_false": 3, "uniform_rate": 0.3333333333333333, "meanD_uni": 0.13792654879076685, "shareD50_uni": 0.13797979797979798, "same_false_rate_uni": 0.613633401016771, "meanD_nu": 0.11046829449956766, "shareD50_nu": 0.11050505050505051, "same_false_rate_nu": 0.6083871909448071, "sec": 6.435685634613037}

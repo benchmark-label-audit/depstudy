@@ -1,0 +1,1 @@
+{"bench": "mmlu", "panel": "small_strong", "method": "accu_depen_lo", "param": "c", "value": "0.95", "default": "0.8", "is_default": false, "ap": 0.23694633512242133, "pk": 0.35, "ap_key": 0.33946097557991717, "sec": 3.1359124183654785}

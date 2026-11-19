@@ -1,0 +1,38 @@
+{
+ "gsm-mc": {
+  "files": 71,
+  "models": 68,
+  "items": 1319,
+  "rows": 89692,
+  "parse_agrees_with_is_correct": 1.0
+ },
+ "math-mc": {
+  "files": 72,
+  "models": 69,
+  "items": 4914,
+  "rows": 339066,
+  "parse_agrees_with_is_correct": 1.0
+ },
+ "gpqa-diamond": {
+  "files": 69,
+  "models": 66,
+  "items": 198,
+  "rows": 13068,
+  "parse_agrees_with_is_correct": 1.0
+ },
+ "landbikel": {
+  "rows": 1001,
+  "benchmarks": {
+   "RMB-Code": 211,
+   "RMB-Chat": 210,
+   "RB2": 169,
+   "RMB-Safe": 150,
+   "RB1": 102,
+   "RMB-Math": 79,
+   "MATH": 25,
+   "JB": 23,
+   "GPQA": 18,
+   "GSM": 14
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "vote": {
+  "values": {
+   "Stonebraker": "MIT",
+   "Dewitt": "UWisc",
+   "Bernstein": "MSR",
+   "Carey": "BEA",
+   "Halevy": "UW"
+  },
+  "correct": 2
+ },
+ "accu": {
+  "values": {
+   "Stonebraker": "MIT",
+   "Dewitt": "UWisc",
+   "Bernstein": "MSR",
+   "Carey": "BEA",
+   "Halevy": "UW"
+  },
+  "correct": 2,
+  "P_dep": {
+   "S1-S2": 0.0,
+   "S3-S4": 0.0,
+   "S3-S5": 0.0,
+   "S4-S5": 0.0,
+   "S1-S3": 0.0
+  }
+ },
+ "depen": {
+  "values": {
+   "Stonebraker": "MIT",
+   "Dewitt": "MSR",
+   "Bernstein": "MSR",
+   "Carey": "UCI",
+   "Halevy": "Google"
+  },
+  "correct": 5,
+  "P_dep": {
+   "S1-S2": 0.022,
+   "S3-S4": 1.0,
+   "S3-S5": 1.0,
+   "S4-S5": 1.0,
+   "S1-S3": 0.006
+  }
+ },
+ "depen_nonuni": {
+  "values": {
+   "Stonebraker": "MIT",
+   "Dewitt": "MSR",
+   "Bernstein": "MSR",
+   "Carey": "BEA",
+   "Halevy": "Google"
+  },
+  "correct": 4,
+  "P_dep": {
+   "S1-S2": 0.027,
+   "S3-S4": 0.881,
+   "S3-S5": 0.489,
+   "S4-S5": 0.489,
+   "S1-S3": 0.004
+  }
+ }
+}

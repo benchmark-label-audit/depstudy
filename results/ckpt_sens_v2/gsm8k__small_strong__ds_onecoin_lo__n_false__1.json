@@ -1,0 +1,1 @@
+{"bench": "gsm8k", "panel": "small_strong", "method": "ds_onecoin_lo", "param": "n_false", "value": "1", "default": "10", "is_default": false, "ap": 0.26914994305060624, "pk": 0.35, "ap_key": 0.32336109283136294, "sec": 0.9316487312316895}

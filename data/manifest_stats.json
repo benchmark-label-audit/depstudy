@@ -1,0 +1,7 @@
+{
+ "repos": 7055,
+ "readme_ok": 6135,
+ "all_57_mmlu": 5783,
+ "gsm8k": 5941,
+ "complete_mmlu_and_gsm8k": 5592
+}
