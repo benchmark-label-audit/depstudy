@@ -1,0 +1,22 @@
+
+== mmlu: key errors 104
+  strong   mean acc(clean) 0.793  wrong-key agreement 0.191
+  capable  mean acc(clean) 0.690  wrong-key agreement 0.203
+  top400   mean acc(clean) 0.725  wrong-key agreement 0.193
+  full     mean acc(clean) 0.553  wrong-key agreement 0.202
+  slope of wrong-key agreement on clean accuracy (top 400): -0.045; flagged 12 models (> 2 SD)
+  flagged in strong: 9, in capable: 2
+  DS-1 strong                 AP 0.223  key-error AP 0.313  wrong-key agr 0.191
+  DS-1 strong minus flagged   AP 0.226  key-error AP 0.322  wrong-key agr 0.175
+  DS-1 capable                AP 0.184  key-error AP 0.230  wrong-key agr 0.203
+
+== gsm8k: key errors 10
+  strong   mean acc(clean) 0.758  wrong-key agreement 0.243
+  capable  mean acc(clean) 0.655  wrong-key agreement 0.166
+  top400   mean acc(clean) 0.733  wrong-key agreement 0.210
+  full     mean acc(clean) 0.347  wrong-key agreement 0.096
+  slope of wrong-key agreement on clean accuracy (top 400): +0.520; flagged 22 models (> 2 SD)
+  flagged in strong: 11, in capable: 0
+  DS-1 strong                 AP 0.270  key-error AP 0.322  wrong-key agr 0.243
+  DS-1 strong minus flagged   AP 0.269  key-error AP 0.335  wrong-key agr 0.227
+  DS-1 capable                AP 0.300  key-error AP 0.513  wrong-key agr 0.166

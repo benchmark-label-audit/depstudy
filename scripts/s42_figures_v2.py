@@ -83,7 +83,7 @@ def key_ap(bench, tag, m, sources=False):
 
 def sizecap():
     c = pd.read_csv(os.path.join(RES, "contrasts_v2.csv"))
-    fig, axes = plt.subplots(1, 3, figsize=(7.0, 2.1))
+    fig, axes = plt.subplots(1, 3, figsize=(7.0, 1.9))
     for ax, b in zip(axes, ("mmlu", "gsm8k", "hellaswag")):
         for m in ("crh", "ds"):
             n = [10, 30, 100, 300, 1000]
@@ -118,7 +118,7 @@ def dose():
     from s10_size_capability import key_mask
     from s37_mmlu_splitdose import halves
     methods = ["crh", "ds", "accu_depen_lo", "accu_depen_nu_lo", "irt4pl"]  # GLAD coincides with DS-1 on every ladder
-    fig, axes = plt.subplots(1, 4, figsize=(7.0, 2.05))
+    fig, axes = plt.subplots(1, 4, figsize=(7.0, 1.85))
     specs = [("gsm8k", "GSM8K (design: MMLU)"), ("hellaswag", "HellaSwag (design: MMLU)"), ("split", "MMLU (design: other half)"),
              ("mmlu", "MMLU (design: GSM8K)")]
     strong_R = {"gsm8k": 0.230, "hellaswag": 0.565, "mmlu": 0.095, "split": float(np.mean([F["R_small_strong_design"] for F in S2["folds"]]))}
@@ -164,7 +164,7 @@ def types():
                    ("multiple_correct_answers", "several\ncorr."), ("no_correct_answer", "no\ncorr.")],
           "gsm8k": [("revised_key", "revised\nkey"), ("removed_question", "removed\nitem")],
           "hellaswag": [("wrong_answer", "key\nerror"), ("multiple_correct_only", "several\nendings")]}
-    fig = plt.figure(figsize=(7.0, 2.0))
+    fig = plt.figure(figsize=(7.0, 1.85))
     gs = fig.add_gridspec(1, 4, width_ratios=[6.2, 2, 2, 3.0])
     for k, b in enumerate(("mmlu", "gsm8k", "hellaswag")):
         ax = fig.add_subplot(gs[0, k])
@@ -187,7 +187,7 @@ def types():
     labs = ["key error", "unclear q.", "unclear opt.", "several corr.", "no correct", "clean"]
     ax.barh(range(len(order)), [x.loc[o, "top_of_nonkey_mean"] for o in order], color=["#2a78d6"] + ["#9fb8d9"] * 4 + ["#c9c8c4"], height=0.6)
     ax.set_yticks(range(len(order))); ax.set_yticklabels(labs); ax.invert_yaxis(); ax.set_xlim(0, 1)
-    ax.set_xlabel("top non-key answer's share\nof non-key answers"); ax.set_title("MMLU concentration", color=INK)
+    ax.set_xlabel("top option's share\nof non-key answers"); ax.set_title("MMLU concentration", color=INK)
     ax.spines[["top", "right"]].set_visible(False)
     h, lab = fig.axes[0].get_legend_handles_labels()
     fig.legend(h, lab, ncol=3, loc="upper center", bbox_to_anchor=(0.35, 1.0), frameon=False)
@@ -200,12 +200,12 @@ def sources():
              ("v1_random_k", [f"src_v1_random_k_{r}" for r in range(20)]), ("helm_plus_v1_strong100", ["src_helm_plus_v1_strong100_0"]),
              ("helm_plus_v1_all", ["src_helm_plus_v1_all_0"])]
     clab = ["HELM", "v1 top\n(same n)", "v1 rand.\n(same n)", "HELM\n+100 v1", "HELM\n+all v1"]
-    fig, axes = plt.subplots(2, 1, figsize=(3.35, 2.5), sharex=True)
+    fig, axes = plt.subplots(2, 1, figsize=(3.35, 2.05), sharex=True)
     for ax, b in zip(axes, ("mmlu", "gsm8k")):
         for j, m in enumerate(("crh", "ds", "irt4pl")):
             v = [np.nanmean([key_ap(b, tg, m, sources=True) for tg in tags]) for _, tags in conds]
             ax.bar(np.arange(len(conds)) + (j - 1) * 0.26, v, width=0.24, color=COL[m], label=LAB[m])
-        ax.set_ylabel(f"{BLAB[b]} key-error AP"); style(ax)
+        ax.set_ylabel(f"{BLAB[b]}\nkey-error AP"); style(ax)
     axes[1].set_xticks(range(len(conds))); axes[1].set_xticklabels(clab)
     h, lab = axes[0].get_legend_handles_labels()
     fig.legend(h, lab, ncol=3, loc="upper center", bbox_to_anchor=(0.55, 1.0), frameon=False)
@@ -216,7 +216,7 @@ def sources():
 def budget():
     """Expected share of the 104 MMLU key errors within the first k items (random order within ties)."""
     t, kpos, clean = truth("mmlu")
-    fig, ax = plt.subplots(figsize=(3.35, 1.75))
+    fig, ax = plt.subplots(figsize=(3.35, 1.5))
     ks = np.arange(10, 1001, 10)
     specs = [("crh", "single_small_strong", "CRH, strong", "-"), ("ds", "single_small_strong", "DS-1, strong", "-"),
              ("ds", "single_full", "DS-1, all 2,999", "--"), ("crh", "single_full", "CRH, all 2,999", "--")]
@@ -226,7 +226,7 @@ def budget():
         ax.plot(ks, y, color=COL[m], ls=ls, lw=1.3, label=lab)
     ax.plot(ks, ks / len(t), color=MUTED, ls=":", lw=0.9, label="random order")
     ax.axvline(200, color=GRID, lw=0.8)
-    ax.set_xlabel("items verified ($k$)"); ax.set_ylabel("share of key errors found"); ax.set_ylim(0, 1.18); ax.set_yticks([0, .2, .4, .6, .8, 1]); style(ax)
+    ax.set_xlabel("items verified ($k$)"); ax.set_ylabel("key errors found"); ax.set_ylim(0, 1.18); ax.set_yticks([0, .2, .4, .6, .8, 1]); style(ax)
     ax.legend(frameon=False, loc="upper left", fontsize=6, ncol=2, bbox_to_anchor=(0.0, 1.02))
     fig.tight_layout()
     fig.savefig(os.path.join(RES, "fig_budget.pdf")); fig.savefig(os.path.join(RES, "fig_budget.png"), dpi=200)

@@ -1,0 +1,39 @@
+item 1309 status: revised | n items 1319
+  single_full                mv                   rank   194.0
+  single_full                crh                  rank   196.0
+  single_full                ds_onecoin_nf10_lo   rank    82.0
+  single_offbench_strong     mv                   rank     7.0
+  single_offbench_strong     crh                  rank     7.0
+  single_offbench_strong     ds_onecoin_nf10_lo   rank     7.0
+  single_small_strong        mv                   rank   173.0
+  single_small_strong        crh                  rank   174.0
+  single_small_strong        ds_onecoin_nf10_lo   rank    71.0
+revised keys: 10 clean: 1199
+  single_small_strong: key-error AP 0.322; LOO range 0.224-0.354; ranks among 1209 key-err+clean: 1, 2, 5, 14, 51, 85, 97, 220, 356, 361
+  single_offbench_strong: key-error AP 0.513; LOO range 0.438-0.568; ranks among 1209 key-err+clean: 1, 2, 3, 6, 8, 9, 96, 158, 301, 591
+  single_full: key-error AP 0.219; LOO range 0.147-0.241; ranks among 1209 key-err+clean: 2, 3, 9, 12, 60, 68, 92, 131, 333, 493
+HELM mmlu: items 5631, key errors 104, defects 336, models 3080
+   accuracy on shared items: per-population summary below
+   model id sample: ['stabilityai__stablelm-tuned-alpha-7b', 'FPHam__Sydney_Overthinker_13b_HF', 'AdaptLLM__medicine-chat'] ... ['helm:upstage_solar-pro-241126', 'helm:writer_palmyra-x-004', 'helm:writer_palmyra-x-v3']
+   acc describe: {'count': 3080.0, 'mean': 0.547, 'std': 0.155, 'min': 0.174, '25%': 0.468, '50%': 0.61, '75%': 0.651, 'max': 0.873}
+HELM gsm8k: items 1000, key errors 6, defects 90, models 3093
+   accuracy on shared items: per-population summary below
+   model id sample: ['stabilityai__stablelm-tuned-alpha-7b', 'FPHam__Sydney_Overthinker_13b_HF', 'AdaptLLM__medicine-chat'] ... ['helm:writer_palmyra-x-004', 'helm:writer_palmyra-x-v2', 'helm:writer_palmyra-x-v3']
+   acc describe: {'count': 3093.0, 'mean': 0.345, 'std': 0.275, 'min': 0.0, '25%': 0.064, '50%': 0.341, '75%': 0.621, 'max': 0.961}
+budget mmlu strong mv                   defects@200   69.2/336  key@200  54.1/104
+budget mmlu strong crh                  defects@200   69.0/336  key@200  54.0/104
+budget mmlu strong ds_onecoin_lo        defects@200   70.0/336  key@200  52.0/104
+budget mmlu strong glad_lo              defects@200   66.0/336  key@200  49.0/104
+budget mmlu strong irt4pl               defects@200   68.0/336  key@200  48.0/104
+budget mmlu strong ensemble             defects@200   69.0/336  key@200  52.0/104
+budget gsm8k strong mv                   defects@100   36.3/120  key@100   5.0/10
+budget gsm8k strong crh                  defects@100   36.0/120  key@100   5.0/10
+budget gsm8k strong ds_onecoin_nf10_lo   defects@100   35.0/120  key@100   5.0/10
+budget gsm8k strong glad_lo              defects@100   35.0/120  key@100   5.0/10
+budget gsm8k strong irt4pl               defects@100   31.0/120  key@100   6.0/10
+budget gsm8k strong ensemble             defects@100   39.0/120  key@100   7.0/10
+HELM vs v1 top same n (mmlu): HELM mean acc 0.738, v1 top mean acc 0.780, shared models 3 ['qwen15110b', 'qwen1572b', 'qwen272b']
+HELM vs v1 top same n (gsm8k): HELM mean acc 0.690, v1 top mean acc 0.736, shared models 2 ['qwen15110b', 'qwen272b']
+CrowdFM mmlu full panel: 5631 items, 5631 distinct scores, tied share 0.000
+CrowdFM gsm8k full panel: 1319 items, 1319 distinct scores, tied share 0.000
+CrowdFM hellaswag full panel: 10036 items, 10035 distinct scores, tied share 0.000

@@ -71,6 +71,7 @@ def main():
         import matplotlib
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
+        plt.rcParams["pdf.fonttype"] = 42  # embed TrueType, no Type 3 fonts
         fig, ax = plt.subplots(1, 3, figsize=(10, 2.6))
         for b, c in (("mmlu", "#2a78d6"), ("gsm8k", "#eb6834"), ("hellaswag", "#1baf7a")):
             ax[0].hist(accs[b], bins=40, histtype="step", color=c, label=b)
@@ -78,11 +79,11 @@ def main():
         t, _, _, _ = mats["mmlu"]; y = t.defective.values.astype(bool)
         ax[1].hist(agree["mmlu"][~y], bins=40, density=True, histtype="step", color="#888780", label="clean")
         ax[1].hist(agree["mmlu"][y], bins=40, density=True, histtype="step", color="#e34948", label="defective")
-        ax[1].set_xlabel("share of models agreeing with key (MMLU)"); ax[1].legend(fontsize=7, frameon=False)
+        ax[1].set_xlabel("share of models agreeing with key (MMLU)"); ax[1].set_ylabel("density of items"); ax[1].legend(fontsize=7, frameon=False)
         ax[2].hist(r[both & ~same], bins=60, density=True, histtype="step", color="#888780", label="different families")
         if same.any():
             ax[2].hist(r[same], bins=60, density=True, histtype="step", color="#6250d6", label="same family")
-        ax[2].set_xlabel("residual correlation (MMLU)"); ax[2].legend(fontsize=7, frameon=False)
+        ax[2].set_xlabel("residual correlation (MMLU)"); ax[2].set_ylabel("density of model pairs"); ax[2].legend(fontsize=7, frameon=False)
         for a in ax:
             a.spines[["top", "right"]].set_visible(False)
         fig.tight_layout(); fig.savefig(os.path.join(ROOT, "results", "fig_workload.pdf")); fig.savefig(os.path.join(ROOT, "results", "fig_workload.png"), dpi=160)
