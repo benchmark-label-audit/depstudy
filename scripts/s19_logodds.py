@@ -152,6 +152,12 @@ def tasks():
     return out
 
 
+def done(t):
+    """A task counts as finished only when its checkpoint and every item-score file it writes exist."""
+    ck = os.path.join(CK, f"{t[0]}__{t[1]}__{t[2]}__{t[3]}__{t[4]}.json")
+    return os.path.exists(ck) and all(os.path.exists(os.path.join(CACHE, f"{t[1]}__{t[5]}__{m}.npy")) for m in t[7])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=6)
@@ -160,7 +166,7 @@ def main():
     a = ap.parse_args()
     os.makedirs(CK, exist_ok=True); os.makedirs(CACHE, exist_ok=True)
     if a.phase != "collect":
-        todo = [t for t in tasks() if not os.path.exists(os.path.join(CK, f"{t[0]}__{t[1]}__{t[2]}__{t[3]}__{t[4]}.json"))]
+        todo = [t for t in tasks() if not done(t)]
         light = [t for t in todo if len(t[6]) < HEAVY]
         heavy = sorted([t for t in todo if len(t[6]) >= HEAVY], key=lambda t: -len(t[6]))
         print("tasks: light", len(light), "heavy", len(heavy), flush=True)

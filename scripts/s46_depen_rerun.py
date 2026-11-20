@@ -85,6 +85,9 @@ def tasks():
         if "accu_depen_lo" in ms or family == "single":
             out[("gsm8kflex", tag)] = ("flex_" + family, "gsm8kflex", list(models), None)
     archived = {tuple(os.path.basename(p)[:-len("__accu_depen_lo.npy")].split("__", 1)) for p in glob.glob(os.path.join(OLD, "*.npy"))}
+    if not archived:
+        # no archive (fresh setup): the shipped diagnostics in results/depen_diag*/ list the rescored panels
+        archived = {tuple(os.path.basename(p)[:-len(".json")].split("__", 1)) for p in glob.glob(os.path.join(DIAG, "*.json"))}
     keep = {k: v for k, v in out.items() if k in archived or k[1] == "single_full"}
     missing = archived - set(out)
     if missing:
@@ -169,7 +172,9 @@ def main():
     if a.step == "archive":
         archive(); return
     T = tasks()
-    items = [(k, v) for k, v in T.items() if not os.path.exists(os.path.join(DIAG, f"{k[0]}__{k[1]}.json"))]
+    # a panel counts as finished only when its diagnostics and every item-score file it writes exist
+    items = [(k, v) for k, v in T.items() if not (os.path.exists(os.path.join(DIAG, f"{k[0]}__{k[1]}.json"))
+             and all(os.path.exists(os.path.join(CACHE, f"{k[0]}__{k[1]}__{m}.npy")) for m in METHODS))]
     if a.only == "small":
         items = [x for x in items if len(x[1][2]) <= 400]
     elif a.only == "full":

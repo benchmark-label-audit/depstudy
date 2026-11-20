@@ -1,7 +1,10 @@
 """Review-budget view: share of key errors (and of all defects) found within the first k items of the review
 queue, for selected panels and methods, from cached item scores. Light computation (sorting only).
 
-  python scripts/s24_budget.py  ->  results/budget.csv, results/fig_budget.pdf
+Superseded: the paper's Figure 4 comes from s42_figures_v2.py. Outputs go to results/archive/ so that a rerun
+leaves the paper's figure in place.
+
+  python scripts/s24_budget.py  ->  results/archive/budget.csv, results/archive/fig_budget_s24.pdf
 """
 import glob
 import os
@@ -16,7 +19,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from depstudy.hf import DATA_ROOT  # noqa: E402
 
 CACHE = os.path.join(DATA_ROOT, "item_scores")
-RES = os.path.join(ROOT, "results")
+RES = os.path.join(ROOT, "results", "archive")
 SEL = [("full", "crh"), ("full", "ds_onecoin"), ("full", "ds_onecoin_lo"), ("small_strong", "crh"), ("small_strong", "ds_onecoin_lo")]
 KS = [50, 100, 200, 500, 1000]
 
@@ -69,7 +72,7 @@ def main():
     ax.spines[["top", "right"]].set_visible(False); ax.grid(color=GRID, lw=0.6); ax.set_axisbelow(True)
     ax.legend(frameon=False, loc="lower center", bbox_to_anchor=(0.45, 1.0), ncol=2)
     fig.tight_layout()
-    fig.savefig(os.path.join(RES, "fig_budget.pdf")); fig.savefig(os.path.join(RES, "fig_budget.png"), dpi=200)
+    fig.savefig(os.path.join(RES, "fig_budget_s24.pdf")); fig.savefig(os.path.join(RES, "fig_budget_s24.png"), dpi=200)
 
 
 if __name__ == "__main__":

@@ -148,6 +148,12 @@ def group_of(t):
     return t[0]
 
 
+def done(t):
+    """A task counts as finished only when its checkpoint and every item-score file it writes exist."""
+    ck = os.path.join(CK, f"{t[0]}__{t[1]}__{t[2]}__{t[3]}__{t[4]}.json")
+    return os.path.exists(ck) and all(os.path.exists(os.path.join(CACHE, f"{t[1]}__{t[5]}__{m}.npy")) for m in t[7])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=6)
@@ -160,7 +166,7 @@ def main():
         T = tasks()
         if a.only:
             T = [t for t in T if group_of(t) in a.only.split(",")]
-        todo = [t for t in T if not os.path.exists(os.path.join(CK, f"{t[0]}__{t[1]}__{t[2]}__{t[3]}__{t[4]}.json"))]
+        todo = [t for t in T if not done(t)]
         heavy = sorted([t for t in todo if len(t[6]) >= 1000], key=lambda t: -len(t[6]))
         light = [t for t in todo if len(t[6]) < 1000]
         print("tasks", len(T), "todo light", len(light), "heavy", len(heavy), flush=True)

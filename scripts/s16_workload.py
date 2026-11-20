@@ -36,10 +36,15 @@ def main():
         acc = (Y * M).sum(0) / np.maximum(M.sum(0), 1)
         ag = (Y * M).sum(1) / np.maximum(M.sum(1), 1)
         accs[b], agree[b] = acc, ag
+        # GSM8K: M marks attempted answers, so unparseable ones count against the key in ag; the paper's share uses
+        # parseable answers only (on MMLU and HellaSwag the two masks coincide)
+        P = M & (X >= 0)
+        agp = (Y * P).sum(1) / np.maximum(P.sum(1), 1)
         y = t.defective.values.astype(bool)
         out[b] = {"items": len(t), "models": len(mods), "answers": int(M.sum()), "defective": int(y.sum()),
                   "model_accuracy": q(acc), "item_agreement_clean": q(ag[~y]), "item_agreement_defective": q(ag[y]),
-                  "share_items_majority_disagrees": round(float((ag < 0.5).mean()), 4)}
+                  "share_items_majority_disagrees": round(float((ag < 0.5).mean()), 4),
+                  "share_items_majority_disagrees_parseable": round(float((agp < 0.5).mean()), 4)}
     for hb, b in (("helm_mmlu", "mmlu"), ("helm_gsm8k", "gsm8k")):
         t, mods, X, g, Y, M = matrices(helm_models(hb), hb, min_coverage=0.0)
         out[hb] = {"models": len(mods), "model_accuracy": q((Y * M).sum(0) / np.maximum(M.sum(0), 1))}

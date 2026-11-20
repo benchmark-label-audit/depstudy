@@ -3,9 +3,10 @@
 * Every AP and P@k is the expected value under random ordering of tied scores (methods.average_precision_expected).
 * Item bootstrap stratified by defect status, B = 2,000, paired across methods and panels; random-panel means add panel resampling (two-way).
   On MMLU a subject-cluster bootstrap (57 subjects) is reported next to the item bootstrap.
-* p-values are two-sided bootstrap tail shares; Holm correction within each family = research question x benchmark x metric (AP and key AP test different
-  defect sets).
-  Diagnostic contrasts form their own family.
+* p-values are two-sided bootstrap tail shares; Holm correction within each family = research question x benchmark x metric x bootstrap
+  scheme (AP and key AP test different defect sets). The diagnostic contrasts (log odds versus probability ranking of DS-1, with the same
+  n_false on both sides) form one family per metric and scheme that pools the three benchmarks (m = 3 for the item bootstrap).
+* Rows of the shipped tables that cannot be recomputed (a missing item-score file) stop the script before anything is written.
 * Equivalence: a contrast is declared equivalent when its 90% interval lies within +-0.02 AP (TOST).
 * The rank average of CRH, DS-1 and IRT-4PL is computed here.
 
@@ -31,7 +32,7 @@ B = 2000
 PK = {"mmlu": 200, "gsm8k": 100, "hellaswag": 200}
 DS = {"mmlu": "ds_onecoin_lo", "gsm8k": "ds_onecoin_nf10_lo", "hellaswag": "ds_onecoin_lo"}
 PANELS = ["full", "corr_dedup", "small_strong", "small_diverse", "offbench_strong"]
-SINGLE_METHODS = ["mv", "crh", "catd", "ds_onecoin_lo", "ds_onecoin_nf10_lo", "ds_onecoin", "ds_full_lo", "accu_nodep_lo",
+SINGLE_METHODS = ["mv", "crh", "catd", "ds_onecoin_lo", "ds_onecoin_nf10_lo", "ds_onecoin", "ds_onecoin_nf10", "ds_full_lo", "accu_nodep_lo",
                   "accu_depen_lo", "accu_depen_nu_lo", "accu_depen_key_lo", "accu_depen_nu_key_lo", "glad_lo", "irt4pl", "irt4pl_miss", "crowdfm", "crowdfm_block100", "entropy", "ensemble"]
 SIZES = [10, 30, 100, 300, 1000]
 
@@ -171,7 +172,9 @@ def bench_job(bench):
                 pairs += [("ds_onecoin_nf10_lo", "ds_onecoin_lo"), ("irt4pl_miss", "irt4pl")]
             for x, z in pairs:
                 contrast(f"RQ3-{bench}", f"{panel}: {x} - {z}", [(tg, x)], [(tg, z)], metric)
-        contrast("diag", f"full: {ds} log-odds - probability", [("single_full", ds)], [("single_full", "ds_onecoin")], metric)
+        # same false-value count on both sides: n_false = 10 on GSM8K (s53 writes the probability scores)
+        prob = "ds_onecoin_nf10" if bench == "gsm8k" else "ds_onecoin"
+        contrast("diag", f"full: {ds} log-odds - probability", [("single_full", ds)], [("single_full", prob)], metric)
     return rows, crow
 
 
@@ -221,6 +224,24 @@ def holm(df):
     return df
 
 
+def check_complete(rows, c):
+    """Stop when a row of the shipped tables cannot be recomputed, since a missing row also changes Holm family sizes."""
+    miss = []
+    ps, pc = os.path.join(RES, "singles_v2.parquet"), os.path.join(RES, "contrasts_v2.csv")
+    if os.path.exists(ps):
+        k = ["bench", "panel", "method"]
+        old = set(map(tuple, pd.read_parquet(ps)[k].astype(str).values))
+        miss += [("singles",) + x for x in sorted(old - set(map(tuple, pd.DataFrame(rows)[k].astype(str).values)))]
+    if os.path.exists(pc):
+        k = ["family", "bench", "contrast", "metric", "scheme"]
+        old = set(map(tuple, pd.read_csv(pc)[k].astype(str).values))
+        miss += [("contrasts",) + x for x in sorted(old - set(map(tuple, c[k].astype(str).values)))]
+    if miss:
+        for x in miss[:40]:
+            print("missing:", x)
+        sys.exit(f"{len(miss)} rows of the shipped tables could not be recomputed; check {CACHE}. Nothing was written.")
+
+
 def main():
     jobs = [("b", b) for b in ("mmlu", "gsm8k", "hellaswag")] + [("s", b) for b in ("mmlu", "gsm8k")]
     rows, crow = [], []
@@ -228,8 +249,9 @@ def main():
         futs = [ex.submit(bench_job if k == "b" else sources_job, b) for k, b in jobs]
         for f in futs:
             r, c = f.result(); rows += r; crow += c
-    pd.DataFrame(rows).to_parquet(os.path.join(RES, "singles_v2.parquet"))
     c = holm(pd.DataFrame(crow))
+    check_complete(rows, c)
+    pd.DataFrame(rows).to_parquet(os.path.join(RES, "singles_v2.parquet"))
     c.to_csv(os.path.join(RES, "contrasts_v2.csv"), index=False)
     pd.set_option("display.width", 250)
     d = pd.DataFrame(rows)

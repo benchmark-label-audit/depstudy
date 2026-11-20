@@ -37,3 +37,20 @@ HELM vs v1 top same n (gsm8k): HELM mean acc 0.690, v1 top mean acc 0.736, share
 CrowdFM mmlu full panel: 5631 items, 5631 distinct scores, tied share 0.000
 CrowdFM gsm8k full panel: 1319 items, 1319 distinct scores, tied share 0.000
 CrowdFM hellaswag full panel: 10036 items, 10035 distinct scores, tied share 0.000
+Example 3.1: item 1309, shipped key 2280, expert key 2180; 2999 models, 1613 parseable answers; most frequent: 2180 x 523, 2280 x 312, 1880 x 226
+  full panel, MV: 193 items above item 1309, 149 of them clean items on which most parseable answers reject the key
+  off-benchmark top 100: answers {'2180': 66, '1880': 19, '2080': 1}, key given by 0
+  off-benchmark top 100, DS-1: expected defects among the top 7 items 5.0
+DS-1 full MMLU: median |log posterior odds| 3951 nats; 1 - pi rounds to 0 or 1 beyond 36.7 nats
+Kendall tau of ACCU (no dependence step) and DS-1 on the 12 single panels: min 0.999694 (gsm8k corr_dedup), max 0.999998
+full MMLU: 489 of 2999 models below 0.30 accuracy; their share of the positive DS-1 weight 0.0052 (signed 0.0036, 209 models below chance); their share of the CRH weight 0.1443 (log m = 8.01, median CRH weight 8.26)
+GSM8K shared items, HELM (94 models): same false value rate against the shipped key 0.1468
+GSM8K shared items, v1, most accurate (94 models): same false value rate against the shipped key 0.3557
+NonUni mmlu strong panel: same false value rate under the final NonUni-inferred truth 0.7446, under the default AccuCopy truth 0.8042, uniform 1/n_f 0.3333
+NonUni gsm8k strong panel: same false value rate under the final NonUni-inferred truth 0.4084, under the default AccuCopy truth 0.3726, uniform 1/n_f 0.1000
+NonUni gsm8k ladder level 0 (10 panels): flagged pairs 0.014, same false value rate 0.212
+NonUni gsm8k ladder level 1 (10 panels): flagged pairs 0.023, same false value rate 0.230
+NonUni gsm8k ladder level 2 (10 panels): flagged pairs 0.028, same false value rate 0.240
+NonUni gsm8k ladder level 3 (10 panels): flagged pairs 0.046, same false value rate 0.262
+NonUni gsm8k ladder level 4 (10 panels): flagged pairs 0.056, same false value rate 0.280
+NonUni gsm8k ladder level 5 (10 panels): flagged pairs 0.144, same false value rate 0.330

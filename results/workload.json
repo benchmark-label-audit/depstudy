@@ -29,7 +29,8 @@
    "p90": 0.7904,
    "mean": 0.3684
   },
-  "share_items_majority_disagrees": 0.4063
+  "share_items_majority_disagrees": 0.4063,
+  "share_items_majority_disagrees_parseable": 0.4063
  },
  "gsm8k": {
   "items": 1319,
@@ -60,7 +61,8 @@
    "p90": 0.5111,
    "mean": 0.2172
   },
-  "share_items_majority_disagrees": 0.7847
+  "share_items_majority_disagrees": 0.7847,
+  "share_items_majority_disagrees_parseable": 0.4064
  },
  "hellaswag": {
   "items": 10036,
@@ -91,7 +93,8 @@
    "p90": 0.9534,
    "mean": 0.5253
   },
-  "share_items_majority_disagrees": 0.1673
+  "share_items_majority_disagrees": 0.1673,
+  "share_items_majority_disagrees_parseable": 0.1673
  },
  "helm_mmlu": {
   "models": 81,
