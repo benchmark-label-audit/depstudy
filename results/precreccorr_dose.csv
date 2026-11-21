@@ -1,0 +1,129 @@
+bench,metric,method,effect,estimate,family,lo,hi,p_boot,p_holm
+mmlu,ap,precreccorr_lo,mean_level0,0.22151855494748302,,,,,
+mmlu,ap,precreccorr_lo,mean_level1,0.21689740701137109,,,,,
+mmlu,ap,precreccorr_lo,mean_level2,0.22044938045126833,,,,,
+mmlu,ap,precreccorr_lo,mean_level3,0.22089459562024608,,,,,
+mmlu,ap,precreccorr_lo,mean_level4,0.21877046389933436,,,,,
+mmlu,ap,precreccorr_lo,mean_level5,0.21866925615947963,,,,,
+mmlu,ap,precreccorr_lo,top_minus_bottom_level,-0.002849298788003385,S4b-dose-mmlu-ap,-0.013915054947188955,0.007733442227849624,0.596,0.84
+mmlu,ap,ds_onecoin_lo,mean_level0,0.21810856309572113,,,,,
+mmlu,ap,ds_onecoin_lo,mean_level1,0.214873629854425,,,,,
+mmlu,ap,ds_onecoin_lo,mean_level2,0.21880107385913408,,,,,
+mmlu,ap,ds_onecoin_lo,mean_level3,0.21790725770245842,,,,,
+mmlu,ap,ds_onecoin_lo,mean_level4,0.21477225439895092,,,,,
+mmlu,ap,ds_onecoin_lo,mean_level5,0.21280887834779266,,,,,
+mmlu,ap,ds_onecoin_lo,top_minus_bottom_level,-0.005299684747928468,S4b-dose-mmlu-ap,-0.018539866458405687,0.006777425493759594,0.42,0.84
+mmlu,ap,precreccorr_lo - ds_onecoin_lo,diff_level0,0.0034099918517618844,S4b-dose-mmlu-ap,0.0008899531072613987,0.006506529869844066,0.012,0.036000000000000004
+mmlu,ap,precreccorr_lo - ds_onecoin_lo,diff_level5,0.005860377811686968,S4b-dose-mmlu-ap,0.0015503009297829489,0.010476611515684475,0.008,0.032
+mmlu,ap_key,precreccorr_lo,mean_level0,0.31079636164453844,,,,,
+mmlu,ap_key,precreccorr_lo,mean_level1,0.2946088101760036,,,,,
+mmlu,ap_key,precreccorr_lo,mean_level2,0.3026484821055261,,,,,
+mmlu,ap_key,precreccorr_lo,mean_level3,0.29948057811161183,,,,,
+mmlu,ap_key,precreccorr_lo,mean_level4,0.2921598995759707,,,,,
+mmlu,ap_key,precreccorr_lo,mean_level5,0.2884745111514287,,,,,
+mmlu,ap_key,precreccorr_lo,top_minus_bottom_level,-0.02232185049310975,S4b-dose-mmlu-ap_key,-0.052891557286114235,0.004273320560364665,0.116,0.176
+mmlu,ap_key,ds_onecoin_lo,mean_level0,0.30224576180950513,,,,,
+mmlu,ap_key,ds_onecoin_lo,mean_level1,0.2875191798295954,,,,,
+mmlu,ap_key,ds_onecoin_lo,mean_level2,0.29619790639336546,,,,,
+mmlu,ap_key,ds_onecoin_lo,mean_level3,0.2905546609932398,,,,,
+mmlu,ap_key,ds_onecoin_lo,mean_level4,0.28169834919802345,,,,,
+mmlu,ap_key,ds_onecoin_lo,mean_level5,0.27529068801856454,,,,,
+mmlu,ap_key,ds_onecoin_lo,top_minus_bottom_level,-0.026955073790940587,S4b-dose-mmlu-ap_key,-0.05916228518071581,0.0028952244191646917,0.088,0.176
+mmlu,ap_key,precreccorr_lo - ds_onecoin_lo,diff_level0,0.008550599835033312,S4b-dose-mmlu-ap_key,0.0025584020508762633,0.016232821133336166,0.004,0.012
+mmlu,ap_key,precreccorr_lo - ds_onecoin_lo,diff_level5,0.013183823132864148,S4b-dose-mmlu-ap_key,0.005696033195623583,0.021019429487077333,0.002,0.008
+gsm8k,ap,precreccorr_lo,mean_level0,0.28789044745045766,,,,,
+gsm8k,ap,precreccorr_lo,mean_level1,0.2566172008461715,,,,,
+gsm8k,ap,precreccorr_lo,mean_level2,0.24321278054263512,,,,,
+gsm8k,ap,precreccorr_lo,mean_level3,0.22810360917167943,,,,,
+gsm8k,ap,precreccorr_lo,mean_level4,0.2128855955901272,,,,,
+gsm8k,ap,precreccorr_lo,mean_level5,0.20312313213425132,,,,,
+gsm8k,ap,precreccorr_lo,top_minus_bottom_level,-0.08476731531620635,S4b-dose-gsm8k-ap,-0.1298546240678703,-0.04418878276703445,0.002,0.016
+gsm8k,ap,ds_onecoin_nf10_lo,mean_level0,0.28775689994250614,,,,,
+gsm8k,ap,ds_onecoin_nf10_lo,mean_level1,0.25851957310609497,,,,,
+gsm8k,ap,ds_onecoin_nf10_lo,mean_level2,0.24334511167521938,,,,,
+gsm8k,ap,ds_onecoin_nf10_lo,mean_level3,0.22760510123539465,,,,,
+gsm8k,ap,ds_onecoin_nf10_lo,mean_level4,0.21106339341237962,,,,,
+gsm8k,ap,ds_onecoin_nf10_lo,mean_level5,0.2009398800593291,,,,,
+gsm8k,ap,ds_onecoin_nf10_lo,top_minus_bottom_level,-0.08681701988317703,S4b-dose-gsm8k-ap,-0.1278980614593845,-0.04536453677328974,0.002,0.016
+gsm8k,ap,accu_depen_dongorder_lo,mean_level0,0.17374011057733146,,,,,
+gsm8k,ap,accu_depen_dongorder_lo,mean_level1,0.18678161146552538,,,,,
+gsm8k,ap,accu_depen_dongorder_lo,mean_level2,0.19033872289315407,,,,,
+gsm8k,ap,accu_depen_dongorder_lo,mean_level3,0.20785365026522404,,,,,
+gsm8k,ap,accu_depen_dongorder_lo,mean_level4,0.19955700653575986,,,,,
+gsm8k,ap,accu_depen_dongorder_lo,mean_level5,0.19239027660603297,,,,,
+gsm8k,ap,accu_depen_dongorder_lo,top_minus_bottom_level,0.01865016602870151,S4b-dose-gsm8k-ap,-0.015500799788920501,0.05528457300817147,0.276,1.0
+gsm8k,ap,accu_depen_lo,mean_level0,0.17705138665799589,,,,,
+gsm8k,ap,accu_depen_lo,mean_level1,0.18842739296558217,,,,,
+gsm8k,ap,accu_depen_lo,mean_level2,0.19869634232977632,,,,,
+gsm8k,ap,accu_depen_lo,mean_level3,0.23795963432139594,,,,,
+gsm8k,ap,accu_depen_lo,mean_level4,0.20725371567914208,,,,,
+gsm8k,ap,accu_depen_lo,mean_level5,0.1926578958954282,,,,,
+gsm8k,ap,accu_depen_lo,top_minus_bottom_level,0.015606509237432314,S4b-dose-gsm8k-ap,-0.02103551287856971,0.05536341270581054,0.424,1.0
+gsm8k,ap,precreccorr_lo - ds_onecoin_nf10_lo,diff_level0,0.0001335475079515258,S4b-dose-gsm8k-ap,-0.007616884732657215,0.007800946307137634,0.988,1.0
+gsm8k,ap,precreccorr_lo - ds_onecoin_nf10_lo,diff_level5,0.002183252074922204,S4b-dose-gsm8k-ap,-0.0014611925286215743,0.006348420418484929,0.296,1.0
+gsm8k,ap,accu_depen_dongorder_lo - accu_depen_lo,diff_level0,-0.0033112760806644215,S4b-dose-gsm8k-ap,-0.00598253556320384,-0.00133006938658559,0.002,0.016
+gsm8k,ap,accu_depen_dongorder_lo - accu_depen_lo,diff_level5,-0.0002676192893952267,S4b-dose-gsm8k-ap,-0.01712693556829631,0.021493292585818443,1.0,1.0
+gsm8k,ap_key,precreccorr_lo,mean_level0,0.37296517253976086,,,,,
+gsm8k,ap_key,precreccorr_lo,mean_level1,0.3127290157642825,,,,,
+gsm8k,ap_key,precreccorr_lo,mean_level2,0.301540556884518,,,,,
+gsm8k,ap_key,precreccorr_lo,mean_level3,0.2728777732205187,,,,,
+gsm8k,ap_key,precreccorr_lo,mean_level4,0.2222629125767952,,,,,
+gsm8k,ap_key,precreccorr_lo,mean_level5,0.1704986419902771,,,,,
+gsm8k,ap_key,precreccorr_lo,top_minus_bottom_level,-0.20246653054948377,S4b-dose-gsm8k-ap_key,-0.34012146817465183,-0.05629425836130361,0.002,0.016
+gsm8k,ap_key,ds_onecoin_nf10_lo,mean_level0,0.37410247878062103,,,,,
+gsm8k,ap_key,ds_onecoin_nf10_lo,mean_level1,0.33374116806895265,,,,,
+gsm8k,ap_key,ds_onecoin_nf10_lo,mean_level2,0.3107985607976931,,,,,
+gsm8k,ap_key,ds_onecoin_nf10_lo,mean_level3,0.274599762594922,,,,,
+gsm8k,ap_key,ds_onecoin_nf10_lo,mean_level4,0.2214507382548024,,,,,
+gsm8k,ap_key,ds_onecoin_nf10_lo,mean_level5,0.16832337616991042,,,,,
+gsm8k,ap_key,ds_onecoin_nf10_lo,top_minus_bottom_level,-0.2057791026107106,S4b-dose-gsm8k-ap_key,-0.34447669532556896,-0.05846190420527672,0.002,0.016
+gsm8k,ap_key,accu_depen_dongorder_lo,mean_level0,0.03828703623549529,,,,,
+gsm8k,ap_key,accu_depen_dongorder_lo,mean_level1,0.059513813013791605,,,,,
+gsm8k,ap_key,accu_depen_dongorder_lo,mean_level2,0.06570637329495782,,,,,
+gsm8k,ap_key,accu_depen_dongorder_lo,mean_level3,0.09636886298081845,,,,,
+gsm8k,ap_key,accu_depen_dongorder_lo,mean_level4,0.12607051137426234,,,,,
+gsm8k,ap_key,accu_depen_dongorder_lo,mean_level5,0.05546819788927174,,,,,
+gsm8k,ap_key,accu_depen_dongorder_lo,top_minus_bottom_level,0.01718116165377645,S4b-dose-gsm8k-ap_key,-0.06928292982880024,0.07505043859054522,0.52,1.0
+gsm8k,ap_key,accu_depen_lo,mean_level0,0.04004017838862588,,,,,
+gsm8k,ap_key,accu_depen_lo,mean_level1,0.061354847175892256,,,,,
+gsm8k,ap_key,accu_depen_lo,mean_level2,0.09169390644368117,,,,,
+gsm8k,ap_key,accu_depen_lo,mean_level3,0.2021025724825641,,,,,
+gsm8k,ap_key,accu_depen_lo,mean_level4,0.18875897316036955,,,,,
+gsm8k,ap_key,accu_depen_lo,mean_level5,0.08033895051927983,,,,,
+gsm8k,ap_key,accu_depen_lo,top_minus_bottom_level,0.040298772130653956,S4b-dose-gsm8k-ap_key,-0.03402183854152481,0.14302441380771813,0.232,0.928
+gsm8k,ap_key,precreccorr_lo - ds_onecoin_nf10_lo,diff_level0,-0.0011373062408601697,S4b-dose-gsm8k-ap_key,-0.033421612283258725,0.02236798131873312,0.896,1.0
+gsm8k,ap_key,precreccorr_lo - ds_onecoin_nf10_lo,diff_level5,0.002175265820366673,S4b-dose-gsm8k-ap_key,-0.00734532226895503,0.017590364743536403,0.956,1.0
+gsm8k,ap_key,accu_depen_dongorder_lo - accu_depen_lo,diff_level0,-0.0017531421531305838,S4b-dose-gsm8k-ap_key,-0.006460578472803336,-7.956552620908979e-05,0.024,0.14400000000000002
+gsm8k,ap_key,accu_depen_dongorder_lo - accu_depen_lo,diff_level5,-0.02487075263000809,S4b-dose-gsm8k-ap_key,-0.10321030480667029,0.010945231507356462,0.172,0.8599999999999999
+hellaswag,ap,precreccorr_lo,mean_level0,0.10245365304439343,,,,,
+hellaswag,ap,precreccorr_lo,mean_level1,0.09964143945780028,,,,,
+hellaswag,ap,precreccorr_lo,mean_level2,0.09902203900963681,,,,,
+hellaswag,ap,precreccorr_lo,mean_level3,0.0962603480465016,,,,,
+hellaswag,ap,precreccorr_lo,mean_level4,0.09354228211028813,,,,,
+hellaswag,ap,precreccorr_lo,mean_level5,0.08821241956278207,,,,,
+hellaswag,ap,precreccorr_lo,top_minus_bottom_level,-0.014241233481611354,S4b-dose-hellaswag-ap,-0.02472744694282994,-0.005084620797905385,0.002,0.008
+hellaswag,ap,ds_onecoin_lo,mean_level0,0.10221073612162332,,,,,
+hellaswag,ap,ds_onecoin_lo,mean_level1,0.0993422316640628,,,,,
+hellaswag,ap,ds_onecoin_lo,mean_level2,0.0981752781778076,,,,,
+hellaswag,ap,ds_onecoin_lo,mean_level3,0.09622744704996887,,,,,
+hellaswag,ap,ds_onecoin_lo,mean_level4,0.09351253598246434,,,,,
+hellaswag,ap,ds_onecoin_lo,mean_level5,0.08633668160383785,,,,,
+hellaswag,ap,ds_onecoin_lo,top_minus_bottom_level,-0.015874054517785466,S4b-dose-hellaswag-ap,-0.026300332781343104,-0.007919396556721765,0.002,0.008
+hellaswag,ap,precreccorr_lo - ds_onecoin_lo,diff_level0,0.00024291692277010613,S4b-dose-hellaswag-ap,-0.0004424385322290766,0.000921640772393358,0.52,0.52
+hellaswag,ap,precreccorr_lo - ds_onecoin_lo,diff_level5,0.001875737958944218,S4b-dose-hellaswag-ap,-0.0002778882301387363,0.005796246805489535,0.172,0.344
+hellaswag,ap_key,precreccorr_lo,mean_level0,0.1479059787105814,,,,,
+hellaswag,ap_key,precreccorr_lo,mean_level1,0.14337670676183986,,,,,
+hellaswag,ap_key,precreccorr_lo,mean_level2,0.14107871436817726,,,,,
+hellaswag,ap_key,precreccorr_lo,mean_level3,0.13716609985565992,,,,,
+hellaswag,ap_key,precreccorr_lo,mean_level4,0.13286258006103,,,,,
+hellaswag,ap_key,precreccorr_lo,mean_level5,0.12365436470526911,,,,,
+hellaswag,ap_key,precreccorr_lo,top_minus_bottom_level,-0.024251614005312283,S4b-dose-hellaswag-ap_key,-0.039101396130236665,-0.012476668592626214,0.002,0.008
+hellaswag,ap_key,ds_onecoin_lo,mean_level0,0.14743366994167456,,,,,
+hellaswag,ap_key,ds_onecoin_lo,mean_level1,0.14284045735624257,,,,,
+hellaswag,ap_key,ds_onecoin_lo,mean_level2,0.1399909074159967,,,,,
+hellaswag,ap_key,ds_onecoin_lo,mean_level3,0.13705858213530003,,,,,
+hellaswag,ap_key,ds_onecoin_lo,mean_level4,0.13284037147774133,,,,,
+hellaswag,ap_key,ds_onecoin_lo,mean_level5,0.12148732125801014,,,,,
+hellaswag,ap_key,ds_onecoin_lo,top_minus_bottom_level,-0.025946348683664425,S4b-dose-hellaswag-ap_key,-0.041554835493411595,-0.014635079640622398,0.002,0.008
+hellaswag,ap_key,precreccorr_lo - ds_onecoin_lo,diff_level0,0.0004723087689068317,S4b-dose-hellaswag-ap_key,-0.0006108745843888007,0.0013162494305963873,0.364,0.364
+hellaswag,ap_key,precreccorr_lo - ds_onecoin_lo,diff_level5,0.0021670434472589734,S4b-dose-hellaswag-ap_key,-0.00029487265539348824,0.00763802232175407,0.096,0.192

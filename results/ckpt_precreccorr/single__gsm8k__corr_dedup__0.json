@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "gsm8k", "condition": "corr_dedup", "rep": 0, "n_models": 2450, "method": "precreccorr_lo", "sec": 96.24151062965393, "n_clusters": 2301, "max_cluster": 7}, {"family": "single", "bench": "gsm8k", "condition": "corr_dedup", "rep": 0, "n_models": 2450, "method": "precreccorr4_lo", "sec": 99.71899008750916, "n_clusters": 2386, "max_cluster": 4}]

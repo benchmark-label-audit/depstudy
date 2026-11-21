@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "mmlu", "condition": "small_diverse", "rep": 0, "n_models": 100, "method": "precreccorr_lo", "sec": 1.1459548473358154, "n_clusters": 86, "max_cluster": 8}, {"family": "single", "bench": "mmlu", "condition": "small_diverse", "rep": 0, "n_models": 100, "method": "precreccorr4_lo", "sec": 0.2607097625732422, "n_clusters": 89, "max_cluster": 3}]

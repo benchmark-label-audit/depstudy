@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "gsm8k", "condition": "offbench_strong", "rep": 0, "n_models": 100, "method": "precreccorr_lo", "sec": 2.06740140914917, "n_clusters": 51, "max_cluster": 8}]

@@ -1,0 +1,230 @@
+        bench            panel                   method     ap  ap_key  flag_share  n_clusters  max_cluster
+0        mmlu             full           precreccorr_lo  0.192   0.248         NaN      2959.0          5.0
+1        mmlu             full          precreccorr4_lo  0.192   0.249         NaN      2999.0          1.0
+2        mmlu             full            ds_onecoin_lo  0.190   0.246         NaN         NaN          NaN
+3        mmlu             full            accu_depen_lo  0.115   0.098         NaN         NaN          NaN
+4        mmlu             full                  ebcc_lo  0.170   0.177         NaN         NaN          NaN
+5        mmlu       corr_dedup           precreccorr_lo  0.181   0.228         NaN      1597.0          8.0
+6        mmlu       corr_dedup          precreccorr4_lo  0.184   0.232         NaN      1613.0          4.0
+7        mmlu       corr_dedup            ds_onecoin_lo  0.185   0.234         NaN         NaN          NaN
+8        mmlu       corr_dedup            accu_depen_lo  0.116   0.100         NaN         NaN          NaN
+9        mmlu       corr_dedup                  ebcc_lo  0.137   0.128         NaN         NaN          NaN
+10       mmlu     small_strong           precreccorr_lo  0.228   0.325         NaN        61.0          8.0
+11       mmlu     small_strong          precreccorr4_lo  0.224   0.315         NaN        92.0          4.0
+12       mmlu     small_strong            ds_onecoin_lo  0.223   0.313         NaN         NaN          NaN
+13       mmlu     small_strong            accu_depen_lo  0.153   0.156         NaN         NaN          NaN
+14       mmlu     small_strong  accu_depen_dongorder_lo  0.154   0.158        0.98         NaN          NaN
+15       mmlu     small_strong                  ebcc_lo  0.189   0.212         NaN         NaN          NaN
+16       mmlu    small_diverse           precreccorr_lo  0.206   0.274         NaN        86.0          8.0
+17       mmlu    small_diverse          precreccorr4_lo  0.205   0.273         NaN        89.0          3.0
+18       mmlu    small_diverse            ds_onecoin_lo  0.205   0.272         NaN         NaN          NaN
+19       mmlu    small_diverse            accu_depen_lo  0.201   0.254         NaN         NaN          NaN
+20       mmlu    small_diverse                  ebcc_lo  0.133   0.108         NaN         NaN          NaN
+21       mmlu  offbench_strong           precreccorr_lo  0.189   0.237         NaN        79.0          8.0
+22       mmlu  offbench_strong            ds_onecoin_lo  0.184   0.230         NaN         NaN          NaN
+23       mmlu  offbench_strong            accu_depen_lo  0.185   0.214         NaN         NaN          NaN
+24       mmlu  offbench_strong                  ebcc_lo  0.119   0.087         NaN         NaN          NaN
+25      gsm8k             full           precreccorr_lo  0.235   0.221         NaN      2824.0          8.0
+26      gsm8k             full          precreccorr4_lo  0.236   0.222         NaN      2928.0          4.0
+27      gsm8k             full       ds_onecoin_nf10_lo  0.238   0.219         NaN         NaN          NaN
+28      gsm8k             full            accu_depen_lo  0.193   0.147         NaN         NaN          NaN
+29      gsm8k             full                  ebcc_lo  0.242   0.271         NaN         NaN          NaN
+30      gsm8k       corr_dedup           precreccorr_lo  0.233   0.219         NaN      2301.0          7.0
+31      gsm8k       corr_dedup          precreccorr4_lo  0.233   0.219         NaN      2386.0          4.0
+32      gsm8k       corr_dedup       ds_onecoin_nf10_lo  0.235   0.221         NaN         NaN          NaN
+33      gsm8k       corr_dedup            accu_depen_lo  0.199   0.165         NaN         NaN          NaN
+34      gsm8k       corr_dedup                  ebcc_lo  0.240   0.271         NaN         NaN          NaN
+35      gsm8k     small_strong           precreccorr_lo  0.274   0.338         NaN        56.0          8.0
+36      gsm8k     small_strong          precreccorr4_lo  0.265   0.322         NaN        86.0          4.0
+37      gsm8k     small_strong       ds_onecoin_nf10_lo  0.270   0.322         NaN         NaN          NaN
+38      gsm8k     small_strong            accu_depen_lo  0.196   0.072         NaN         NaN          NaN
+39      gsm8k     small_strong  accu_depen_dongorder_lo  0.190   0.067        1.00         NaN          NaN
+40      gsm8k     small_strong                  ebcc_lo  0.268   0.323         NaN         NaN          NaN
+41      gsm8k    small_diverse           precreccorr_lo  0.257   0.324         NaN        83.0          8.0
+42      gsm8k    small_diverse          precreccorr4_lo  0.256   0.330         NaN        92.0          4.0
+43      gsm8k    small_diverse       ds_onecoin_nf10_lo  0.252   0.298         NaN         NaN          NaN
+44      gsm8k    small_diverse            accu_depen_lo  0.249   0.278         NaN         NaN          NaN
+45      gsm8k    small_diverse                  ebcc_lo  0.252   0.324         NaN         NaN          NaN
+46      gsm8k  offbench_strong           precreccorr_lo  0.309   0.505         NaN        51.0          8.0
+47      gsm8k  offbench_strong       ds_onecoin_nf10_lo  0.300   0.513         NaN         NaN          NaN
+48      gsm8k  offbench_strong            accu_depen_lo  0.193   0.216         NaN         NaN          NaN
+49      gsm8k  offbench_strong                  ebcc_lo  0.302   0.504         NaN         NaN          NaN
+50  hellaswag             full           precreccorr_lo  0.092   0.129         NaN      2872.0          8.0
+51  hellaswag             full          precreccorr4_lo  0.092   0.129         NaN      2929.0          4.0
+52  hellaswag             full            ds_onecoin_lo  0.092   0.129         NaN         NaN          NaN
+53  hellaswag             full            accu_depen_lo  0.042   0.051         NaN         NaN          NaN
+54  hellaswag             full                  ebcc_lo  0.090   0.125         NaN         NaN          NaN
+55  hellaswag       corr_dedup           precreccorr_lo  0.090   0.123         NaN       840.0          8.0
+56  hellaswag       corr_dedup          precreccorr4_lo  0.090   0.123         NaN       887.0          4.0
+57  hellaswag       corr_dedup            ds_onecoin_lo  0.090   0.123         NaN         NaN          NaN
+58  hellaswag       corr_dedup            accu_depen_lo  0.042   0.052         NaN         NaN          NaN
+59  hellaswag       corr_dedup                  ebcc_lo  0.078   0.104         NaN         NaN          NaN
+60  hellaswag     small_strong           precreccorr_lo  0.101   0.147         NaN        56.0          7.0
+61  hellaswag     small_strong          precreccorr4_lo  0.101   0.147         NaN        73.0          4.0
+62  hellaswag     small_strong            ds_onecoin_lo  0.101   0.147         NaN         NaN          NaN
+63  hellaswag     small_strong            accu_depen_lo  0.098   0.141         NaN         NaN          NaN
+64  hellaswag     small_strong  accu_depen_dongorder_lo  0.094   0.137        1.00         NaN          NaN
+65  hellaswag     small_strong                  ebcc_lo  0.094   0.133         NaN         NaN          NaN
+66  hellaswag    small_diverse           precreccorr_lo  0.096   0.137         NaN        86.0          8.0
+67  hellaswag    small_diverse          precreccorr4_lo  0.097   0.138         NaN        94.0          4.0
+68  hellaswag    small_diverse            ds_onecoin_lo  0.097   0.138         NaN         NaN          NaN
+69  hellaswag    small_diverse            accu_depen_lo  0.095   0.139         NaN         NaN          NaN
+70  hellaswag    small_diverse                  ebcc_lo  0.106   0.157         NaN         NaN          NaN
+71  hellaswag  offbench_strong           precreccorr_lo  0.089   0.123         NaN        41.0          8.0
+72  hellaswag  offbench_strong            ds_onecoin_lo  0.091   0.127         NaN         NaN          NaN
+73  hellaswag  offbench_strong            accu_depen_lo  0.085   0.120         NaN         NaN          NaN
+74  hellaswag  offbench_strong                  ebcc_lo  0.082   0.115         NaN         NaN          NaN
+                  family      bench  metric                                               contrast       a       b  estimate      lo      hi  p_boot  equiv_0.02  p_holm
+0            S4b-mmlu-ap       mmlu      ap                   full: precreccorr_lo - ds_onecoin_lo  0.1916  0.1905    0.0011  0.0002  0.0023  0.0140        True   0.056
+1            S4b-mmlu-ap       mmlu      ap           small_strong: precreccorr_lo - ds_onecoin_lo  0.2284  0.2230    0.0054  0.0002  0.0112  0.0340        True   0.087
+2            S4b-mmlu-ap       mmlu      ap        offbench_strong: precreccorr_lo - ds_onecoin_lo  0.1891  0.1842    0.0049  0.0005  0.0098  0.0290        True   0.087
+3            S4b-mmlu-ap       mmlu      ap  small_strong: accu_depen_dongorder_lo - accu_depen_lo  0.1541  0.1534    0.0007 -0.0004  0.0030  0.5280        True   0.528
+4        S4b-mmlu-ap_key       mmlu  ap_key                   full: precreccorr_lo - ds_onecoin_lo  0.2484  0.2462    0.0022  0.0002  0.0051  0.0210        True   0.084
+5        S4b-mmlu-ap_key       mmlu  ap_key           small_strong: precreccorr_lo - ds_onecoin_lo  0.3245  0.3135    0.0111 -0.0004  0.0246  0.0630       False   0.189
+6        S4b-mmlu-ap_key       mmlu  ap_key        offbench_strong: precreccorr_lo - ds_onecoin_lo  0.2373  0.2300    0.0073 -0.0005  0.0160  0.0670        True   0.189
+7        S4b-mmlu-ap_key       mmlu  ap_key  small_strong: accu_depen_dongorder_lo - accu_depen_lo  0.1582  0.1558    0.0024 -0.0003  0.0095  0.2710        True   0.271
+8           S4b-gsm8k-ap      gsm8k      ap              full: precreccorr_lo - ds_onecoin_nf10_lo  0.2346  0.2381   -0.0035 -0.0079 -0.0007  0.0130        True   0.039
+9           S4b-gsm8k-ap      gsm8k      ap      small_strong: precreccorr_lo - ds_onecoin_nf10_lo  0.2737  0.2696    0.0042 -0.0086  0.0184  0.4850        True   0.485
+10          S4b-gsm8k-ap      gsm8k      ap   offbench_strong: precreccorr_lo - ds_onecoin_nf10_lo  0.3091  0.3001    0.0090 -0.0062  0.0265  0.2350       False   0.470
+11          S4b-gsm8k-ap      gsm8k      ap  small_strong: accu_depen_dongorder_lo - accu_depen_lo  0.1904  0.1963   -0.0059 -0.0113 -0.0024  0.0005        True   0.002
+12      S4b-gsm8k-ap_key      gsm8k  ap_key              full: precreccorr_lo - ds_onecoin_nf10_lo  0.2211  0.2189    0.0022 -0.0037  0.0197  0.9270        True   1.000
+13      S4b-gsm8k-ap_key      gsm8k  ap_key      small_strong: precreccorr_lo - ds_onecoin_nf10_lo  0.3383  0.3216    0.0167  0.0004  0.0482  0.0410       False   0.123
+14      S4b-gsm8k-ap_key      gsm8k  ap_key   offbench_strong: precreccorr_lo - ds_onecoin_nf10_lo  0.5046  0.5129   -0.0082 -0.0487  0.0037  0.9310       False   1.000
+15      S4b-gsm8k-ap_key      gsm8k  ap_key  small_strong: accu_depen_dongorder_lo - accu_depen_lo  0.0671  0.0725   -0.0053 -0.0213 -0.0001  0.0240        True   0.096
+16      S4b-hellaswag-ap  hellaswag      ap                   full: precreccorr_lo - ds_onecoin_lo  0.0924  0.0923    0.0001 -0.0006  0.0006  0.6830        True   1.000
+17      S4b-hellaswag-ap  hellaswag      ap           small_strong: precreccorr_lo - ds_onecoin_lo  0.1013  0.1010    0.0003 -0.0014  0.0020  0.7350        True   1.000
+18      S4b-hellaswag-ap  hellaswag      ap        offbench_strong: precreccorr_lo - ds_onecoin_lo  0.0887  0.0907   -0.0020 -0.0037 -0.0004  0.0180        True   0.064
+19      S4b-hellaswag-ap  hellaswag      ap  small_strong: accu_depen_dongorder_lo - accu_depen_lo  0.0942  0.0980   -0.0038 -0.0073 -0.0005  0.0160        True   0.064
+20  S4b-hellaswag-ap_key  hellaswag  ap_key                   full: precreccorr_lo - ds_onecoin_lo  0.1286  0.1286    0.0000 -0.0014  0.0009  0.8950        True   1.000
+21  S4b-hellaswag-ap_key  hellaswag  ap_key           small_strong: precreccorr_lo - ds_onecoin_lo  0.1474  0.1469    0.0006 -0.0021  0.0034  0.6480        True   1.000
+22  S4b-hellaswag-ap_key  hellaswag  ap_key        offbench_strong: precreccorr_lo - ds_onecoin_lo  0.1230  0.1266   -0.0036 -0.0063 -0.0011  0.0020        True   0.008
+23  S4b-hellaswag-ap_key  hellaswag  ap_key  small_strong: accu_depen_dongorder_lo - accu_depen_lo  0.1366  0.1405   -0.0040 -0.0083 -0.0007  0.0110        True   0.033
+         bench  metric                                   method                  effect  estimate                     family      lo      hi  p_boot  p_holm
+0         mmlu      ap                           precreccorr_lo             mean_level0    0.2215                        NaN     NaN     NaN     NaN     NaN
+1         mmlu      ap                           precreccorr_lo             mean_level1    0.2169                        NaN     NaN     NaN     NaN     NaN
+2         mmlu      ap                           precreccorr_lo             mean_level2    0.2204                        NaN     NaN     NaN     NaN     NaN
+3         mmlu      ap                           precreccorr_lo             mean_level3    0.2209                        NaN     NaN     NaN     NaN     NaN
+4         mmlu      ap                           precreccorr_lo             mean_level4    0.2188                        NaN     NaN     NaN     NaN     NaN
+5         mmlu      ap                           precreccorr_lo             mean_level5    0.2187                        NaN     NaN     NaN     NaN     NaN
+6         mmlu      ap                           precreccorr_lo  top_minus_bottom_level   -0.0028           S4b-dose-mmlu-ap -0.0139  0.0077   0.596   0.840
+7         mmlu      ap                            ds_onecoin_lo             mean_level0    0.2181                        NaN     NaN     NaN     NaN     NaN
+8         mmlu      ap                            ds_onecoin_lo             mean_level1    0.2149                        NaN     NaN     NaN     NaN     NaN
+9         mmlu      ap                            ds_onecoin_lo             mean_level2    0.2188                        NaN     NaN     NaN     NaN     NaN
+10        mmlu      ap                            ds_onecoin_lo             mean_level3    0.2179                        NaN     NaN     NaN     NaN     NaN
+11        mmlu      ap                            ds_onecoin_lo             mean_level4    0.2148                        NaN     NaN     NaN     NaN     NaN
+12        mmlu      ap                            ds_onecoin_lo             mean_level5    0.2128                        NaN     NaN     NaN     NaN     NaN
+13        mmlu      ap                            ds_onecoin_lo  top_minus_bottom_level   -0.0053           S4b-dose-mmlu-ap -0.0185  0.0068   0.420   0.840
+14        mmlu      ap           precreccorr_lo - ds_onecoin_lo             diff_level0    0.0034           S4b-dose-mmlu-ap  0.0009  0.0065   0.012   0.036
+15        mmlu      ap           precreccorr_lo - ds_onecoin_lo             diff_level5    0.0059           S4b-dose-mmlu-ap  0.0016  0.0105   0.008   0.032
+16        mmlu  ap_key                           precreccorr_lo             mean_level0    0.3108                        NaN     NaN     NaN     NaN     NaN
+17        mmlu  ap_key                           precreccorr_lo             mean_level1    0.2946                        NaN     NaN     NaN     NaN     NaN
+18        mmlu  ap_key                           precreccorr_lo             mean_level2    0.3026                        NaN     NaN     NaN     NaN     NaN
+19        mmlu  ap_key                           precreccorr_lo             mean_level3    0.2995                        NaN     NaN     NaN     NaN     NaN
+20        mmlu  ap_key                           precreccorr_lo             mean_level4    0.2922                        NaN     NaN     NaN     NaN     NaN
+21        mmlu  ap_key                           precreccorr_lo             mean_level5    0.2885                        NaN     NaN     NaN     NaN     NaN
+22        mmlu  ap_key                           precreccorr_lo  top_minus_bottom_level   -0.0223       S4b-dose-mmlu-ap_key -0.0529  0.0043   0.116   0.176
+23        mmlu  ap_key                            ds_onecoin_lo             mean_level0    0.3022                        NaN     NaN     NaN     NaN     NaN
+24        mmlu  ap_key                            ds_onecoin_lo             mean_level1    0.2875                        NaN     NaN     NaN     NaN     NaN
+25        mmlu  ap_key                            ds_onecoin_lo             mean_level2    0.2962                        NaN     NaN     NaN     NaN     NaN
+26        mmlu  ap_key                            ds_onecoin_lo             mean_level3    0.2906                        NaN     NaN     NaN     NaN     NaN
+27        mmlu  ap_key                            ds_onecoin_lo             mean_level4    0.2817                        NaN     NaN     NaN     NaN     NaN
+28        mmlu  ap_key                            ds_onecoin_lo             mean_level5    0.2753                        NaN     NaN     NaN     NaN     NaN
+29        mmlu  ap_key                            ds_onecoin_lo  top_minus_bottom_level   -0.0270       S4b-dose-mmlu-ap_key -0.0592  0.0029   0.088   0.176
+30        mmlu  ap_key           precreccorr_lo - ds_onecoin_lo             diff_level0    0.0086       S4b-dose-mmlu-ap_key  0.0026  0.0162   0.004   0.012
+31        mmlu  ap_key           precreccorr_lo - ds_onecoin_lo             diff_level5    0.0132       S4b-dose-mmlu-ap_key  0.0057  0.0210   0.002   0.008
+32       gsm8k      ap                           precreccorr_lo             mean_level0    0.2879                        NaN     NaN     NaN     NaN     NaN
+33       gsm8k      ap                           precreccorr_lo             mean_level1    0.2566                        NaN     NaN     NaN     NaN     NaN
+34       gsm8k      ap                           precreccorr_lo             mean_level2    0.2432                        NaN     NaN     NaN     NaN     NaN
+35       gsm8k      ap                           precreccorr_lo             mean_level3    0.2281                        NaN     NaN     NaN     NaN     NaN
+36       gsm8k      ap                           precreccorr_lo             mean_level4    0.2129                        NaN     NaN     NaN     NaN     NaN
+37       gsm8k      ap                           precreccorr_lo             mean_level5    0.2031                        NaN     NaN     NaN     NaN     NaN
+38       gsm8k      ap                           precreccorr_lo  top_minus_bottom_level   -0.0848          S4b-dose-gsm8k-ap -0.1299 -0.0442   0.002   0.016
+39       gsm8k      ap                       ds_onecoin_nf10_lo             mean_level0    0.2878                        NaN     NaN     NaN     NaN     NaN
+40       gsm8k      ap                       ds_onecoin_nf10_lo             mean_level1    0.2585                        NaN     NaN     NaN     NaN     NaN
+41       gsm8k      ap                       ds_onecoin_nf10_lo             mean_level2    0.2433                        NaN     NaN     NaN     NaN     NaN
+42       gsm8k      ap                       ds_onecoin_nf10_lo             mean_level3    0.2276                        NaN     NaN     NaN     NaN     NaN
+43       gsm8k      ap                       ds_onecoin_nf10_lo             mean_level4    0.2111                        NaN     NaN     NaN     NaN     NaN
+44       gsm8k      ap                       ds_onecoin_nf10_lo             mean_level5    0.2009                        NaN     NaN     NaN     NaN     NaN
+45       gsm8k      ap                       ds_onecoin_nf10_lo  top_minus_bottom_level   -0.0868          S4b-dose-gsm8k-ap -0.1279 -0.0454   0.002   0.016
+46       gsm8k      ap                  accu_depen_dongorder_lo             mean_level0    0.1737                        NaN     NaN     NaN     NaN     NaN
+47       gsm8k      ap                  accu_depen_dongorder_lo             mean_level1    0.1868                        NaN     NaN     NaN     NaN     NaN
+48       gsm8k      ap                  accu_depen_dongorder_lo             mean_level2    0.1903                        NaN     NaN     NaN     NaN     NaN
+49       gsm8k      ap                  accu_depen_dongorder_lo             mean_level3    0.2079                        NaN     NaN     NaN     NaN     NaN
+50       gsm8k      ap                  accu_depen_dongorder_lo             mean_level4    0.1996                        NaN     NaN     NaN     NaN     NaN
+51       gsm8k      ap                  accu_depen_dongorder_lo             mean_level5    0.1924                        NaN     NaN     NaN     NaN     NaN
+52       gsm8k      ap                  accu_depen_dongorder_lo  top_minus_bottom_level    0.0187          S4b-dose-gsm8k-ap -0.0155  0.0553   0.276   1.000
+53       gsm8k      ap                            accu_depen_lo             mean_level0    0.1771                        NaN     NaN     NaN     NaN     NaN
+54       gsm8k      ap                            accu_depen_lo             mean_level1    0.1884                        NaN     NaN     NaN     NaN     NaN
+55       gsm8k      ap                            accu_depen_lo             mean_level2    0.1987                        NaN     NaN     NaN     NaN     NaN
+56       gsm8k      ap                            accu_depen_lo             mean_level3    0.2380                        NaN     NaN     NaN     NaN     NaN
+57       gsm8k      ap                            accu_depen_lo             mean_level4    0.2073                        NaN     NaN     NaN     NaN     NaN
+58       gsm8k      ap                            accu_depen_lo             mean_level5    0.1927                        NaN     NaN     NaN     NaN     NaN
+59       gsm8k      ap                            accu_depen_lo  top_minus_bottom_level    0.0156          S4b-dose-gsm8k-ap -0.0210  0.0554   0.424   1.000
+60       gsm8k      ap      precreccorr_lo - ds_onecoin_nf10_lo             diff_level0    0.0001          S4b-dose-gsm8k-ap -0.0076  0.0078   0.988   1.000
+61       gsm8k      ap      precreccorr_lo - ds_onecoin_nf10_lo             diff_level5    0.0022          S4b-dose-gsm8k-ap -0.0015  0.0063   0.296   1.000
+62       gsm8k      ap  accu_depen_dongorder_lo - accu_depen_lo             diff_level0   -0.0033          S4b-dose-gsm8k-ap -0.0060 -0.0013   0.002   0.016
+63       gsm8k      ap  accu_depen_dongorder_lo - accu_depen_lo             diff_level5   -0.0003          S4b-dose-gsm8k-ap -0.0171  0.0215   1.000   1.000
+64       gsm8k  ap_key                           precreccorr_lo             mean_level0    0.3730                        NaN     NaN     NaN     NaN     NaN
+65       gsm8k  ap_key                           precreccorr_lo             mean_level1    0.3127                        NaN     NaN     NaN     NaN     NaN
+66       gsm8k  ap_key                           precreccorr_lo             mean_level2    0.3015                        NaN     NaN     NaN     NaN     NaN
+67       gsm8k  ap_key                           precreccorr_lo             mean_level3    0.2729                        NaN     NaN     NaN     NaN     NaN
+68       gsm8k  ap_key                           precreccorr_lo             mean_level4    0.2223                        NaN     NaN     NaN     NaN     NaN
+69       gsm8k  ap_key                           precreccorr_lo             mean_level5    0.1705                        NaN     NaN     NaN     NaN     NaN
+70       gsm8k  ap_key                           precreccorr_lo  top_minus_bottom_level   -0.2025      S4b-dose-gsm8k-ap_key -0.3401 -0.0563   0.002   0.016
+71       gsm8k  ap_key                       ds_onecoin_nf10_lo             mean_level0    0.3741                        NaN     NaN     NaN     NaN     NaN
+72       gsm8k  ap_key                       ds_onecoin_nf10_lo             mean_level1    0.3337                        NaN     NaN     NaN     NaN     NaN
+73       gsm8k  ap_key                       ds_onecoin_nf10_lo             mean_level2    0.3108                        NaN     NaN     NaN     NaN     NaN
+74       gsm8k  ap_key                       ds_onecoin_nf10_lo             mean_level3    0.2746                        NaN     NaN     NaN     NaN     NaN
+75       gsm8k  ap_key                       ds_onecoin_nf10_lo             mean_level4    0.2215                        NaN     NaN     NaN     NaN     NaN
+76       gsm8k  ap_key                       ds_onecoin_nf10_lo             mean_level5    0.1683                        NaN     NaN     NaN     NaN     NaN
+77       gsm8k  ap_key                       ds_onecoin_nf10_lo  top_minus_bottom_level   -0.2058      S4b-dose-gsm8k-ap_key -0.3445 -0.0585   0.002   0.016
+78       gsm8k  ap_key                  accu_depen_dongorder_lo             mean_level0    0.0383                        NaN     NaN     NaN     NaN     NaN
+79       gsm8k  ap_key                  accu_depen_dongorder_lo             mean_level1    0.0595                        NaN     NaN     NaN     NaN     NaN
+80       gsm8k  ap_key                  accu_depen_dongorder_lo             mean_level2    0.0657                        NaN     NaN     NaN     NaN     NaN
+81       gsm8k  ap_key                  accu_depen_dongorder_lo             mean_level3    0.0964                        NaN     NaN     NaN     NaN     NaN
+82       gsm8k  ap_key                  accu_depen_dongorder_lo             mean_level4    0.1261                        NaN     NaN     NaN     NaN     NaN
+83       gsm8k  ap_key                  accu_depen_dongorder_lo             mean_level5    0.0555                        NaN     NaN     NaN     NaN     NaN
+84       gsm8k  ap_key                  accu_depen_dongorder_lo  top_minus_bottom_level    0.0172      S4b-dose-gsm8k-ap_key -0.0693  0.0751   0.520   1.000
+85       gsm8k  ap_key                            accu_depen_lo             mean_level0    0.0400                        NaN     NaN     NaN     NaN     NaN
+86       gsm8k  ap_key                            accu_depen_lo             mean_level1    0.0614                        NaN     NaN     NaN     NaN     NaN
+87       gsm8k  ap_key                            accu_depen_lo             mean_level2    0.0917                        NaN     NaN     NaN     NaN     NaN
+88       gsm8k  ap_key                            accu_depen_lo             mean_level3    0.2021                        NaN     NaN     NaN     NaN     NaN
+89       gsm8k  ap_key                            accu_depen_lo             mean_level4    0.1888                        NaN     NaN     NaN     NaN     NaN
+90       gsm8k  ap_key                            accu_depen_lo             mean_level5    0.0803                        NaN     NaN     NaN     NaN     NaN
+91       gsm8k  ap_key                            accu_depen_lo  top_minus_bottom_level    0.0403      S4b-dose-gsm8k-ap_key -0.0340  0.1430   0.232   0.928
+92       gsm8k  ap_key      precreccorr_lo - ds_onecoin_nf10_lo             diff_level0   -0.0011      S4b-dose-gsm8k-ap_key -0.0334  0.0224   0.896   1.000
+93       gsm8k  ap_key      precreccorr_lo - ds_onecoin_nf10_lo             diff_level5    0.0022      S4b-dose-gsm8k-ap_key -0.0073  0.0176   0.956   1.000
+94       gsm8k  ap_key  accu_depen_dongorder_lo - accu_depen_lo             diff_level0   -0.0018      S4b-dose-gsm8k-ap_key -0.0065 -0.0001   0.024   0.144
+95       gsm8k  ap_key  accu_depen_dongorder_lo - accu_depen_lo             diff_level5   -0.0249      S4b-dose-gsm8k-ap_key -0.1032  0.0109   0.172   0.860
+96   hellaswag      ap                           precreccorr_lo             mean_level0    0.1025                        NaN     NaN     NaN     NaN     NaN
+97   hellaswag      ap                           precreccorr_lo             mean_level1    0.0996                        NaN     NaN     NaN     NaN     NaN
+98   hellaswag      ap                           precreccorr_lo             mean_level2    0.0990                        NaN     NaN     NaN     NaN     NaN
+99   hellaswag      ap                           precreccorr_lo             mean_level3    0.0963                        NaN     NaN     NaN     NaN     NaN
+100  hellaswag      ap                           precreccorr_lo             mean_level4    0.0935                        NaN     NaN     NaN     NaN     NaN
+101  hellaswag      ap                           precreccorr_lo             mean_level5    0.0882                        NaN     NaN     NaN     NaN     NaN
+102  hellaswag      ap                           precreccorr_lo  top_minus_bottom_level   -0.0142      S4b-dose-hellaswag-ap -0.0247 -0.0051   0.002   0.008
+103  hellaswag      ap                            ds_onecoin_lo             mean_level0    0.1022                        NaN     NaN     NaN     NaN     NaN
+104  hellaswag      ap                            ds_onecoin_lo             mean_level1    0.0993                        NaN     NaN     NaN     NaN     NaN
+105  hellaswag      ap                            ds_onecoin_lo             mean_level2    0.0982                        NaN     NaN     NaN     NaN     NaN
+106  hellaswag      ap                            ds_onecoin_lo             mean_level3    0.0962                        NaN     NaN     NaN     NaN     NaN
+107  hellaswag      ap                            ds_onecoin_lo             mean_level4    0.0935                        NaN     NaN     NaN     NaN     NaN
+108  hellaswag      ap                            ds_onecoin_lo             mean_level5    0.0863                        NaN     NaN     NaN     NaN     NaN
+109  hellaswag      ap                            ds_onecoin_lo  top_minus_bottom_level   -0.0159      S4b-dose-hellaswag-ap -0.0263 -0.0079   0.002   0.008
+110  hellaswag      ap           precreccorr_lo - ds_onecoin_lo             diff_level0    0.0002      S4b-dose-hellaswag-ap -0.0004  0.0009   0.520   0.520
+111  hellaswag      ap           precreccorr_lo - ds_onecoin_lo             diff_level5    0.0019      S4b-dose-hellaswag-ap -0.0003  0.0058   0.172   0.344
+112  hellaswag  ap_key                           precreccorr_lo             mean_level0    0.1479                        NaN     NaN     NaN     NaN     NaN
+113  hellaswag  ap_key                           precreccorr_lo             mean_level1    0.1434                        NaN     NaN     NaN     NaN     NaN
+114  hellaswag  ap_key                           precreccorr_lo             mean_level2    0.1411                        NaN     NaN     NaN     NaN     NaN
+115  hellaswag  ap_key                           precreccorr_lo             mean_level3    0.1372                        NaN     NaN     NaN     NaN     NaN
+116  hellaswag  ap_key                           precreccorr_lo             mean_level4    0.1329                        NaN     NaN     NaN     NaN     NaN
+117  hellaswag  ap_key                           precreccorr_lo             mean_level5    0.1237                        NaN     NaN     NaN     NaN     NaN
+118  hellaswag  ap_key                           precreccorr_lo  top_minus_bottom_level   -0.0243  S4b-dose-hellaswag-ap_key -0.0391 -0.0125   0.002   0.008
+119  hellaswag  ap_key                            ds_onecoin_lo             mean_level0    0.1474                        NaN     NaN     NaN     NaN     NaN
+120  hellaswag  ap_key                            ds_onecoin_lo             mean_level1    0.1428                        NaN     NaN     NaN     NaN     NaN
+121  hellaswag  ap_key                            ds_onecoin_lo             mean_level2    0.1400                        NaN     NaN     NaN     NaN     NaN
+122  hellaswag  ap_key                            ds_onecoin_lo             mean_level3    0.1371                        NaN     NaN     NaN     NaN     NaN
+123  hellaswag  ap_key                            ds_onecoin_lo             mean_level4    0.1328                        NaN     NaN     NaN     NaN     NaN
+124  hellaswag  ap_key                            ds_onecoin_lo             mean_level5    0.1215                        NaN     NaN     NaN     NaN     NaN
+125  hellaswag  ap_key                            ds_onecoin_lo  top_minus_bottom_level   -0.0259  S4b-dose-hellaswag-ap_key -0.0416 -0.0146   0.002   0.008
+126  hellaswag  ap_key           precreccorr_lo - ds_onecoin_lo             diff_level0    0.0005  S4b-dose-hellaswag-ap_key -0.0006  0.0013   0.364   0.364
+127  hellaswag  ap_key           precreccorr_lo - ds_onecoin_lo             diff_level5    0.0022  S4b-dose-hellaswag-ap_key -0.0003  0.0076   0.096   0.192

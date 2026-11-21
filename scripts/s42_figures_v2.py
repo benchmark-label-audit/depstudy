@@ -83,7 +83,7 @@ def key_ap(bench, tag, m, sources=False):
 
 def sizecap():
     c = pd.read_csv(os.path.join(RES, "contrasts_v2.csv"))
-    fig, axes = plt.subplots(1, 3, figsize=(7.0, 1.9))
+    fig, axes = plt.subplots(1, 3, figsize=(7.0, 1.75))
     for ax, b in zip(axes, ("mmlu", "gsm8k", "hellaswag")):
         for m in ("crh", "ds"):
             n = [10, 30, 100, 300, 1000]
@@ -118,7 +118,7 @@ def dose():
     from s10_size_capability import key_mask
     from s37_mmlu_splitdose import halves
     methods = ["crh", "ds", "accu_depen_lo", "accu_depen_nu_lo", "irt4pl"]  # GLAD coincides with DS-1 on every ladder
-    fig, axes = plt.subplots(1, 4, figsize=(7.0, 1.85))
+    fig, axes = plt.subplots(1, 4, figsize=(7.0, 1.72))
     specs = [("gsm8k", "GSM8K (design: MMLU)"), ("hellaswag", "HellaSwag (design: MMLU)"), ("split", "MMLU (design: other half)"),
              ("mmlu", "MMLU (design: GSM8K)")]
     strong_R = {"gsm8k": 0.230, "hellaswag": 0.565, "mmlu": 0.095, "split": float(np.mean([F["R_small_strong_design"] for F in S2["folds"]]))}
@@ -164,7 +164,7 @@ def types():
                    ("multiple_correct_answers", "several\ncorr."), ("no_correct_answer", "no\ncorr.")],
           "gsm8k": [("revised_key", "revised\nkey"), ("removed_question", "removed\nitem")],
           "hellaswag": [("wrong_answer", "key\nerror"), ("multiple_correct_only", "several\nendings")]}
-    fig = plt.figure(figsize=(7.0, 1.85))
+    fig = plt.figure(figsize=(7.0, 1.72))
     gs = fig.add_gridspec(1, 4, width_ratios=[6.2, 2, 2, 3.0])
     for k, b in enumerate(("mmlu", "gsm8k", "hellaswag")):
         ax = fig.add_subplot(gs[0, k])

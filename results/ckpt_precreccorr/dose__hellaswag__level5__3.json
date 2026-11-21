@@ -1,0 +1,1 @@
+[{"family": "dose", "bench": "hellaswag", "condition": "level5", "rep": 3, "n_models": 100, "method": "precreccorr_lo", "sec": 0.3456275463104248, "n_clusters": 67, "max_cluster": 6}]

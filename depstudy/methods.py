@@ -277,6 +277,104 @@ def ebcc_onecoin(X, g, K=None, n_false=None, M=10, a_pi=0.1, a_v=4.0, b_v=3.0, i
     return 1.0 - z[np.arange(n_i), g], z
 
 
+# ----------------------------------------------------------------------------- PrecRecCorr
+def _source_clusters(X, truth, max_size):
+    """Average-linkage clusters of sources by the correlation of their correctness vectors, cut at the smallest number
+    of clusters whose largest cluster has at most max_size sources (Pochampally et al. cluster sources by pairwise
+    correlation and treat sources in different clusters as independent)."""
+    from scipy.cluster.hierarchy import fcluster, linkage
+    from scipy.spatial.distance import squareform
+    n_m = X.shape[1]
+    if n_m <= max_size:
+        return [np.arange(n_m)]
+    Y = (X == truth[:, None]).astype(np.float64)
+    sd = Y.std(0)
+    Y = (Y - Y.mean(0)) / np.where(sd > 0, sd, 1.0)
+    R = np.clip((Y.T @ Y) / len(Y), -1, 1)
+    np.fill_diagonal(R, 1.0)
+    Z = linkage(squareform(1.0 - R, checks=False), "average")
+    lo, hi = 1, n_m
+    while lo < hi:                                     # smallest cluster count with every cluster <= max_size
+        mid = (lo + hi) // 2
+        lab = fcluster(Z, mid, "maxclust")
+        if np.bincount(lab).max() <= max_size:
+            hi = mid
+        else:
+            lo = mid + 1
+    lab = fcluster(Z, lo, "maxclust")
+    return [np.flatnonzero(lab == c) for c in np.unique(lab)]
+
+
+def precreccorr(X, g, K=None, max_cluster=8, kappa=10.0, iters=5, logodds=True):
+    """PrecRecCorr (Pochampally, Das Sarma, Dong, Meliou, Srivastava, SIGMOD 2014): the probability of a triple
+    (item, value) from the joint recall and joint false positive rate of the sources that do and do not provide it
+    (their Eqs. 10-12). Within a cluster of correlated sources the exact inclusion-exclusion sum equals the frequency of
+    the cluster's provider pattern among true and among false triples, which is computed directly; sources in
+    different clusters are treated as independent, as Pochampally et al. do for their large BOOK dataset. Training
+    triples are the (item, value) pairs that at least one source provides; with no gold standard, the truth is
+    estimated iteratively from majority voting (truth step: the value with the largest likelihood ratio). Unseen
+    patterns are smoothed toward the independent model of their Theorem 3.1 with weight kappa. Scores are log
+    posterior odds against the key over the candidate values."""
+    n_i, n_m = X.shape
+    obs = X >= 0
+    valid = _candidates(X, g, K)
+    V = valid.shape[1]
+    C = onehot_counts(X, g)
+    prov = (C > 0) & valid
+    truth = np.where(valid, C, -1.0).argmax(1)
+    clusters = _source_clusters(X, truth, max_cluster)
+    L = None
+    for _ in range(iters):
+        T = np.zeros((n_i, V), bool); T[np.arange(n_i), truth] = True
+        T &= prov
+        F = prov & ~T
+        nT, nF = T.sum(), F.sum()
+        L = np.zeros((n_i, V))
+        for members in clusters:
+            k = len(members)
+            P = np.zeros((n_i, V), np.int32)
+            for b, j in enumerate(members):
+                o = obs[:, j]
+                P[np.flatnonzero(o), X[o, j]] |= (1 << b)
+            npat = 1 << k
+            Ht = np.bincount(P[T], minlength=npat).astype(float)
+            Hf = np.bincount(P[F], minlength=npat).astype(float)
+            bits = ((np.arange(npat)[:, None] >> np.arange(k)[None, :]) & 1).astype(bool)   # (pattern, member)
+            r = np.array([((P[T] >> b) & 1).mean() for b in range(k)]).clip(1e-3, 1 - 1e-3)
+            q = np.array([((P[F] >> b) & 1).mean() for b in range(k)]).clip(1e-3, 1 - 1e-3)
+            pi_t = np.exp(np.where(bits, np.log(r), np.log1p(-r)).sum(1))
+            pi_f = np.exp(np.where(bits, np.log(q), np.log1p(-q)).sum(1))
+            lt = np.log((Ht + kappa * pi_t) / (nT + kappa))
+            lf = np.log((Hf + kappa * pi_f) / (nF + kappa))
+            L += (lt - lf)[P]
+        L[~valid] = -np.inf
+        truth = L.argmax(1)
+    if logodds:
+        return logodds_against_key(L, g, valid), L, clusters
+    m = L.max(1, keepdims=True)
+    post = np.exp(L - m); post /= post.sum(1, keepdims=True)
+    return 1.0 - post[np.arange(n_i), g], L, clusters
+
+
+def dong_order(G, D, acc):
+    """Greedy order of Dong et al. (PVLDB 2009, Sec. 3.3) for the sources G that provide one value: first the more
+    accurate source of the most dependent pair, then each time the source with the largest dependence on a source
+    already selected."""
+    sub = D[np.ix_(G, G)].copy()
+    np.fill_diagonal(sub, -1.0)
+    a, b = np.unravel_index(np.argmax(sub), sub.shape)
+    first = a if acc[G[a]] >= acc[G[b]] else b
+    sel = [first]
+    left = np.ones(len(G), bool); left[first] = False
+    best = sub[first].copy()
+    for _ in range(len(G) - 1):
+        cand = np.where(left, best, -np.inf)
+        nxt = int(np.argmax(cand))
+        sel.append(nxt); left[nxt] = False
+        best = np.maximum(best, sub[nxt])
+    return G[np.array(sel)]
+
+
 # --------------------------------------------------------------------------------------- CRH
 def crh(X, g, iters=20):
     """CRH for categorical data (Li et al., SIGMOD 2014): weighted vote with w_j = -log(loss_j / sum loss)."""
@@ -476,7 +574,7 @@ def dependence_posterior(X, truth_val, acc, n_false, alpha=0.2, c=0.8, pf_same=N
 
 
 def accu_depen(X, g, n_false, iters=5, alpha=0.2, c=0.8, use_dependence=True, K=None, logodds=False, nonuni=False,
-               truth_override=None, eps=0.2, init=None):
+               truth_override=None, eps=0.2, init=None, vote_order="accuracy"):
     """ACCU with dependence (Dong et al. 2009): accuracy-weighted votes, each vote discounted by the
     probability that the value was copied from a source ordered earlier (sources ordered by accuracy).
     nonuni=True replaces the uniform false-value assumption in the copying test by the empirical same-false-value
@@ -512,7 +610,7 @@ def accu_depen(X, g, n_false, iters=5, alpha=0.2, c=0.8, use_dependence=True, K=
             for v in np.unique(vals):
                 G = o[vals == v]
                 if use_dependence and len(G) > 1:
-                    G = G[np.argsort(rank[G])]
+                    G = dong_order(G, D, acc) if vote_order == "dependence" else G[np.argsort(rank[G])]
                     sub = L[np.ix_(G, G)]
                     disc = np.exp(np.tril(sub, -1).sum(1))  # product over earlier sources in G
                 else:

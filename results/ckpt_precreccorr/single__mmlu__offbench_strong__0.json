@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "mmlu", "condition": "offbench_strong", "rep": 0, "n_models": 100, "method": "precreccorr_lo", "sec": 1.1105430126190186, "n_clusters": 79, "max_cluster": 8}]

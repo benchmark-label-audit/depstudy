@@ -1,0 +1,113 @@
+C:\Users\Ttomatopaste\Downloads\ccfa-workfiles\resubmission\4702\depstudy\depstudy\methods.py:634: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-x))
+GSM {
+ "models": 68,
+ "scored_items": 14,
+ "rho_ours_theirs": 0.8681318681318682,
+ "rho_item_ci95": [
+  0.589020950846092,
+  0.972295843482195
+ ],
+ "rho_subset60_vs_full_p10_p50_p90": [
+  0.8205923303153382,
+  0.9076923076923077,
+  0.9432967032967032
+ ],
+ "rho_subset60_vs_theirs_p10_p50_p90": [
+  0.7097482264806687,
+  0.7934065934065934,
+  0.8658115357694295
+ ],
+ "rho_disjoint_halves_p10_p50_p90": [
+  0.3863588696575297,
+  0.5956043956043956,
+  0.7304734893297258
+ ],
+ "subjective_among_scored": 1,
+ "mislabel_provenance": {
+  "delta_gt0": {
+   "n": 4,
+   "irt_top50": 4.0,
+   "mv_top50": 4.0
+  },
+  "other_flag": {
+   "n": 8,
+   "irt_top50": 1.0,
+   "mv_top50": 7.000000000000001
+  }
+ }
+}
+MATH {
+ "models": 69,
+ "scored_items": 24,
+ "rho_ours_theirs": 0.6113043478260869,
+ "rho_item_ci95": [
+  0.22835852680102156,
+  0.8465151152653184
+ ],
+ "rho_subset60_vs_full_p10_p50_p90": [
+  0.7029717062749098,
+  0.8230434782608695,
+  0.9151304347826086
+ ],
+ "rho_subset60_vs_theirs_p10_p50_p90": [
+  0.45591543556369235,
+  0.5869565217391304,
+  0.6722608695652174
+ ],
+ "rho_disjoint_halves_p10_p50_p90": [
+  0.2906645638465727,
+  0.4455315165383815,
+  0.5536112487470923
+ ],
+ "subjective_among_scored": 14,
+ "mislabel_provenance": {
+  "delta_gt0": {
+   "n": 4,
+   "irt_top50": 4.0,
+   "mv_top50": 4.0
+  },
+  "other_flag": {
+   "n": 4,
+   "irt_top50": 1.0,
+   "mv_top50": 1.0
+  }
+ }
+}
+GPQA {
+ "models": 66,
+ "scored_items": 16,
+ "rho_ours_theirs": 0.8529411764705882,
+ "rho_item_ci95": [
+  0.5311268412729437,
+  0.9701959551178853
+ ],
+ "rho_subset60_vs_full_p10_p50_p90": [
+  0.8252941176470588,
+  0.9455882352941175,
+  0.9741176470588235
+ ],
+ "rho_subset60_vs_theirs_p10_p50_p90": [
+  0.7994117647058823,
+  0.8573529411764705,
+  0.9008823529411765
+ ],
+ "rho_disjoint_halves_p10_p50_p90": [
+  0.6258823529411763,
+  0.7473359458254842,
+  0.8708823529411764
+ ],
+ "subjective_among_scored": 0,
+ "mislabel_provenance": {
+  "delta_gt0": {
+   "n": 3,
+   "irt_top50": 3.0,
+   "mv_top50": 3.0
+  },
+  "other_flag": {
+   "n": 11,
+   "irt_top50": 6.0,
+   "mv_top50": 8.0
+  }
+ }
+}

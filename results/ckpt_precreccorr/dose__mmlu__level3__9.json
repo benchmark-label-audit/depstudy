@@ -1,0 +1,1 @@
+[{"family": "dose", "bench": "mmlu", "condition": "level3", "rep": 9, "n_models": 100, "method": "precreccorr_lo", "sec": 0.2732555866241455, "n_clusters": 92, "max_cluster": 5}]

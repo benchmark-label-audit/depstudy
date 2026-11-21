@@ -14,7 +14,7 @@ ranks the known label errors of MMLU and GSM8K (expert-verified) and HellaSwag (
 
 ```
 depstudy/         data access (data.py, hf.py), answer normalization (textnorm.py), panels (panels.py), methods (methods.py)
-scripts/          s0 ... s60, one script per experiment step; each docstring names its inputs and outputs
+scripts/          s0 ... s62, one script per experiment step; each docstring names its inputs and outputs
 results/          result files (CSV, JSON, Parquet), checkpoints of the panel runs, and the figures
 results/archive/  superseded outputs of earlier stages, kept as a record (see its README); the paper does not use them
 data/             model manifest, declared lineage, truth tables, fetch order; data/external holds the MMLU-Redux 2.0 inputs
@@ -123,6 +123,9 @@ python scripts/s52_depen_rounds.py                  # round-by-round copy detect
 python scripts/s59_ebcc.py run --workers 6          # EBCC and warm-started AccuCopy on the single panels and ladders
 python scripts/s59_ebcc.py copyrates                # injected copiers at copy rates 0.3, 0.5, 0.8 (Section 5.5)
 python scripts/s59_ebcc.py stats                    # EBCC rows of Tables 5, 6, 8; warm-start row of Table 7
+python scripts/s61_precreccorr.py run --workers 6   # PrecRecCorr, and AccuCopy with Dong et al.'s vote order
+python scripts/s61_precreccorr.py stats             # PrecRecCorr rows of Tables 5, 6, 8; the vote-order ablation
+python scripts/s62_irt_gap.py                       # IRT-4PL replication diagnostics on Land and Bikel's records (Section 5.1)
 python scripts/s32_errortypes.py                    # defect types (Figure 5)
 python scripts/s33_rankshift.py                     # leaderboard effect of the corrected labels
 python scripts/s49_downstream.py                    # accuracy error removed by verification
