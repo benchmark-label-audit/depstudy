@@ -1,0 +1,50 @@
+{'bench': 'mmlu', 'rep': 0, 'copy_rate': 0.3, 'truth': 'given', 'flag_injected': 0.9, 'flag_independent': 0.011538461538461539}
+{'bench': 'mmlu', 'rep': 0, 'copy_rate': 0.3, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 0, 'copy_rate': 0.5, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.010526315789473684}
+{'bench': 'mmlu', 'rep': 0, 'copy_rate': 0.5, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 0, 'copy_rate': 0.8, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.010728744939271255}
+{'bench': 'mmlu', 'rep': 0, 'copy_rate': 0.8, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 1, 'copy_rate': 0.3, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.007692307692307693}
+{'bench': 'mmlu', 'rep': 1, 'copy_rate': 0.3, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 1, 'copy_rate': 0.5, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.007692307692307693}
+{'bench': 'mmlu', 'rep': 1, 'copy_rate': 0.5, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 1, 'copy_rate': 0.8, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.007692307692307693}
+{'bench': 'mmlu', 'rep': 1, 'copy_rate': 0.8, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 2, 'copy_rate': 0.3, 'truth': 'given', 'flag_injected': 0.9, 'flag_independent': 0.0072874493927125505}
+{'bench': 'mmlu', 'rep': 2, 'copy_rate': 0.3, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 2, 'copy_rate': 0.5, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.007489878542510121}
+{'bench': 'mmlu', 'rep': 2, 'copy_rate': 0.5, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'mmlu', 'rep': 2, 'copy_rate': 0.8, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.007692307692307693}
+{'bench': 'mmlu', 'rep': 2, 'copy_rate': 0.8, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 1.0}
+{'bench': 'gsm8k', 'rep': 0, 'copy_rate': 0.3, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 0, 'copy_rate': 0.3, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9623481781376518}
+{'bench': 'gsm8k', 'rep': 0, 'copy_rate': 0.5, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 0, 'copy_rate': 0.5, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9631578947368421}
+{'bench': 'gsm8k', 'rep': 0, 'copy_rate': 0.8, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 0, 'copy_rate': 0.8, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9587044534412955}
+{'bench': 'gsm8k', 'rep': 1, 'copy_rate': 0.3, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 1, 'copy_rate': 0.3, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.96417004048583}
+{'bench': 'gsm8k', 'rep': 1, 'copy_rate': 0.5, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 1, 'copy_rate': 0.5, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9052631578947369}
+{'bench': 'gsm8k', 'rep': 1, 'copy_rate': 0.8, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 1, 'copy_rate': 0.8, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9238866396761134}
+{'bench': 'gsm8k', 'rep': 2, 'copy_rate': 0.3, 'truth': 'given', 'flag_injected': 0.9, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 2, 'copy_rate': 0.3, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9702429149797571}
+{'bench': 'gsm8k', 'rep': 2, 'copy_rate': 0.5, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 2, 'copy_rate': 0.5, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9700404858299595}
+{'bench': 'gsm8k', 'rep': 2, 'copy_rate': 0.8, 'truth': 'given', 'flag_injected': 1.0, 'flag_independent': 0.0}
+{'bench': 'gsm8k', 'rep': 2, 'copy_rate': 0.8, 'truth': 'inferred', 'flag_injected': 1.0, 'flag_independent': 0.9621457489878542}
+                          flag_injected  flag_independent
+bench copy_rate truth                                    
+gsm8k 0.3       given             0.967             0.000
+                inferred          1.000             0.966
+      0.5       given             1.000             0.000
+                inferred          1.000             0.946
+      0.8       given             1.000             0.000
+                inferred          1.000             0.948
+mmlu  0.3       given             0.933             0.009
+                inferred          1.000             1.000
+      0.5       given             1.000             0.009
+                inferred          1.000             1.000
+      0.8       given             1.000             0.009
+                inferred          1.000             1.000

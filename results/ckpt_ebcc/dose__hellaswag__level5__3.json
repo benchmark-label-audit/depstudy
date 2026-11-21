@@ -1,0 +1,1 @@
+[{"family": "dose", "bench": "hellaswag", "condition": "level5", "rep": 3, "n_models": 100, "method": "ebcc_lo", "flag_share": null, "sec": 0.6877338886260986}]

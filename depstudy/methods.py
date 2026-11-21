@@ -173,6 +173,110 @@ def dawid_skene_full(X, g, K, iters=50, smooth=1.0, logodds=False):
     return 1.0 - post[np.arange(n_i), g], post
 
 
+# ------------------------------------------------------------------------------------- EBCC
+def _logsumexp(a, axis):
+    m = np.max(a, axis=axis, keepdims=True)
+    m = np.where(np.isfinite(m), m, 0.0)
+    return np.squeeze(m, axis) + np.log(np.exp(a - m).sum(axis))
+
+
+def ebcc(X, g, K, M=10, a_pi=0.1, alpha=1.0, a_v=4.0, b_v=1.0, iters=500, tol=1e-3, seed=1234, logodds=True):
+    """EBCC (Li, Rubinstein, Cohn, ICML 2019): each true class k is a mixture of M subtypes, and every worker has one
+    confusion matrix per (class, subtype), so workers that err alike on a subtype of items are modelled as
+    correlated. Mean-field variational Bayes with the authors' defaults (M = 10, a_pi = 0.1, alpha = 1, a_v = 4,
+    b_v = 1, at most 500 iterations, stop when the class posteriors move by less than 1e-3), following their
+    reference implementation (github.com/yuan-li/truth-inference-at-scale, code/ebcc.py). Two changes are numerical
+    only: the E-step is normalised in log space, and items are ranked by log posterior odds against the key
+    (Eq. 1), since with thousands of workers the exponentiated E-step of the reference code under- or overflows."""
+    import scipy.sparse as ssp
+    from scipy.special import digamma
+    n_i, n_m = X.shape
+    obs = X >= 0
+    r, c = np.nonzero(obs)
+    v = X[r, c]
+    Y = [ssp.csr_matrix((np.ones(int((v == l).sum())), (r[v == l], c[v == l])), shape=(n_i, n_m)) for l in range(K)]
+    Yt = [y.T.tocsr() for y in Y]
+    beta = np.eye(K) * (a_v - b_v) + b_v                               # (k, l) prior of each confusion row
+    z = np.stack([np.asarray(y.sum(1)).ravel() for y in Y], 1) + EPS   # majority-vote initialisation
+    z /= z.sum(1, keepdims=True)
+    rng = np.random.default_rng(seed)
+    zg = rng.dirichlet(np.ones(M), size=(n_i, K)) * z[:, :, None]      # (i, k, m)
+    L = None
+    for _ in range(iters):
+        eta = a_pi / M + zg.sum(0)                                      # (k, m)
+        nu = alpha + z.sum(0)                                           # (k,)
+        flat = zg.reshape(n_i, K * M)
+        mu = np.empty((n_m, K, M, K))
+        for l in range(K):
+            mu[:, :, :, l] = (Yt[l] @ flat).reshape(n_m, K, M) + beta[None, :, None, l]
+        Elog_pi = digamma(eta) - digamma(eta.sum(1, keepdims=True))
+        Elog_tau = digamma(nu) - digamma(nu.sum())
+        Elog_v = digamma(mu) - digamma(mu.sum(-1, keepdims=True))
+        L = np.broadcast_to(Elog_pi[None] + Elog_tau[None, :, None], (n_i, K, M)).copy()
+        for l in range(K):
+            L += (Y[l] @ Elog_v[:, :, :, l].reshape(n_m, K * M)).reshape(n_i, K, M)
+        mx = L.max((1, 2), keepdims=True)
+        zg = np.exp(L - mx); zg /= zg.sum((1, 2), keepdims=True)
+        z_old, z = z, zg.sum(2)
+        if np.allclose(z_old, z, atol=tol):
+            break
+    lz = _logsumexp(L, 2)                                               # unnormalised log q(z_i = k)
+    if logodds:
+        return logodds_against_key(lz, g), z
+    return 1.0 - z[np.arange(n_i), g], z
+
+
+def ebcc_onecoin(X, g, K=None, n_false=None, M=10, a_pi=0.1, a_v=4.0, b_v=3.0, iters=500, tol=1e-3, seed=1234, logodds=True):
+    """EBCC's subtype model with one-coin confusion, for free-form answers that have no global class set: each item
+    belongs to one of M latent subtypes, and worker j answers the truth with probability p_jm on items of subtype m,
+    otherwise one of n_f false values uniformly. Shared subtype accuracies are what correlate the workers, as in EBCC.
+    Priors follow EBCC's defaults: a_pi = 0.1 over subtypes and Beta(a_v, b_v) = Beta(4, 3) per accuracy, the
+    correct-versus-wrong mass of EBCC's K = 4 confusion prior. Candidate truths and n_f are those of one-coin DS.
+    Mean-field VB; ranking by log posterior odds against the key."""
+    import scipy.sparse as ssp
+    from scipy.special import digamma
+    n_i, n_m = X.shape
+    obs = X >= 0
+    valid = _candidates(X, g, K)
+    V = valid.shape[1]
+    nv = valid.sum(1).astype(float)
+    nf = np.maximum(nv - 1, 1) if n_false is None else np.full(n_i, float(n_false))
+    lnf = np.log(nf)
+    r, c = np.nonzero(obs)
+    S = ssp.csr_matrix((np.ones(len(r)), (r * V + X[r, c], c)), shape=(n_i * V, n_m))   # (item, value) x worker
+    St = S.T.tocsr()
+    O = ssp.csr_matrix(obs.astype(np.float64))
+    Ot = O.T.tocsr()
+    n_obs_i = obs.sum(1).astype(float)
+    C = np.asarray(S.sum(1)).reshape(n_i, V)
+    z = np.where(valid, C + EPS, 0.0); z /= z.sum(1, keepdims=True)
+    rng = np.random.default_rng(seed)
+    R = rng.dirichlet(np.ones(M), size=(n_i, V)) * z[:, :, None]                       # q(z_i = v, s_i = m)
+    L = None
+    for _ in range(iters):
+        qs = R.sum(1)                                                                   # (i, m)
+        a = a_v + St @ R.reshape(n_i * V, M)                                            # (j, m)
+        tot = Ot @ qs
+        b = b_v + np.maximum(tot - (a - a_v), 0.0)
+        eta = a_pi / M + qs.sum(0)
+        Elog_tau = digamma(eta) - digamma(eta.sum())
+        Elp = digamma(a) - digamma(a + b)
+        El1 = digamma(b) - digamma(a + b)
+        base = (O @ El1) - n_obs_i[:, None] * lnf[:, None]                              # every claim taken as false
+        D = Elp - El1                                                                   # (j, m) without the n_f term
+        L = (S @ D).reshape(n_i, V, M) + (C * lnf[:, None])[:, :, None] + base[:, None, :] + Elog_tau[None, None, :]
+        L[~valid] = -np.inf
+        mx = L.max((1, 2), keepdims=True)
+        R = np.exp(L - mx); R /= R.sum((1, 2), keepdims=True)
+        z_old, z = z, R.sum(2)
+        if np.allclose(z_old, z, atol=tol):
+            break
+    lz = _logsumexp(L, 2)
+    if logodds:
+        return logodds_against_key(lz, g, valid), z
+    return 1.0 - z[np.arange(n_i), g], z
+
+
 # --------------------------------------------------------------------------------------- CRH
 def crh(X, g, iters=20):
     """CRH for categorical data (Li et al., SIGMOD 2014): weighted vote with w_j = -log(loss_j / sum loss)."""
@@ -372,26 +476,30 @@ def dependence_posterior(X, truth_val, acc, n_false, alpha=0.2, c=0.8, pf_same=N
 
 
 def accu_depen(X, g, n_false, iters=5, alpha=0.2, c=0.8, use_dependence=True, K=None, logodds=False, nonuni=False,
-               truth_override=None, eps=0.2):
+               truth_override=None, eps=0.2, init=None):
     """ACCU with dependence (Dong et al. 2009): accuracy-weighted votes, each vote discounted by the
     probability that the value was copied from a source ordered earlier (sources ordered by accuracy).
     nonuni=True replaces the uniform false-value assumption in the copying test by the empirical same-false-value
     rate (Dong et al.'s NONUNI relaxation). truth_override fixes the truth used by the copying test (oracle runs).
     As in Dong et al., the first round treats every provided value as true with probability 1 - eps and every source
-    as having accuracy 1 - eps; later rounds use the selected true values."""
+    as having accuracy 1 - eps; later rounds use the selected true values.
+    init = (truth_val, acc) warm-starts the iteration from given true values and accuracies (e.g. the converged state of
+    ACCU without dependence) and skips the soft first round."""
     n_i, n_m = X.shape
     obs = X >= 0
     acc = np.full(n_m, 1.0 - eps)
     V = int(max(X.max(), g.max())) + 1
     truth = majority_vote(X, g)  # placeholder, replaced below
     C = onehot_counts(X, g); truth_val = C.argmax(1)
+    if init is not None:
+        truth_val, acc = np.asarray(init[0]).copy(), np.asarray(init[1], float).copy()
     D = np.zeros((n_m, n_m))
     post = None
     for it in range(iters):
         if use_dependence:
             tv = truth_val if truth_override is None else truth_override
             ps = same_false_rate(X, tv) if nonuni else None
-            first = it == 0 and truth_override is None
+            first = it == 0 and truth_override is None and init is None
             D = dependence_posterior(X, tv, acc, n_false, alpha, c, pf_same=ps, soft_true=(1.0 - eps) if first else None)
         a = np.log(n_false * np.clip(acc, 0.01, 0.99) / (1 - np.clip(acc, 0.01, 0.99)))
         order = np.argsort(-acc)

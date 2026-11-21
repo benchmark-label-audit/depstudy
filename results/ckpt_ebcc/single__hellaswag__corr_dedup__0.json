@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "hellaswag", "condition": "corr_dedup", "rep": 0, "n_models": 903, "method": "ebcc_lo", "flag_share": null, "sec": 24.394670009613037}, {"family": "single", "bench": "hellaswag", "condition": "corr_dedup", "rep": 0, "n_models": 903, "method": "ebcc1_lo", "flag_share": null, "sec": 34.20847821235657}]

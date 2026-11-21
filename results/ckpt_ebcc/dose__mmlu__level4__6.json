@@ -1,0 +1,1 @@
+[{"family": "dose", "bench": "mmlu", "condition": "level4", "rep": 6, "n_models": 100, "method": "ebcc_lo", "flag_share": null, "sec": 2.1107444763183594}]

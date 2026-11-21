@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "gsm8k", "condition": "small_diverse", "rep": 0, "n_models": 100, "method": "ebcc_lo", "flag_share": null, "sec": 22.77140212059021}]

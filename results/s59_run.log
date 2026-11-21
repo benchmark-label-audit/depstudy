@@ -1,0 +1,16 @@
+todo light 190 heavy 5
+1 / 190 single__mmlu__small_diverse__0 100 00:39:25
+21 / 190 dose__mmlu__level1__2 100 00:39:52
+41 / 190 single__gsm8k__offbench_strong__0 100 00:40:03
+61 / 190 dose__mmlu__level5__3 100 00:40:12
+81 / 190 dose__gsm8k__level1__3 100 00:41:43
+101 / 190 dose__gsm8k__level3__0 100 00:43:41
+121 / 190 dose__gsm8k__level4__5 100 00:45:12
+141 / 190 dose__hellaswag__level1__0 100 00:45:49
+161 / 190 dose__hellaswag__level3__1 100 00:45:59
+181 / 190 dose__hellaswag__level4__7 100 00:46:04
+1 / 5 single__gsm8k__full__0 2999 00:46:24
+2 / 5 single__gsm8k__corr_dedup__0 2450 00:46:36
+3 / 5 single__mmlu__full__0 2999 00:46:42
+4 / 5 single__mmlu__corr_dedup__0 1631 00:47:01
+5 / 5 single__hellaswag__full__0 2999 00:47:04

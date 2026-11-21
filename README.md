@@ -14,7 +14,7 @@ ranks the known label errors of MMLU and GSM8K (expert-verified) and HellaSwag (
 
 ```
 depstudy/         data access (data.py, hf.py), answer normalization (textnorm.py), panels (panels.py), methods (methods.py)
-scripts/          s0 ... s58, one script per experiment step; each docstring names its inputs and outputs
+scripts/          s0 ... s60, one script per experiment step; each docstring names its inputs and outputs
 results/          result files (CSV, JSON, Parquet), checkpoints of the panel runs, and the figures
 results/archive/  superseded outputs of earlier stages, kept as a record (see its README); the paper does not use them
 data/             model manifest, declared lineage, truth tables, fetch order; data/external holds the MMLU-Redux 2.0 inputs
@@ -120,9 +120,13 @@ python scripts/s45_copy_validation.py semi          # simulated independent sour
 python scripts/s45_copy_validation.py realoracle    # real panels with the shipped keys as truth (Table 7)
 python scripts/s47_depen_grid.py --workers 4        # the 32 copy-detection settings on the GSM8K ladder
 python scripts/s52_depen_rounds.py                  # round-by-round copy detection diagnostics
+python scripts/s59_ebcc.py run --workers 6          # EBCC and warm-started AccuCopy on the single panels and ladders
+python scripts/s59_ebcc.py copyrates                # injected copiers at copy rates 0.3, 0.5, 0.8 (Section 5.5)
+python scripts/s59_ebcc.py stats                    # EBCC rows of Tables 5, 6, 8; warm-start row of Table 7
 python scripts/s32_errortypes.py                    # defect types (Figure 5)
 python scripts/s33_rankshift.py                     # leaderboard effect of the corrected labels
 python scripts/s49_downstream.py                    # accuracy error removed by verification
+python scripts/s60_budget_ci.py                     # 95% intervals of the accuracy error removed
 python scripts/s50_lobo.py                          # leave-one-benchmark-out choice of the rank average
 python scripts/s51_lenient_robust.py                # lenient-extraction column of Table 8
 python scripts/s56_wrongkey_answers.py

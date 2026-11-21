@@ -1,0 +1,1 @@
+[{"family": "single", "bench": "mmlu", "condition": "offbench_strong", "rep": 0, "n_models": 100, "method": "ebcc_lo", "flag_share": null, "sec": 1.0682730674743652}]

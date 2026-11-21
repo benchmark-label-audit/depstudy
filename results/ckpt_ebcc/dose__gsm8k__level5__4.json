@@ -1,0 +1,1 @@
+[{"family": "dose", "bench": "gsm8k", "condition": "level5", "rep": 4, "n_models": 100, "method": "ebcc_lo", "flag_share": null, "sec": 20.525219678878784}, {"family": "dose", "bench": "gsm8k", "condition": "level5", "rep": 4, "n_models": 100, "method": "accu_depen_warm_lo", "flag_share": 0.16686868686868686, "sec": 1.8704545497894287}]
